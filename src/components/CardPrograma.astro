@@ -1,0 +1,88 @@
+---
+import type { CiesProgramas } from '@interfaces/cies-programas';
+
+interface Props extends CiesProgramas {}
+const { titulo, grado, descripcion, link, imgSrc } = Astro.props as Props;
+
+const href = link ?? (Astro.props as any).url ?? '#';
+const bgUrl = imgSrc ? encodeURI(imgSrc) : '/images/placeholder.jpg';
+const cardBackground = `background-image:url('${bgUrl}')`;
+const safeDescripcion = descripcion ?? '';
+---
+
+<style>
+  .cies-card {
+    position: relative;
+    width: 100%;
+    height: 320px; /* altura total del contenedor */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+
+  /* Imagen base */
+  .cies-card-image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+  }
+
+  /* Panel blanco superpuesto */
+  .cies-card-info {
+    position: absolute;
+    bottom: 0; /* inicia abajo */
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1.2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    height: 100px; /* solo parte visible al inicio */
+    overflow: hidden;
+  }
+
+  /* Al pasar el mouse: sube y cubre la imagen */
+  .cies-card:hover .cies-card-info {
+    height: 100%;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Zoom leve de la imagen */
+  .cies-card:hover .cies-card-image {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+  }
+</style>
+
+<div class="cies-card">
+  <div class="cies-card-image" style={cardBackground}></div>
+
+  <div class="cies-card-info">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h6 class="fw-bold mb-0">
+        <br class="d-block d-md-none" />
+        <span class="d-block d-md-none">&nbsp;</span>
+        {titulo}
+      </h6>
+      <i class="bi bi-mortarboard"></i>
+    </div>
+    <small class="text-muted d-block">{grado}</small>
+    <small class="text-muted d-block">&nbsp;</small>
+    <hr class="my-2" />
+    <p class="text-muted mb-2" set:html={safeDescripcion} />
+    <a
+      href={href}
+      class="fw-bold text-success text-decoration-none"
+      aria-label={`Ver programa: ${titulo}`}
+    >
+      Ver programa
+    </a>
+  </div>
+</div>

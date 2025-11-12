@@ -1,0 +1,77 @@
+---
+import logo from '@assets/cies-logo.png';
+---
+
+<header>
+  <nav
+    id="cies-nav"
+    class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+  >
+    <div class="container-fluid d-flex flex-column align-items-center">
+      <a class="" href="/">
+        <img src={logo.src} alt="Logo Cies" class="logo-navbar" height="50" />
+      </a>
+
+      <a class="" href="/">
+        <img src={logo.src} alt="Logo Cies" class="logo-navbar-brand d-none" height="40" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target=".navbar-collapse"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Programas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Instalaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  (function () {
+    const THRESHOLD = 60;
+    const nav = document.getElementById('cies-nav');
+    const normal = document.querySelector('.logo-navbar');
+    const brand = document.querySelector('.logo-navbar-brand');
+
+    function update() {
+      const scrolled = window.scrollY > THRESHOLD;
+
+      if (scrolled) {
+        nav?.classList.add('scrolled');
+
+        // ocultar logo normal, mostrar flotante (quitando/poniendo d-none)
+        normal?.classList.add('d-none');
+        brand?.classList.remove('d-none');
+      } else {
+        nav?.classList.remove('scrolled');
+
+        brand?.classList.add('d-none');
+        normal?.classList.remove('d-none');
+      }
+    }
+
+    // evalúa al cargar (por si entras a mitad de scroll) y en scroll
+    window.addEventListener('load', update, { once: true });
+    window.addEventListener('scroll', update, { passive: true });
+  })();
+</script>

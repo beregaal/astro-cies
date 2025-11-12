@@ -1,0 +1,200 @@
+---
+import logoBlanco from '@assets/cies-logo-blanco.png';
+---
+
+<style>
+  #cies-footer {
+    color: #fff;
+    padding: 40px 30px 16px 30px;
+    background-color: var(--cies-green-secondary);
+  }
+
+  #cies-footer h6 {
+    font-weight: 700;
+  }
+
+  #cies-footer .cies-nav-footer {
+    line-height: initial;
+  }
+
+  #cies-footer .cies-nav-footer > .nav-link {
+    color: #f2f0f0;
+    padding: 0.5rem 0;
+    text-decoration: none;
+  }
+
+  #cies-footer .cies-nav-footer > .nav-link:hover {
+    color: var(--cies-yellow-primary);
+    padding: 0.5rem 0;
+  }
+
+  ul.cies-redes-sociales {
+    display: flex;
+    justify-content: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+  }
+
+  ul.cies-redes-sociales li {
+    list-style: none;
+  }
+
+  ul.cies-redes-sociales li a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 22px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    /* fix */
+    perspective: 400px;
+    transform-style: preserve-3d;
+  }
+
+  ul.cies-redes-sociales li a .icon {
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+    /* fix */
+    display: inline-block;
+    backface-visibility: hidden;
+  }
+
+  ul.cies-redes-sociales li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+
+  ul.cies-redes-sociales li a:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 2;
+  }
+
+  ul.cies-redes-sociales li a:hover:before {
+    top: 0;
+  }
+
+  ul.cies-redes-sociales li:nth-child(1) a:before {
+    background: #3b5999;
+  }
+
+  ul.cies-redes-sociales li:nth-child(2) a:before {
+    background: #e1306c;
+  }
+
+  ul.cies-redes-sociales li:nth-child(3) a:before {
+    background: #000;
+  }
+
+  ul.cies-redes-sociales li:nth-child(4) a:before {
+    background: #dd4b39;
+  }
+</style>
+
+<footer id="cies-footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-3 col-xl-3 offset-xxl-1 col-xxl-3 my-4">
+        <h6 class="mb-3">MENÚ</h6>
+        <nav class="nav cies-nav-footer flex-column">
+          <a class="nav-link" href="#">Inicio</a>
+          <a class="nav-link" href="#">Nosotros</a>
+          <a class="nav-link" href="#">Programas</a>
+          <a class="nav-link" href="#">Instalaciones</a>
+        </nav>
+      </div>
+
+      <div class="col-12 col-md-5 col-xl-6 col-xxl-4 my-4">
+        <h6 class="mb-3 text-uppercase">Nuestra oferta educativa</h6>
+        <nav class="nav cies-nav-footer flex-column">
+          <a class="nav-link" href="#">Licenciatura en Psicología</a>
+          <a class="nav-link" href="#">Maestría en Psicomotricidad</a>
+          <a class="nav-link" href="#">Maestría en Psicoterapia Psicoanalítica</a>
+          <a class="nav-link" href="#">Doctorado en Investigación Psicoanalítica</a>
+          <a class="nav-link" href="#">Doctorado en Ciencias del Desarrollo Humano</a>
+        </nav>
+      </div>
+
+      <div class="col-6 col-md-4 col-xl-3 col-xxl-3 my-4">
+        <img src={logoBlanco.src} alt="Logo Cies" class="mb-4" height="50" width="200" />
+        <p>
+          Rómulo O'Farril 351<br />
+          Col. Olivar de los Padre<br />
+          C.P. 01780, Ciudad de México<br />
+        </p>
+        <p>
+          <i class="bi bi-telephone me-2"></i>Tel: <a href="tel:+525556814287" target="_blank"
+            >55 5681 4287</a
+          ><br />
+          <i class="bi bi-whatsapp me-2"></i>WhatsApp: <a
+            href="https://wa.me/5551014882?text=Hola%20quiero%20más%20información"
+            target="_blank">55 5101 4882</a
+          ><br />
+        </p>
+      </div>
+
+      <div class="col-4 text-center"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <hr class="mt-5" />
+        <div class="w-100 d-md-flex justify-content-between align-items-center">
+          <div>
+            <ul class="cies-redes-sociales mb-3 mb-md-0">
+              <li>
+                <a href="https://es-la.facebook.com/CiESmex/"><i class="bi bi-facebook icon"></i></a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/cies_mex/">
+                  <i class="bi bi-instagram icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/ciesmex"><i class="bi bi-twitter-x icon"></i></a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/channel/UC_ummhv7gTerISsONhixfoA">
+                  <i class="bi bi-youtube icon"></i></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex flex-column">
+            <span class="small">Copyright &copy; <span id="cies-footer-year"></span> CIES</span>
+          </div>
+
+          <div>
+            <a class="" asp-area="" asp-page="/Privacy">Aviso de privacidad</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const spanYear = document.querySelector('#cies-footer-year') as HTMLSpanElement;
+  const currentYear: number = new Date().getFullYear();
+  spanYear.innerText = `${currentYear}`;
+</script>

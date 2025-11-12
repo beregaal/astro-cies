@@ -1,0 +1,64 @@
+---
+import json_programas from '@data/programas.json';
+import type { CiesProgramas } from '@interfaces/cies-programas';
+
+import CardPrograma from '@components/CardPrograma.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import wallpaper from '@assets/cies-wallpaper.jpeg';
+
+const data: CiesProgramas[] = json_programas as CiesProgramas[];
+---
+
+<BaseLayout title="Inicio">
+  <div id="cies-home">
+    <div class="row">
+      <div class="col-12">
+        <img
+          src={wallpaper.src}
+          alt="Logo Cies"
+          class="img-fluid w-100"
+          style="height:600px;margin-bottom:30px;"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mt-5">
+          <h1 class="cies-titulo">Programas Académicos</h1>
+        </div>
+
+        <div class="col-12 my-5">
+          <div class="row">
+            {
+              data.map((programa) => (
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 p-3">
+                  <CardPrograma
+                    titulo={programa.titulo}
+                    grado={programa.grado}
+                    descripcion={programa.descripcion}
+                    link={programa.link}
+                    imgSrc={programa.imgSrc}
+                  />
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row rounded-3 mb-5" style="background-color:#fff;">
+      <div class="col-12 text-center py-4" style="height:400px;">
+        <h1 class="cies-titulo">Actualización Profesional</h1>
+      </div>
+    </div>
+
+    <div class="row rounded-3 mb-5" style="background-color:#fff;">
+      <div class="col-12 text-center py-4" style="height:400px;">
+        <h1 class="cies-titulo">Revistas</h1>
+        <h1 class="cies-titulo">carrusel</h1>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

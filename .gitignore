@@ -1,0 +1,50 @@
+# 🌍 === Astro + Node ===
+node_modules/
+dist/
+.cache/
+.output/
+.vercel/
+.netlify/
+astro.config.mjs.timestamp-*
+
+# 🧱 === Archivos de build / logs ===
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# ⚙️ === Archivos de entorno ===
+.env
+.env.*.local
+.env.local
+.envrc
+*.local
+
+# 💻 === VS Code / IDEs ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 🪟 === Archivos de sistema ===
+.DS_Store
+Thumbs.db
+
+# 🧪 === Archivos temporales ===
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+
+# 🚀 === GitHub Pages ===
+# Al publicar con 'astro build' o GitHub Actions, los archivos generados van a /dist
+# No los subas manualmente, GitHub Pages se encargará del despliegue.
+dist/
+public/
+build/
+
+# 🔒 === Otros ===
+coverage/

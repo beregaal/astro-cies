@@ -1,0 +1,82 @@
+:root {
+  --navbar-h: 140px;
+  --cies-green-primary: #00a859;
+  --cies-green-secondary: #0c4a23;
+  --cies-green-acent: #7ab728;
+  --cies-white-primary: #ffffff;
+  --cies-white-secondary: #f6f8f7;
+  --cies-yellow-primary: #fdf601;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: var(--navbar-h);
+  background-color: var(--cies-white-secondary);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+footer a {
+  color: var(--cies-white-secondary);
+}
+
+footer a:hover {
+  color: var(--cies-yellow-primary);
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/**
+    CIES
+*/
+
+.cies-titulo {
+  font-weight: bolder;
+  color: var(--cies-green-secondary);
+}
+
+#cies-nav {
+  height: var(--navbar-h);
+}
+
+#cies-nav.scrolled {
+  height: 60px;
+}
+
+#cies-nav .nav-item > .nav-link:hover {
+  color: var(--cies-green-primary);
+  font-weight: bolder;
+}
+
+#cies-nav .logo-navbar-brand {
+  position: absolute;
+  left: 0;
+  padding-left: 20px;
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Psicología",
+    "grado": "Licenciatura",
+    "descripcion": "Comprende los fundamentos del comportamiento humano, el desarrollo emocional y los procesos mentales, formando profesionales capaces de aplicar la psicología en diversos contextos sociales y clínicos.",
+    "link": "/programas/licenciatura/psicologia",
+    "imgSrc": "/images/programas/psicologia.jpg"
+  },
+  {
+    "titulo": "Psicomotricidad",
+    "grado": "Maestría",
+    "descripcion": "Profundiza en la relación entre cuerpo y mente para intervenir en el desarrollo psicomotor, emocional y cognitivo de niños y adultos, desde una perspectiva integral y terapéutica.",
+    "link": "/programas/maestria/psicomotricidad",
+    "imgSrc": "/images/programas/psicomotricidad.jpg"
+  },
+  {
+    "titulo": "Psicoterapia Psicoanalítica",
+    "grado": "Maestría",
+    "descripcion": "Desarrolla habilidades clínicas basadas en el enfoque psicoanalítico para comprender y acompañar los procesos inconscientes que determinan la conducta y la vida emocional.",
+    "link": "/programas/maestria/psicoterapia-psicoanalitica",
+    "imgSrc": "/images/programas/psicoterapia.jpg"
+  },
+  {
+    "titulo": "Investigación Psicoanalítica",
+    "grado": "Doctorado",
+    "descripcion": "Forma investigadores capaces de generar nuevo conocimiento en torno al pensamiento psicoanalítico, la subjetividad y la práctica clínica contemporánea.",
+    "link": "/programas/doctorado/investigacion-psicoanalitica",
+    "imgSrc": "/images/programas/investigacion.jpg"
+  },
+  {
+    "titulo": "Ciencias del Desarrollo Humano",
+    "grado": "Doctorado",
+    "descripcion": "Explora los procesos de crecimiento y transformación del ser humano desde una visión científica, ética y humanista, integrando perspectivas psicológicas, biológicas y sociales.",
+    "link": "/programas/doctorado/ciencias-del-desarrollo-humano",
+    "imgSrc": "/images/programas/desarrollo-humano.jpg"
+  },
+  {
+    "titulo": "Práctica Psicoanalítica",
+    "grado": "Diplomado",
+    "descripcion": "Perfecciona la comprensión teórica y técnica del psicoanálisis para aplicarlo en la práctica clínica, el acompañamiento terapéutico y el trabajo con grupos o instituciones.",
+    "link": "/programas/diplomado/practica-psicoanalitica",
+    "imgSrc": "/images/programas/practica-psicoanalitica.jpg"
+  }
+]
