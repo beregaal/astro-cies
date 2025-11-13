@@ -1,11 +1,11 @@
 :root {
   --navbar-h: 140px;
-  --cies-green-primary: #00a859;
-  --cies-green-secondary: #0c4a23;
-  --cies-green-acent: #7ab728;
+  --cies-green-primary: #00a859;  /* verde claro */
+  --cies-green-secondary: #0c4a23; /* verde fuerte */
+  --cies-green-acent: #7ab728;  /* verde acentos, links */
   --cies-white-primary: #ffffff;
   --cies-white-secondary: #f6f8f7;
-  --cies-yellow-primary: #fdf601;
+  --cies-yellow-primary: #fdf601;  /* amarillo */
 }
 
 .btn:focus,
