@@ -1,0 +1,196 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import docentes from "@data/docentes.json";
+---
+
+<BaseLayout title="Docentes">
+  <section class="container py-5">
+    <header class="text-center mb-5">
+      <h1 class="cies-titulo">Equipo Académico</h1>
+      <p class="lead text-muted mx-auto cies-docentes-intro">
+        Conoce a las y los especialistas que integran nuestros programas de
+        licenciatura, maestría y formación continua. Haz clic en la foto de cada
+        docente para ver su trayectoria académica.
+      </p>
+    </header>
+
+    <!-- Card de docentes -->
+    <div class="row g-4">
+      {
+        docentes.map((docente) => {
+          const foto = docente.foto ?? "docentes-dummy.png";
+
+          return (
+            <div class="col-6 col-md-4 col-lg-2">
+              <article class="card cies-docente h-100 border-0 shadow-sm">
+                <button
+                  type="button"
+                  class="btn p-0 border-0 bg-transparent text-start h-100 w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target={`#docenteModal-${docente.id}`}
+                >
+                  <div class="cies-docente-img-wrapper">
+                    <img
+                      src={`/images/docentes/${foto}`}
+                      alt={docente.nombre}
+                      class="cies-docente-img"
+                    />
+                  </div>
+
+                  <div class="card-body text-center">
+                <h2 class="h6 fw-semibold mb-1">{docente.nombre}</h2>
+                <p class="small text-muted mb-0">{docente.grado}</p>
+                {docente.categoria && (
+                  <p class="small text-success text-uppercase mt-1 mb-0">
+                    {docente.categoria}
+                  </p>
+                )}
+              </div>
+                </button>
+              </article>
+            </div>
+          );
+        })
+      }
+    </div>
+
+    <!-- Modales por docente -->
+    {
+      docentes.map((docente) => (
+        <div
+          class="modal fade"
+          id={`docenteModal-${docente.id}`}
+          tabindex="-1"
+          aria-labelledby={`docenteModalLabel-${docente.id}`}
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content cies-docente-modal">
+              <div class="modal-header border-0 pb-0">
+                <h2
+                  class="modal-title h5"
+                  id={`docenteModalLabel-${docente.id}`}
+                >
+                  {docente.nombre}
+                </h2>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                />
+              </div>
+              <div class="modal-body pt-3">
+                <div class="row g-4">
+                  <div class="col-12 col-md-4 text-center">
+                    <img
+                      src={`/images/docentes/${docente.foto ?? "docentes-dummy.png"}`}
+                      alt={docente.nombre}
+                      class="img-fluid rounded-3 mb-3 cies-docente-modal-img"
+                    />
+                    {docente.categoria && (
+                      <p class="small text-success text-uppercase mb-1">
+                        {docente.categoria}
+                      </p>
+                    )}
+                    <p class="small text-muted mb-0">{docente.grado}</p>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    {docente.resumen && (
+                      <p class="mb-3 fw-semibold">{docente.resumen}</p>
+                    )}
+
+                    {docente.bio && (
+                      <ul class="cies-docente-bio mb-3">
+                        {docente.bio.map((linea) => (
+                          <li>{linea}</li>
+                        ))}
+                      </ul>
+                    )}
+
+                    {docente.lineasInteres &&
+                      docente.lineasInteres.length > 0 && (
+                        <>
+                          <h3 class="h6 fw-semibold mt-2">Líneas de interés</h3>
+                          <ul class="small mb-0">
+                            {docente.lineasInteres.map((item) => (
+                              <li>{item}</li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </section>
+
+  <style>
+    .cies-docentes-intro {
+      max-width: 720px;
+    }
+
+    .cies-docente {
+      border-radius: 1rem;
+      overflow: hidden;
+      background: #ffffff;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .cies-docente-img-wrapper {
+      width: 120px;
+      aspect-ratio: 1 / 1; /* cuadrado perfecto */
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .cies-docente-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* mantiene el recorte */
+      object-position: top;
+    }
+
+    .cies-docente:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .cies-docente:hover .cies-docente-img {
+      transform: scale(1.03);
+    }
+
+    .cies-docente-modal {
+      border-radius: 1.25rem;
+      border: 0;
+    }
+
+    .cies-docente-modal-img {
+      max-height: 240px;
+      object-fit: cover;
+    }
+
+    .cies-docente-bio {
+      padding-left: 1.2rem;
+      font-size: 0.95rem;
+    }
+
+    .cies-docente-bio li + li {
+      margin-top: 0.25rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cies-docente,
+      .cies-docente-img {
+        transition: none;
+      }
+    }
+  </style>
+</BaseLayout>

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "carmen-islas",
+    "nombre": "Carmen Islas",
+    "grado": "Mtra. en Psicología Clínica",
+    "categoria": "Licenciatura",
+    "foto": null,
+    "resumen": "Coordinadora de la licenciatura, plantel sur.",
+    "bio": [
+      "Licenciada en Psicología por la Universidad X.",
+      "Maestría en Psicología Clínica con orientación psicoanalítica.",
+      "Experiencia docente en licenciatura y posgrado."
+    ],
+    "lineasInteres": [
+      "Psicoanálisis",
+      "Clínica con adolescentes",
+      "Supervisión de casos"
+    ]
+  },
+  {
+    "id": "muriel-wolowelski",
+    "nombre": "Muriel Wolowelski",
+    "grado": "Mtra. en Psicoterapia Psicoanalítica",
+    "categoria": "Licenciatura",
+    "foto": null,
+    "resumen": "Coordinadora académica de la licenciatura, plantel sur.",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  }
+]
