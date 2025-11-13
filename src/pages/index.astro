@@ -2,10 +2,12 @@
 import json_programas from "@data/programas.json";
 import type { CiesProgramas } from "@interfaces/cies-programas";
 
-import CardPrograma from "@components/CardPrograma.astro";
-import BaseLayout from "@layouts/BaseLayout.astro";
 import wallpaper from "@assets/cies-wallpaper.jpeg";
-import CarruselRevistas from "@components/CarruselRevistas.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+import CardPrograma from "@components/ComponenteCardPrograma.astro";
+import CiesSeccionEducacionContinua from "@components/SeccionEducacionContinua.astro";
+import CiesSeccionRevistas from "@components/SeccionRevistasCarrusel.astro";
 
 const data: CiesProgramas[] = json_programas as CiesProgramas[];
 ---
@@ -50,13 +52,13 @@ const data: CiesProgramas[] = json_programas as CiesProgramas[];
     </div>
 
     <div class="row rounded-3 mb-5" style="background-color:#fff;">
-      <div class="col-12 text-center py-4" style="height:400px;">
-        <h1 class="cies-titulo">Actualización Profesional</h1>
+      <div class="col-12 text-center py-4">
+        <CiesSeccionEducacionContinua />
       </div>
     </div>
 
     <div class="col-12 text-center py-4 cies-revista-wrapper">
-      <CarruselRevistas />
+      <CiesSeccionRevistas />
     </div>
   </div>
 

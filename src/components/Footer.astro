@@ -2,6 +2,98 @@
 import logoBlanco from '@assets/cies-logo-blanco.png';
 ---
 
+<footer id="cies-footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-3 col-xl-3 offset-xxl-1 col-xxl-3 my-4">
+        <h6 class="mb-3">MENÚ</h6>
+        <nav class="nav cies-nav-footer flex-column">
+          <a class="nav-link" href="#">Inicio</a>
+          <a class="nav-link" href="#">Nosotros</a>
+          <a class="nav-link" href="#">Programas</a>
+          <a class="nav-link" href="#">Instalaciones</a>
+        </nav>
+      </div>
+
+      <div class="col-12 col-md-5 col-xl-6 col-xxl-4 my-4">
+        <h6 class="mb-3 text-uppercase">Nuestra oferta educativa</h6>
+        <nav class="nav cies-nav-footer flex-column">
+          <a class="nav-link" href="#">Licenciatura en Psicología</a>
+          <a class="nav-link" href="#">Maestría en Psicomotricidad</a>
+          <a class="nav-link" href="#">Maestría en Psicoterapia Psicoanalítica</a>
+          <a class="nav-link" href="#">Doctorado en Investigación Psicoanalítica</a>
+          <a class="nav-link" href="#">Doctorado en Ciencias del Desarrollo Humano</a>
+        </nav>
+      </div>
+
+      <div class="col-6 col-md-4 col-xl-3 col-xxl-3 my-4">
+        <img src={logoBlanco.src} alt="Logo Cies" class="mb-4" height="50" width="200" />
+        <p>
+          Rómulo O'Farril 351<br />
+          Col. Olivar de los Padre<br />
+          C.P. 01780, Ciudad de México<br />
+        </p>
+        <p>
+          <i class="bi bi-telephone me-2"></i>Tel: <a href="tel:+525556814287" target="_blank"
+            >55 5681 4287</a
+          ><br />
+          <i class="bi bi-whatsapp me-2"></i>WhatsApp: <a
+            href="https://wa.me/5551014882?text=Hola%20quiero%20más%20información"
+            target="_blank">55 5101 4882</a
+          ><br />
+        </p>
+      </div>
+
+      <div class="col-4 text-center"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <hr class="mt-5" />
+        <div class="w-100 d-md-flex justify-content-between align-items-center">
+          <div>
+            <ul class="cies-redes-sociales mb-3 mb-md-0">
+              <li>
+                <a href="https://es-la.facebook.com/CiESmex/"><i class="bi bi-facebook icon"></i></a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/cies_mex/">
+                  <i class="bi bi-instagram icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/ciesmex"><i class="bi bi-twitter-x icon"></i></a>
+              </li>
+
+              <li>
+                <a href="https://www.youtube.com/channel/UC_ummhv7gTerISsONhixfoA">
+                  <i class="bi bi-youtube icon"></i></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex flex-column">
+            <span class="small">Copyright &copy; <span id="cies-footer-year"></span> CIES</span>
+          </div>
+
+          <div>
+            <a class="" asp-area="" asp-page="/Privacy">Aviso de privacidad</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const spanYear = document.querySelector('#cies-footer-year') as HTMLSpanElement;
+  const currentYear: number = new Date().getFullYear();
+  spanYear.innerText = `${currentYear}`;
+</script>
+
+
 <style>
   #cies-footer {
     color: #fff;
@@ -107,94 +199,3 @@ import logoBlanco from '@assets/cies-logo-blanco.png';
     background: #dd4b39;
   }
 </style>
-
-<footer id="cies-footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-md-3 col-xl-3 offset-xxl-1 col-xxl-3 my-4">
-        <h6 class="mb-3">MENÚ</h6>
-        <nav class="nav cies-nav-footer flex-column">
-          <a class="nav-link" href="#">Inicio</a>
-          <a class="nav-link" href="#">Nosotros</a>
-          <a class="nav-link" href="#">Programas</a>
-          <a class="nav-link" href="#">Instalaciones</a>
-        </nav>
-      </div>
-
-      <div class="col-12 col-md-5 col-xl-6 col-xxl-4 my-4">
-        <h6 class="mb-3 text-uppercase">Nuestra oferta educativa</h6>
-        <nav class="nav cies-nav-footer flex-column">
-          <a class="nav-link" href="#">Licenciatura en Psicología</a>
-          <a class="nav-link" href="#">Maestría en Psicomotricidad</a>
-          <a class="nav-link" href="#">Maestría en Psicoterapia Psicoanalítica</a>
-          <a class="nav-link" href="#">Doctorado en Investigación Psicoanalítica</a>
-          <a class="nav-link" href="#">Doctorado en Ciencias del Desarrollo Humano</a>
-        </nav>
-      </div>
-
-      <div class="col-6 col-md-4 col-xl-3 col-xxl-3 my-4">
-        <img src={logoBlanco.src} alt="Logo Cies" class="mb-4" height="50" width="200" />
-        <p>
-          Rómulo O'Farril 351<br />
-          Col. Olivar de los Padre<br />
-          C.P. 01780, Ciudad de México<br />
-        </p>
-        <p>
-          <i class="bi bi-telephone me-2"></i>Tel: <a href="tel:+525556814287" target="_blank"
-            >55 5681 4287</a
-          ><br />
-          <i class="bi bi-whatsapp me-2"></i>WhatsApp: <a
-            href="https://wa.me/5551014882?text=Hola%20quiero%20más%20información"
-            target="_blank">55 5101 4882</a
-          ><br />
-        </p>
-      </div>
-
-      <div class="col-4 text-center"></div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 text-center">
-        <hr class="mt-5" />
-        <div class="w-100 d-md-flex justify-content-between align-items-center">
-          <div>
-            <ul class="cies-redes-sociales mb-3 mb-md-0">
-              <li>
-                <a href="https://es-la.facebook.com/CiESmex/"><i class="bi bi-facebook icon"></i></a
-                >
-              </li>
-              <li>
-                <a href="https://www.instagram.com/cies_mex/">
-                  <i class="bi bi-instagram icon"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/ciesmex"><i class="bi bi-twitter-x icon"></i></a>
-              </li>
-
-              <li>
-                <a href="https://www.youtube.com/channel/UC_ummhv7gTerISsONhixfoA">
-                  <i class="bi bi-youtube icon"></i></a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="d-flex flex-column">
-            <span class="small">Copyright &copy; <span id="cies-footer-year"></span> CIES</span>
-          </div>
-
-          <div>
-            <a class="" asp-area="" asp-page="/Privacy">Aviso de privacidad</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-  const spanYear = document.querySelector('#cies-footer-year') as HTMLSpanElement;
-  const currentYear: number = new Date().getFullYear();
-  spanYear.innerText = `${currentYear}`;
-</script>

@@ -1,5 +1,5 @@
 ---
-import logo from '@assets/cies-logo.png';
+import logo from "@assets/cies-logo.png";
 ---
 
 <header>
@@ -8,13 +8,21 @@ import logo from '@assets/cies-logo.png';
     class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
   >
     <div class="container-fluid d-flex flex-column align-items-center">
-      <a class="" href="/">
+      <!-- Logo centrado inicial -->
+      <a class="logo-wrapper-center" href="/">
         <img src={logo.src} alt="Logo Cies" class="logo-navbar" height="50" />
       </a>
 
-      <a class="" href="/">
-        <img src={logo.src} alt="Logo Cies" class="logo-navbar-brand d-none" height="40" />
+      <!-- Logo scroll -->
+      <a class="logo-wrapper-brand" href="/">
+        <img
+          src={logo.src}
+          alt="Logo Cies"
+          class="logo-navbar-brand"
+          height="40"
+        />
       </a>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -26,7 +34,9 @@ import logo from '@assets/cies-logo.png';
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+      >
         <ul class="navbar-nav flex-grow-1">
           <li class="nav-item">
             <a class="nav-link" href="/">Nosotros</a>
@@ -49,29 +59,98 @@ import logo from '@assets/cies-logo.png';
 <script>
   (function () {
     const THRESHOLD = 60;
-    const nav = document.getElementById('cies-nav');
-    const normal = document.querySelector('.logo-navbar');
-    const brand = document.querySelector('.logo-navbar-brand');
+    const nav = document.getElementById("cies-nav");
 
     function update() {
       const scrolled = window.scrollY > THRESHOLD;
-
-      if (scrolled) {
-        nav?.classList.add('scrolled');
-
-        // ocultar logo normal, mostrar flotante (quitando/poniendo d-none)
-        normal?.classList.add('d-none');
-        brand?.classList.remove('d-none');
-      } else {
-        nav?.classList.remove('scrolled');
-
-        brand?.classList.add('d-none');
-        normal?.classList.remove('d-none');
+      if (nav) {
+        nav.classList.toggle("scrolled", scrolled);
       }
     }
 
-    // evalúa al cargar (por si entras a mitad de scroll) y en scroll
-    window.addEventListener('load', update, { once: true });
-    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener("load", update, { once: true });
+    window.addEventListener("scroll", update, { passive: true });
   })();
 </script>
+
+<style>
+  #cies-nav {
+    height: var(--navbar-h);
+    tbackground-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(0px);
+    transition:
+      backdrop-filter 0.25s ease,
+      background-color 0.25s ease,
+      box-shadow 0.25s ease,
+      height 0.25s ease;
+  }
+
+  /* Da espacio vertical a la zona del menú */
+  #cies-nav .navbar-collapse {
+    padding-top: 2rem;
+    padding-bottom: 0.4rem;
+  }
+
+  #cies-nav.scrolled {
+    height: 60px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  }
+
+  .logo-wrapper-center {
+    position: absolute;
+    top: 5px; /* ajusta el valor a tu gusto */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+
+  .logo-wrapper-brand {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    /* que no estorbe al principio en mobile */
+  }
+
+  /* Logos con transición */
+  .logo-navbar,
+  .logo-navbar-brand {
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  /* Estado inicial: logo grande centrado visible, brand oculto */
+  .logo-navbar {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .logo-navbar-brand {
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none; /* que no se pueda clickear mientras está oculto */
+  }
+
+  #cies-nav .nav-item > .nav-link:hover {
+    color: var(--cies-green-primary);
+    font-weight: bolder;
+  }
+
+  /* Estado con scroll: se cruza uno por otro */
+  #cies-nav.scrolled .logo-navbar {
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+  }
+
+  #cies-nav.scrolled .logo-navbar-brand {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+</style>

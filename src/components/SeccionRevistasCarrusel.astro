@@ -20,7 +20,7 @@ const getCardStyle = (imgSrc?: string) =>
   imgSrc && imgSrc.trim() !== "" ? `background-image: url('${imgSrc}');` : "";
 ---
 
-<section class="cies-blog-section">
+<section class="cies-inicio-revistas">
   <div class="container py-5">
     <div class="text-center mb-4">
       <h1 class="cies-blog-title mb-2">Revista CIES</h2>
@@ -92,7 +92,7 @@ const getCardStyle = (imgSrc?: string) =>
 </section>
 
 <style>
-  .cies-blog-section {
+  .cies-inicio-revistas {
     background-color: var(--cies-green-secondary);
     color: #ffffff;
   }
@@ -124,9 +124,7 @@ const getCardStyle = (imgSrc?: string) =>
     inset: 0;
     background-size: cover;
     background-position: center;
-    background-color: var(
-      --cies-green-secondary
-    ); /* fallback si no hay imagen */
+    background-color: var(--cies-green-secondary); /* fallback si no hay imagen */
     transition: transform 0.4s ease;
   }
 
@@ -221,7 +219,7 @@ const getCardStyle = (imgSrc?: string) =>
       font-size: 0.78rem;
     }
 
-    .cies-blog-section {
+    .cies-inicio-revistas {
       padding-bottom: 2.5rem;
     }
   }
