@@ -1,0 +1,235 @@
+---
+import notas from "../data/entradas-revista.json";
+
+interface CiesRevistaNota {
+  titulo: string;
+  autor: string;
+  link: string;
+  imgSrc?: string;
+}
+
+const itemsPerSlide = 4;
+const lista = notas as CiesRevistaNota[];
+
+const slides: CiesRevistaNota[][] = [];
+for (let i = 0; i < lista.length; i += itemsPerSlide) {
+  slides.push(lista.slice(i, i + itemsPerSlide));
+}
+
+const getCardStyle = (imgSrc?: string) =>
+  imgSrc && imgSrc.trim() !== "" ? `background-image: url('${imgSrc}');` : "";
+---
+
+<section class="cies-blog-section">
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <h1 class="cies-blog-title mb-2">Revista CIES</h2>
+      <p class="cies-blog-subtitle mb-0">
+        Artículos de psicología, psicoanálisis y psicomotricidad publicados por
+        la universidad.
+      </p>
+    </div>
+
+    <div id="ciesBlogCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {
+          slides.map((slide, index) => (
+            <div class={`carousel-item ${index === 0 ? "active" : ""}`}>
+              <div class="row g-3">
+                {slide.map((nota) => (
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <a
+                      href={nota.link}
+                      class="cies-blog-card text-decoration-none"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div
+                        class="cies-blog-card-bg"
+                        style={getCardStyle(nota.imgSrc)}
+                        aria-hidden="true"
+                      />
+                      <div class="cies-blog-card-overlay" />
+
+                      <div class="cies-blog-card-body">
+                        <span class="cies-blog-chip">Artículo</span>
+                        <h5 class="cies-blog-card-title">{nota.titulo}</h5>
+                        <p class="cies-blog-card-author mb-1">{nota.autor}</p>
+                        <span class="cies-blog-card-link">Leer artículo</span>
+                      </div>
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <!-- Controles ABAJO, centrados -->
+      <div class="cies-carousel-controls text-center mt-4">
+        <button
+          class="btn btn-outline-light cies-carousel-btn me-2"
+          type="button"
+          data-bs-target="#ciesBlogCarousel"
+          data-bs-slide="prev"
+        >
+          <span aria-hidden="true">&lsaquo;</span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="btn btn-outline-light cies-carousel-btn"
+          type="button"
+          data-bs-target="#ciesBlogCarousel"
+          data-bs-slide="next"
+        >
+          <span aria-hidden="true">&rsaquo;</span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cies-blog-section {
+    background-color: var(--cies-green-secondary);
+    color: #ffffff;
+  }
+
+  .cies-blog-title {
+    font-weight: 700;
+  }
+
+  .cies-blog-subtitle {
+    font-size: 0.95rem;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cies-blog-card {
+    position: relative;
+    display: block;
+    height: 100%;
+    min-height: 230px;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #ffffff;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  }
+
+  .cies-blog-card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: var(
+      --cies-green-secondary
+    ); /* fallback si no hay imagen */
+    transition: transform 0.4s ease;
+  }
+
+  .cies-blog-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.15)
+    );
+    transition:
+      background 0.4s ease,
+      opacity 0.4s ease;
+  }
+
+  .cies-blog-card-body {
+    position: absolute;
+    inset-inline: 1.1rem;
+    bottom: 1.1rem;
+  }
+
+  .cies-blog-chip {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.18);
+    font-size: 0.7rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .cies-blog-card-title {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .cies-blog-card-author {
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
+
+  .cies-blog-card-link {
+    color: var(--cies-green-primary);
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  .cies-blog-card-link:hover {
+    color: var(--cies-yellow-primary);
+  }
+
+  .cies-blog-card:hover .cies-blog-card-bg {
+    transform: scale(1.07);
+  }
+
+  .cies-blog-card:hover .cies-blog-card-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+  }
+
+  /* Controles abajo */
+  .cies-carousel-controls {
+    position: relative;
+    z-index: 2;
+  }
+
+  .cies-carousel-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 1;
+    font-size: 1.4rem;
+    border-width: 1px;
+  }
+
+  .cies-carousel-btn:hover {
+    background-color: #ffffff;
+    color: #003da6;
+  }
+
+  @media (max-width: 575.98px) {
+    .cies-blog-card {
+      min-height: 220px;
+    }
+
+    .cies-blog-card-title {
+      font-size: 0.9rem;
+    }
+
+    .cies-blog-card-author,
+    .cies-blog-card-link {
+      font-size: 0.78rem;
+    }
+
+    .cies-blog-section {
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    /* 2 tarjetas por fila con texto un poco mas pequeño */
+    .cies-blog-card-title {
+      font-size: 0.95rem;
+    }
+  }
+</style>

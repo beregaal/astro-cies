@@ -5,6 +5,7 @@ import CiesFooter from '@components/Footer.astro';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import bootstrapBundleUrl from 'bootstrap/dist/js/bootstrap.bundle.min.js?url';
 import '@styles/site.css';
 
 interface Props {
@@ -35,8 +36,6 @@ const { title } = Astro.props;
 
     <CiesFooter />
 
-    <script is:inline type="module">
-      import('bootstrap/dist/js/bootstrap.bundle.min.js');
-    </script>
+    <script src={bootstrapBundleUrl} defer></script>
   </body>
 </html>

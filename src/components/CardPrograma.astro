@@ -1,14 +1,40 @@
 ---
-import type { CiesProgramas } from '@interfaces/cies-programas';
+import type { CiesProgramas } from "@interfaces/cies-programas";
 
 interface Props extends CiesProgramas {}
 const { titulo, grado, descripcion, link, imgSrc } = Astro.props as Props;
 
-const href = link ?? (Astro.props as any).url ?? '#';
-const bgUrl = imgSrc ? encodeURI(imgSrc) : '/images/placeholder.jpg';
+const href = link ?? (Astro.props as any).url ?? "#";
+const bgUrl = imgSrc ? encodeURI(imgSrc) : "/images/placeholder.jpg";
 const cardBackground = `background-image:url('${bgUrl}')`;
-const safeDescripcion = descripcion ?? '';
+const safeDescripcion = descripcion ?? "";
 ---
+
+<div class="cies-card">
+  <div class="cies-card-image" style={cardBackground}></div>
+
+  <div class="cies-card-info">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h6 class="fw-bold mb-0">
+        <br class="d-block d-md-none" />
+        <span class="d-block d-md-none">&nbsp;</span>
+        {titulo}
+      </h6>
+      <i class="bi bi-mortarboard"></i>
+    </div>
+    <small class="text-muted d-block">{grado}</small>
+    <small class="text-muted d-block">&nbsp;</small>
+    <hr class="my-2" />
+    <p class="text-muted mb-2" set:html={safeDescripcion} />
+    <a
+      href={href}
+      class="fw-bold text-success text-decoration-none"
+      aria-label={`Ver programa: ${titulo}`}
+    >
+      Ver programa
+    </a>
+  </div>
+</div>
 
 <style>
   .cies-card {
@@ -60,29 +86,3 @@ const safeDescripcion = descripcion ?? '';
     filter: brightness(0.7);
   }
 </style>
-
-<div class="cies-card">
-  <div class="cies-card-image" style={cardBackground}></div>
-
-  <div class="cies-card-info">
-    <div class="d-flex justify-content-between align-items-center mb-2">
-      <h6 class="fw-bold mb-0">
-        <br class="d-block d-md-none" />
-        <span class="d-block d-md-none">&nbsp;</span>
-        {titulo}
-      </h6>
-      <i class="bi bi-mortarboard"></i>
-    </div>
-    <small class="text-muted d-block">{grado}</small>
-    <small class="text-muted d-block">&nbsp;</small>
-    <hr class="my-2" />
-    <p class="text-muted mb-2" set:html={safeDescripcion} />
-    <a
-      href={href}
-      class="fw-bold text-success text-decoration-none"
-      aria-label={`Ver programa: ${titulo}`}
-    >
-      Ver programa
-    </a>
-  </div>
-</div>

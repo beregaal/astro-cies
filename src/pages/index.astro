@@ -1,10 +1,11 @@
 ---
-import json_programas from '@data/programas.json';
-import type { CiesProgramas } from '@interfaces/cies-programas';
+import json_programas from "@data/programas.json";
+import type { CiesProgramas } from "@interfaces/cies-programas";
 
-import CardPrograma from '@components/CardPrograma.astro';
-import BaseLayout from '@layouts/BaseLayout.astro';
-import wallpaper from '@assets/cies-wallpaper.jpeg';
+import CardPrograma from "@components/CardPrograma.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import wallpaper from "@assets/cies-wallpaper.jpeg";
+import CarruselRevistas from "@components/CarruselRevistas.astro";
 
 const data: CiesProgramas[] = json_programas as CiesProgramas[];
 ---
@@ -54,11 +55,15 @@ const data: CiesProgramas[] = json_programas as CiesProgramas[];
       </div>
     </div>
 
-    <div class="row rounded-3 mb-5" style="background-color:#fff;">
-      <div class="col-12 text-center py-4" style="height:400px;">
-        <h1 class="cies-titulo">Revistas</h1>
-        <h1 class="cies-titulo">carrusel</h1>
-      </div>
+    <div class="col-12 text-center py-4 cies-revista-wrapper">
+      <CarruselRevistas />
     </div>
   </div>
+
+  <style>
+    .cies-revista-wrapper {
+      /* background-color: #fff; */
+      border-radius: 1rem;
+    }
+  </style>
 </BaseLayout>
