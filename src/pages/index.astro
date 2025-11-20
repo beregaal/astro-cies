@@ -6,8 +6,9 @@ import wallpaper from "@assets/cies-wallpaper.jpeg";
 import BaseLayout from "@layouts/BaseLayout.astro";
 
 import CardPrograma from "@components/ComponenteCardPrograma.astro";
-import CiesSeccionEducacionContinua from "@components/SeccionEducacionContinua.astro";
-import CiesSeccionRevistas from "@components/SeccionRevistasCarrusel.astro";
+import CiesSeccionEducacionContinua from "@components/inicio/SeccionEducacionContinua.astro";
+import CiesSeccionRevistas from "@components/inicio/SeccionRevistasCarrusel.astro";
+import CiesSeccionCacies from "@components/inicio/SeccionCacies.astro";
 
 const data: CiesProgramas[] = json_programas as CiesProgramas[];
 ---
@@ -35,7 +36,7 @@ const data: CiesProgramas[] = json_programas as CiesProgramas[];
           <div class="row">
             {
               data.map((programa) => (
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 p-3">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4 p-3">
                   <CardPrograma
                     titulo={programa.titulo}
                     grado={programa.grado}
@@ -51,14 +52,48 @@ const data: CiesProgramas[] = json_programas as CiesProgramas[];
       </div>
     </div>
 
+
     <div class="row rounded-3 mb-5" style="background-color:#fff;">
-      <div class="col-12 text-center py-4">
+      <div class="col-12 col-md-7 text-center py-4">
         <CiesSeccionEducacionContinua />
       </div>
     </div>
 
     <div class="col-12 text-center py-4 cies-revista-wrapper">
       <CiesSeccionRevistas />
+    </div>
+
+    <div class="row rounded-3 mb-5" style="background-color:#fff;">
+      <div class="col-12 col-md-5 text-center py-4">
+        
+      </div>
+      <div class="col-12 col-md-7 text-center py-4">
+        <CiesSeccionCacies />
+      </div>
+    </div>
+
+    <div class="col-12 text-center py-4 cies-revista-wrapper">
+      <h1 class="cies-titulo">CACiES</h1>
+
+      Psicoterapia psicomotriz. 
+      Psicoterapia Psicoanalítica
+Test Vocacional Online
+Psicodiagnóstico Infantil Online
+Valoración neuropsicológica
+Valoración Psicomotriz
+Asesoría de CV
+Escuela para padres
+Talleres para alumnos y docentes. Atención a escuelas.
+Acompañamiento Terapéutico/ Sombra Monitor (en escuelas)
+Atención a empresas
+    </div>
+
+    <div class="col-12 text-center py-4 cies-revista-wrapper">
+      Fundadores y Docentes (Coordinadores)
+    </div>
+
+    <div class="col-12 text-center py-4 cies-revista-wrapper">
+      Libros
     </div>
   </div>
 

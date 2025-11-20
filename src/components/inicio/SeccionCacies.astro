@@ -1,0 +1,258 @@
+---
+const serviciosCacies = [
+  // ATENCIÓN TERAPÉUTICA
+  {
+    categoria: "ATENCIÓN TERAPÉUTICA",
+    titulo: "Psicoterapia psicomotriz",
+    descripcion:
+      "Trabajo corporal y emocional para fortalecer el desarrollo humano.",
+    url: "/cacies/psicoterapia-psicomotriz",
+  },
+  {
+    categoria: "ATENCIÓN TERAPÉUTICA",
+    titulo: "Psicoterapia psicoanalítica",
+    descripcion: "Acompañamiento terapéutico desde un enfoque de profundidad.",
+    url: "/cacies/psicoterapia-psicoanalitica",
+  },
+  {
+    categoria: "ATENCIÓN TERAPÉUTICA",
+    titulo: "Valoración neuropsicológica",
+    descripcion: "Evaluación integral de funciones cognitivas y conductuales.",
+    url: "/cacies/valoracion-neuropsicologica",
+  },
+  {
+    categoria: "ATENCIÓN TERAPÉUTICA",
+    titulo: "Valoración psicomotriz",
+    descripcion: "Exploración del desarrollo motor, emocional y relacional.",
+    url: "/cacies/valoracion-psicomotriz",
+  },
+  {
+    categoria: "ATENCIÓN TERAPÉUTICA",
+    titulo: "Psicodiagnóstico infantil online",
+    descripcion:
+      "Evaluación del estado emocional y conductual de niñas y niños.",
+    url: "/cacies/psicodiagnostico-infantil-online",
+  },
+  {
+    categoria: "ATENCIÓN TERAPÉUTICA",
+    titulo: "Acompañamiento terapéutico / Sombra monitor",
+    descripcion: "Intervención personalizada en entornos escolares.",
+    url: "/cacies/acompaniamiento-terapeutico",
+  },
+
+  // EDUCATIVOS
+  {
+    categoria: "EDUCATIVOS",
+    titulo: "Escuela para padres",
+    descripcion: "Orientación para fortalecer vínculos y dinámicas familiares.",
+    url: "/cacies/escuela-para-padres",
+  },
+  {
+    categoria: "EDUCATIVOS",
+    titulo: "Talleres para alumnos y docentes",
+    descripcion: "Formación vivencial y psicoeducativa para instituciones.",
+    url: "/cacies/talleres-alumnos-docentes",
+  },
+  {
+    categoria: "EDUCATIVOS",
+    titulo: "Atención a escuelas",
+    descripcion:
+      "Programas y asesorías especializadas para centros educativos.",
+    url: "/cacies/atencion-escuelas",
+  },
+
+  // ORIENTACIÓN
+  {
+    categoria: "ORIENTACIÓN",
+    titulo: "Test vocacional online",
+    descripcion:
+      "Explora tus intereses y fortalezas para elegir tu camino profesional.",
+    url: "/cacies/test-vocacional-online",
+  },
+  {
+    categoria: "ORIENTACIÓN",
+    titulo: "Asesoría de CV",
+    descripcion:
+      "Guía para estructurar y presentar tu trayectoria académica y laboral.",
+    url: "/cacies/asesoria-cv",
+  },
+  {
+    categoria: "ORIENTACIÓN",
+    titulo: "Atención a empresas",
+    descripcion:
+      "Capacitación, orientación y programas de bienestar organizacional.",
+    url: "/cacies/atencion-empresas",
+  },
+];
+---
+
+<section id="cies-inicio-cacies" class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <header class="text-center mb-4">
+        <p class="cies-section-kicker mb-1">
+          CENTRO DE ATENCIÓN DEL CiES (CACiES)
+        </p>
+        <h2 class="cies-section-title mb-2">
+          Servicios psicológicos, psicoeducativos y orientación profesional
+        </h2>
+        <p class="text-muted mb-0">
+          Atención clínica, asesoría vocacional y acompañamiento emocional para
+          el bienestar.
+        </p>
+      </header>
+
+      <div class="cies-timeline">
+        {
+          serviciosCacies.map((item) => (
+            <a href={item.url} class="cies-timeline-item d-flex align-items-center justify-content-between gap-3">
+              <div class="cies-timeline-text">
+                <span class="cies-pill">{item.categoria}</span>
+                <h3 class="cies-timeline-title mb-1">{item.titulo}</h3>
+                <p class="cies-timeline-subtitle mb-0">{item.descripcion}</p>
+              </div>
+              <span class="cies-timeline-icon" aria-hidden="true">
+                <i class="bi bi-arrow-right" />
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Encabezado sección */
+  .cies-section-kicker {
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--cies-green-primary);
+  }
+
+  .cies-section-title {
+    font-weight: 700;
+  }
+
+  /* Contenedor de la “línea” */
+  .cies-timeline {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  /* Línea vertical */
+  .cies-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    bottom: 0.25rem;
+    left: 0.7rem;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      var(--cies-green-primary),
+      rgba(157, 220, 59, 0.15)
+    );
+  }
+
+  /* Cada item / hito */
+  .cies-timeline-item {
+    position: relative;
+    display: block;
+    padding: 1rem 1.25rem 1rem 1.75rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.9rem;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    transition:
+      background-color 0.2s ease,
+      transform 0.15s ease,
+      box-shadow 0.2s ease;
+  }
+
+  /* Bullet circular */
+  .cies-timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 0.2rem;
+    top: 1.2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--cies-green-primary);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(157, 220, 59, 0.15);
+  }
+
+  .cies-timeline-text {
+    width: 100%;
+  }
+
+  /* Textos */
+  .cies-timeline-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .cies-timeline-subtitle {
+    font-size: 0.9rem;
+  }
+
+  /* Pill pequeñita arriba del título */
+  .cies-pill {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.12rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(157, 220, 59, 0.4);
+    color: var(--cies-green);
+    margin-bottom: 0.25rem;
+  }
+
+  /* Icono flecha */
+  .cies-timeline-icon {
+    font-size: 1.1rem;
+    opacity: 0.4;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  /* Hover / focus */
+  .cies-timeline-item:hover,
+  .cies-timeline-item:focus-visible {
+    background-color: rgba(157, 220, 59, 0.06);
+    transform: translateX(4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+
+  .cies-timeline-item:hover .cies-timeline-icon,
+  .cies-timeline-item:focus-visible .cies-timeline-icon {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+
+  /* Responsive: en pantallas chicas quitamos la línea para que se vea más limpio */
+  @media (max-width: 575.98px) {
+    .cies-timeline {
+      padding-left: 0;
+    }
+
+    .cies-timeline::before {
+      display: none;
+    }
+
+    .cies-timeline-item {
+      padding-left: 1rem;
+    }
+
+    .cies-timeline-item::before {
+      left: 0.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,9 @@
+---
+const { id } = Astro.props;
+---
+
+<section class="cies-accordion-wrapper mb-4">
+  <div class="accordion" id={id}>
+    <slot />
+  </div>
+</section>

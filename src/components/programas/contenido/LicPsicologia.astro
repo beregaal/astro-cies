@@ -1,0 +1,207 @@
+---
+import CiesAccordionGroup from '@components/programas/AccordionGroup.astro';
+import CiesAccordionItem from '@components/programas/AccordionItem.astro';
+---
+
+<section class="cies-programa-detalle">
+
+  {/* Bloque de RVOE e introducción */}
+  <article class="mb-5">
+    <h2 class="h5 fw-bold mb-3 cies-rvoe-heading">
+      Reconocimiento de Validez Oficial de Estudios (RVOE)
+      SEP 2012064 del 09/03/2001.
+    </h2>
+
+    <p>
+      Descubre el camino para seguir transformando vidas a través de la
+      Licenciatura en Psicología en CiES. Abre las puertas de tu propio
+      consultorio y conviértete en un agente de cambio en distintos contextos,
+      acompañando a personas, familias e instituciones.
+    </p>
+
+    <p>
+      En nuestra institución de excelencia, te prepararás en las cinco áreas
+      fundamentales de la Psicología: Clínica, Educativa, Social,
+      Organizacional y del Delito. Nuestro Programa Integral de Licenciatura en
+      Psicología, respaldado por más de 26 años de experiencia, se basa en las
+      Neurociencias y en una formación teórica y práctica sólida y actualizada.
+    </p>
+
+    <h3 class="h6 fw-bold mt-4 mb-2">Ventajas únicas en CiES:</h3>
+    <ul class="mb-0">
+      <li>Experiencia sólida en la enseñanza especializada de la Psicología.</li>
+      <li>Reconocida calidad académica de nuestros docentes.</li>
+      <li>Enfoque exclusivo en la formación psicológica.</li>
+      <li>
+        Programa Integral de Formación en Psicología (PIFP) con
+        acompañamiento cercano del profesorado.
+      </li>
+      <li>
+        Diseño curricular que abarca las principales áreas de la Psicología con
+        énfasis en Neurociencias.
+      </li>
+      <li>Horarios flexibles: matutino y mixto (sabatino).</li>
+      <li>Becas y apoyos a la vocación.</li>
+    </ul>
+  </article>
+
+  {/* Programa de estudio: acordeones en dos columnas */}
+  <section class="mb-5">
+    <h2 class="h5 fw-bold mb-3">Programa de estudio</h2>
+
+    <div class="row g-4">
+      {/* Columna izquierda */}
+      <div class="col-12 col-lg-6">
+        <CiesAccordionGroup id="lic-psico-programa-izq">
+          <CiesAccordionItem
+            parentId="lic-psico-programa-izq"
+            itemId="objetivos"
+            heading="Objetivos"
+            startOpen={true}
+          >
+            <p>
+              Formar psicólogas y psicólogos capaces de comprender,
+              evaluar e intervenir en los procesos psicológicos en
+              diferentes ámbitos, con una perspectiva ética, humanista
+              y científica.
+            </p>
+          </CiesAccordionItem>
+
+          <CiesAccordionItem
+            parentId="lic-psico-programa-izq"
+            itemId="perfil-ingreso"
+            heading="Perfil de ingreso"
+          >
+            <ul>
+              <li>
+                Interés por el comportamiento humano, la salud mental
+                y los procesos de aprendizaje.
+              </li>
+              <li>
+                Habilidad para la observación, la escucha y el trabajo
+                colaborativo.
+              </li>
+              <li>
+                Sensibilidad social y disposición para el trabajo con
+                personas en contextos diversos.
+              </li>
+            </ul>
+          </CiesAccordionItem>
+
+          <CiesAccordionItem
+            parentId="lic-psico-programa-izq"
+            itemId="perfil-egreso"
+            heading="Perfil de egreso"
+          >
+            <p>
+              La persona egresada contará con bases teóricas,
+              metodológicas y técnicas para realizar evaluación,
+              diagnóstico e intervención psicológica en los ámbitos
+              clínico, educativo, social, organizacional y del delito,
+              así como para participar en proyectos de investigación.
+            </p>
+          </CiesAccordionItem>
+
+          <CiesAccordionItem
+            parentId="lic-psico-programa-izq"
+            itemId="campos-trabajo"
+            heading="Campos de trabajo"
+          >
+            <ul>
+              <li>Consultorio psicológico privado.</li>
+              <li>Instituciones educativas y de atención a la salud.</li>
+              <li>Organizaciones públicas y privadas.</li>
+              <li>Centros comunitarios y de intervención social.</li>
+              <li>Proyectos de investigación y docencia.</li>
+            </ul>
+          </CiesAccordionItem>
+        </CiesAccordionGroup>
+      </div>
+
+      {/* Columna derecha */}
+      <div class="col-12 col-lg-6">
+        <CiesAccordionGroup id="lic-psico-programa-der">
+          <CiesAccordionItem
+            parentId="lic-psico-programa-der"
+            itemId="plan-estudios"
+            heading="Plan de estudios"
+            startOpen={true}
+          >
+            <p>
+              El plan de estudios se organiza en semestres que integran
+              asignaturas teóricas, talleres, prácticas y espacios de
+              supervisión clínica, permitiendo un desarrollo progresivo
+              de competencias profesionales.
+            </p>
+            <p class="mb-0">
+              Consulta el mapa curricular detallado en el apartado de
+              admisiones o directamente con el área académica de CiES.
+            </p>
+          </CiesAccordionItem>
+
+          <CiesAccordionItem
+            parentId="lic-psico-programa-der"
+            itemId="horarios"
+            heading="Horarios"
+          >
+            <ul class="mb-0">
+              <li>Turno matutino.</li>
+              <li>Opción mixta (sabatina) sujeta a apertura de grupo.</li>
+            </ul>
+          </CiesAccordionItem>
+
+          <CiesAccordionItem
+            parentId="lic-psico-programa-der"
+            itemId="fechas"
+            heading="Fechas"
+          >
+            <p class="mb-0">
+              Se abren grupos en marzo y septiembre de cada año
+              (sujeto a cupo y a calendario oficial).
+            </p>
+          </CiesAccordionItem>
+
+          <CiesAccordionItem
+            parentId="lic-psico-programa-der"
+            itemId="becas"
+            heading="Becas"
+          >
+            <p class="mb-0">
+              CiES ofrece distintos esquemas de becas académicas y
+              apoyos económicos. Pregunta por los requisitos en el área
+              de admisiones.
+            </p>
+          </CiesAccordionItem>
+        </CiesAccordionGroup>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<style>
+    .cies-programa-detalle p {
+  line-height: 1.7;
+}
+
+.cies-rvoe-heading {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.cies-rvoe-heading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  width: 4px;
+  border-radius: 999px;
+  background-color: var(--cies-green-600, #00a859);
+}
+
+.cies-accordion-wrapper .accordion-item + .accordion-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+</style>

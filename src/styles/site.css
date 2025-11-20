@@ -61,3 +61,116 @@ footer a:hover {
   font-weight: bolder;
   color: var(--cies-green-secondary);
 }
+
+
+.cies-btn-primary {
+  background-color: var(--cies-primary, #00a859);
+  border-color: var(--cies-primary, #00a859);
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.cies-btn-primary:hover,
+.cies-btn-primary:focus {
+  background-color: #0c4a23;
+  border-color: #0c4a23;
+}
+
+
+
+/* ================================
+   CIES Accordion – Card + Icon
+   ================================ */
+
+.cies-accordion-wrapper .accordion {
+  border: 0;
+  background: transparent;
+}
+
+/* Tarjeta */
+.cies-accordion-card {
+  border-radius: 14px !important;
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  overflow: hidden;
+  margin-bottom: 0.9rem;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+/* Botón */
+.cies-accordion-button {
+  background: #ffffff !important;
+  color: #111827 !important;
+  font-weight: 600;
+  padding: 0.9rem 1.1rem;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 0.98rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hover */
+.cies-accordion-button:hover {
+  background: rgba(0, 168, 89, 0.04) !important;
+}
+
+/* Abierto */
+.cies-accordion-button:not(.collapsed) {
+  background: rgba(0, 168, 89, 0.06) !important;
+  color: var(--cies-green-800, #0c4a23) !important;
+}
+
+/* Quitar focus azul */
+.cies-accordion-button:focus {
+  box-shadow: none !important;
+}
+
+/* Ícono circular */
+.cies-accordion-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 168, 89, 0.08);
+  color: var(--cies-green-800, #0c4a23);
+  font-size: 1rem;
+}
+
+/* Chevron minimalista */
+.cies-accordion-button::after {
+  content: "";
+  background-image: none !important;
+  width: 12px;
+  height: 12px;
+  margin-left: 0.6rem;
+  border-right: 2px solid var(--cies-green-800, #0c4a23);
+  border-bottom: 2px solid var(--cies-green-800, #0c4a23);
+  transform: rotate(-45deg);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  opacity: 0.7;
+}
+
+.cies-accordion-button:not(.collapsed)::after {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+/* Cuerpo */
+.cies-accordion-body {
+  padding: 0.9rem 1.1rem 1.1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  background: #f9fafb;
+}
+
+.cies-accordion-body ul {
+  padding-left: 1.2rem;
+}
+
+.cies-accordion-body li + li {
+  margin-top: 0.15rem;
+}

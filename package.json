@@ -12,5 +12,9 @@
     "astro": "^5.15.5",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

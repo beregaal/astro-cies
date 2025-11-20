@@ -1,13 +1,24 @@
 ---
-import type { GetStaticPaths } from 'astro';
-import BaseLayout from '@layouts/BaseLayout.astro';
-import json_programas from '@data/programas.json';
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import json_programas from "@data/programas.json";
+import "@styles/views/programas.css";
+
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+import CiesSeccionProgramaForm from "@components/programas/Form.astro";
+
+// Contenidos específicos
+import CiesContenidoLicPsicologia from '@components/programas/contenido/LicPsicologia.astro';
+
+
+
+
 
 // Genera las rutas estaticas desde json
 export const getStaticPaths = (() => {
   return json_programas.map((p) => {
     // p.link: "/programas/maestria/psicoterapia-psicoanalitica"
-    const parts = p.link.split('/').filter(Boolean); // ["programas","maestria","psicoterapia-psicoanalitica"]
+    const parts = p.link.split("/").filter(Boolean); // ["programas","maestria","psicoterapia-psicoanalitica"]
     const grado = parts[1];
     const name = parts[2];
     return { params: { grado, name } };
@@ -20,14 +31,37 @@ const { grado, name } = Astro.params;
 // Recupera información del programa
 const programa = json_programas.find((p) => p.link.endsWith(`/${grado}/${name}`));
 console.log(programa);
+
+
+// Mapa de key -> componente de contenido
+const contentMap: Record<string, any> = {
+  'lic-psicologia': CiesContenidoLicPsicologia
+  //'mtr-psicomotricidad': CiesContenidoMtrPsicomotricidad,
+  //'mtr-psicoterapia': CiesContenidoMtrPsicoterapia,
+  // ...
+};
+
+// Resolve el componente según la key
+const ContentComponent = programa ? contentMap[programa.key] : null;
 ---
 
-<BaseLayout title={`${programa?.grado ?? ''}  ${programa?.titulo ?? 'Programa'}`}>
-  <h1>{`${programa?.grado} ${programa?.titulo}`.trim()}</h1>
-  {
-    programa?.imgSrc && (
-      <img src={programa.imgSrc} alt={programa.titulo} class="img-fluid rounded mb-4" />
-    )
-  }
-  <p set:html={programa?.descripcion} />
+<BaseLayout title={`${programa?.grado ?? ""}  ${programa?.titulo ?? "Programa"}`}>
+  <CiesSeccionProgramaHeader programa={programa} />
+  <CiesSeccionProgramaForm />
+
+  <div class="container my-5">
+    <div class="row g-5">
+      <div class="col-12 col-lg-8">
+        {ContentComponent && <ContentComponent />}
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="/js/views/programas.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      ComponentPrograma.init({});
+    });
+  </script>
 </BaseLayout>
