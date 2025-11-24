@@ -1,0 +1,31 @@
+---
+interface Props {
+  numero: number | string;
+  titulo: string;
+}
+
+const { numero, titulo } = Astro.props as Props;
+---
+
+<li class="cies-timeline-item">
+  {/* Línea vertical */}
+  <div class="cies-timeline-line" aria-hidden="true"></div>
+
+  {/* Badge con icono + número */}
+  <div class="cies-timeline-badge">
+    <span class="cies-timeline-icon">
+      <i class="bi bi-layers"></i>
+    </span>
+    <span class="cies-timeline-number">
+      {numero}
+    </span>
+  </div>
+
+  {/* Tarjeta de contenido */}
+  <div class="cies-timeline-card">
+    <h3 class="h6 fw-bold mb-2">{titulo}</h3>
+    <div class="cies-timeline-body">
+      <slot />
+    </div>
+  </div>
+</li>

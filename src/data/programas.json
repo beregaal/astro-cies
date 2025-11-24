@@ -3,7 +3,7 @@
     "key": "lic-psicologia",
     "titulo": "Psicología",
     "grado": "Licenciatura",
-    "descripcion": "Comprende los fundamentos del comportamiento humano, el desarrollo emocional y los procesos mentales, formando profesionales capaces de aplicar la psicología en diversos contextos sociales y clínicos.",
+    "descripcion": "Preparate en las 5 áreas fundamentales de la Psicología, respaldado por sólidas bases en neurociencias. Transforma vidas formando profesionales capaces de aplicar la psicología en diversos contextos.",
     "link": "/programas/licenciatura/psicologia",
     "imgSrc": "/images/programas/psicologia.jpg"
   },
@@ -11,7 +11,7 @@
     "key": "mtr-psicomotricidad",
     "titulo": "Psicomotricidad",
     "grado": "Maestría",
-    "descripcion": "Profundiza en la relación entre cuerpo y mente para intervenir en el desarrollo psicomotor, emocional y cognitivo de niños y adultos, desde una perspectiva integral y terapéutica.",
+    "descripcion": "Profundiza en la relación entre mente y cuerpo en movimiento, especialízate en este enfoque inovador que te permitirá ayudar a las personas de todas las edades a mejorar su atención, concentración, coordinación, socialización, aprendizaje entre otros aspectos.",
     "link": "/programas/maestria/psicomotricidad",
     "imgSrc": "/images/programas/psicomotricidad.jpg"
   },
@@ -19,7 +19,7 @@
     "key": "mtr-psicoterapia",
     "titulo": "Psicoterapia Psicoanalítica",
     "grado": "Maestría",
-    "descripcion": "Desarrolla habilidades clínicas basadas en el enfoque psicoanalítico para comprender y acompañar los procesos inconscientes que determinan la conducta y la vida emocional.",
+    "descripcion": "Desarrolla la práctica clínica con pacientes,  basada en la teoría psicoanalítica desde los teóricos clásicos y contemporáneos.",
     "link": "/programas/maestria/psicoterapia-psicoanalitica",
     "imgSrc": "/images/programas/psicoterapia.jpg"
   },
@@ -27,7 +27,7 @@
     "key": "dct-investigacion-psicoanalítica",
     "titulo": "Investigación Psicoanalítica",
     "grado": "Doctorado",
-    "descripcion": "Forma investigadores capaces de generar nuevo conocimiento en torno al pensamiento psicoanalítico, la subjetividad y la práctica clínica contemporánea.",
+    "descripcion": "Fórmate en la investigación con enfoque psicoanalítico para generar aportaciones  en este campo desde la corriente de tu preferencia.",
     "link": "/programas/doctorado/investigacion-psicoanalitica",
     "imgSrc": "/images/programas/investigacion.jpg"
   },
@@ -35,7 +35,7 @@
     "key": "dct-desarrollo-humano",
     "titulo": "Ciencias del Desarrollo Humano",
     "grado": "Doctorado",
-    "descripcion": "Explora los procesos de crecimiento y transformación del ser humano desde una visión científica, ética y humanista, integrando perspectivas psicológicas, biológicas y sociales.",
+    "descripcion": "Fórmate en la investigación con enfoque de las ciencias del desarrollo humano para generar aportaciones en este campo desde la corriente de tu preferencia.",
     "link": "/programas/doctorado/ciencias-del-desarrollo-humano",
     "imgSrc": "/images/programas/desarrollo-humano.jpg"
   }

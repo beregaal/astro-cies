@@ -78,6 +78,11 @@ footer a:hover {
 
 
 
+
+
+
+
+
 /* ================================
    CIES Accordion – Card + Icon
    ================================ */
@@ -85,6 +90,10 @@ footer a:hover {
 .cies-accordion-wrapper .accordion {
   border: 0;
   background: transparent;
+}
+
+.cies-accordion-wrapper .accordion-item + .accordion-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Tarjeta */

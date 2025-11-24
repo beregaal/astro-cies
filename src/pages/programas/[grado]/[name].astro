@@ -51,7 +51,7 @@ const ContentComponent = programa ? contentMap[programa.key] : null;
 
   <div class="container my-5">
     <div class="row g-5">
-      <div class="col-12 col-lg-8">
+      <div class="col-12">
         {ContentComponent && <ContentComponent />}
       </div>
     </div>
@@ -65,3 +65,25 @@ const ContentComponent = programa ? contentMap[programa.key] : null;
     });
   </script>
 </BaseLayout>
+
+<style>
+    .cies-programa-detalle p {
+      line-height: 1.7;
+    }
+
+    .cies-rvoe-heading {
+      position: relative;
+      padding-left: 1rem;
+    }
+
+    .cies-rvoe-heading::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.2rem;
+      bottom: 0.2rem;
+      width: 4px;
+      border-radius: 999px;
+      background-color: var(--cies-green-600, #00a859);
+    }
+  </style>
