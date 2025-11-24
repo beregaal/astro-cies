@@ -3,26 +3,30 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import CiesEventCard from "@components/ComponenteCardEvento.astro";
 import data from "@data/eventos-dominicales-psicoanalisis.json";
 
+import CiesSeccionCursoHeader from "@components/cursos/Header.astro";
+
 // json -> array: [{ mes: "octubre", eventos: [...] }]
 const meses = Object.entries(data).map(([mes, eventos]) => ({ mes, eventos }));
 
 const capitalize = (s: string) =>
   s.charAt(0).toUpperCase() + s.slice(1);
+
+const curso = {
+  mostrarBadge: true,
+  tipo: "Cursos Dominicales",
+  titulo: 'Psicomotricidad',
+  descripcion: 'Consulta el calendario anual de cursos, pláticas y diálogos.'
+}
 ---
 
-<BaseLayout title="Cursos dominicales de psicoanálisis">
+<BaseLayout title="Cursos dominicales de psicomotricidad">
+  <CiesSeccionCursoHeader curso={curso} />
+
   <div class="container py-5">
 
     <!-- Encabezado + selector de mes -->
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
-      <div>
-        <h1 class="cies-titulo">
-          Cursos dominicales de psicoanálisis
-        </h1>
-        <h6 class="text-muted mb-0">
-          Consulta el calendario anual de cursos, pláticas y diálogos.
-        </p>
-      </div>
+      <div></div>
 
       <div class="month-selector">
         <label for="monthSelector" class="form-label small mb-1">

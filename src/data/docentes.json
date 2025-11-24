@@ -1,11 +1,11 @@
 [
   {
     "id": "carmen-islas",
-    "nombre": "Carmen Islas",
-    "grado": "Mtra. en Psicología Clínica",
-    "categoria": "Licenciatura",
+    "nombre": "María de la I. Concepción Rabadán Fernández",
+    "grado": "Lic. Psic",
+    "categoria": "",
     "foto": null,
-    "resumen": "Coordinadora de la licenciatura, plantel sur.",
+    "resumen": "",
     "bio": [
       "Licenciada en Psicología por la Universidad X.",
       "Maestría en Psicología Clínica con orientación psicoanalítica.",
@@ -18,12 +18,652 @@
     ]
   },
   {
-    "id": "muriel-wolowelski",
-    "nombre": "Muriel Wolowelski",
-    "grado": "Mtra. en Psicoterapia Psicoanalítica",
-    "categoria": "Licenciatura",
+    "id": "",
+    "nombre": "Jaime Ayala Villarreal",
+    "grado": "",
+    "categoria": "",
     "foto": null,
-    "resumen": "Coordinadora académica de la licenciatura, plantel sur.",
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Yolanda Alquicira Sahagun",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Enrique Octavio Aragón Burgos",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Miguel Ángel Bautista Gutiérrez",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Martha Patricia Bonilla ",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Walterio Francisco Beller Taboada",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Lucía Blanco Pantoja",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Nadia Bolaños",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Francisco Castillo Bórquez",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "María de los Ángeles Cano Villamil",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Magdalena Feregrino",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Juan Francisco Garduño Aparicio",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Susana Guevara Palazuelos",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Nicolás Guzmán Nava",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "María Guadalupe Hernández López",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Pedro Rafael Hernández Uzcanga",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Pola Jiménez",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Mitzi Miriam León Calderón",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Anna Berenice Mejía Iturriaga",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Belén Mendoza Mendoza",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Teresita Moreno Iriarte",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Elsa Miriam Ortiz Funes",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Paulina Reyes Renata Dahl ",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Dayanira Rodríguez Coronado ",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Martha Elva Valenzuela Amaya",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Wendy Zepeda",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Julieta Abrego Lerma",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Angélica Lorelein Aguilar Hinojosa",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Rosa Ciria Cruz Mendoza",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Roberta García Quevedo",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Oscar Mauricio García Zamitiz",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Cristina González Méndez",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Juan Manuel Hernández Martínez",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Daniel Mendoza  Paredes",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Yomara Valeria Molotla Rojas",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Laura Monsivais Galindo",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Mayra Ramos Coyoy",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Diana Laura Rojas López",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Omar Segura Landin",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Diana Vidales Martínez",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
+    "bio": [
+      "Docente y supervisora clínica.",
+      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    ],
+    "lineasInteres": [
+      "Teoría psicoanalítica contemporánea",
+      "Clínica con adultos"
+    ]
+  },
+  {
+    "id": "",
+    "nombre": "Cristal Villegas",
+    "grado": "",
+    "categoria": "",
+    "foto": null,
+    "resumen": "",
     "bio": [
       "Docente y supervisora clínica.",
       "Autora de diversos artículos sobre psicoanálisis contemporáneo."

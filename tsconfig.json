@@ -10,7 +10,8 @@
       "@data/*": ["./src/data/*"],
       "@interfaces/*": ["./src/interfaces/*"],
       "@layouts/*": ["./src/layouts/*"],
-      "@styles/*": ["./src/styles/*"]
+      "@styles/*": ["./src/styles/*"],
+      "@scripts/*": ["./src/scripts/*"]
     }
   }
 }

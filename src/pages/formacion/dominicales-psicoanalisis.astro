@@ -1,0 +1,114 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesEventCard from "@components/ComponenteCardEvento.astro";
+import data from "@data/eventos-dominicales-psicoanalisis.json";
+
+import CiesSeccionCursoHeader from "@components/cursos/Header.astro";
+
+
+// json -> array: [{ mes: "octubre", eventos: [...] }]
+const meses = Object.entries(data).map(([mes, eventos]) => ({ mes, eventos }));
+
+const capitalize = (s: string) =>
+  s.charAt(0).toUpperCase() + s.slice(1);
+
+const curso = {
+  mostrarBadge: true,
+  tipo: "Cursos Dominicales",
+  titulo: 'Psicoanálisis',
+  descripcion: 'Consulta el calendario anual de cursos, pláticas y diálogos.'
+}
+---
+
+<BaseLayout title="Cursos dominicales de psicoanálisis">
+  <CiesSeccionCursoHeader curso={curso} />
+
+  <div class="container py-5">
+
+    <!-- Encabezado + selector de mes -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+      <div></div>
+
+      <div class="month-selector">
+        <label for="monthSelector" class="form-label small mb-1">
+          Ir al mes
+        </label>
+        <select id="monthSelector" class="form-select form-select-sm">
+          <option value="">Selecciona un mes</option>
+          {meses.map(({ mes }) => (
+            <option value={mes}>{capitalize(mes)}</option>
+          ))}
+        </select>
+      </div>
+    </div>
+
+    <!-- Listado de meses + eventos -->
+    {meses.map(({ mes, eventos }) => (
+      <>
+        <div id={`month-${mes}`} style="padding-top: 62px;"></div>
+        <section class="bg-white rounded-3 shadow-sm p-4">
+          <h2 class="h4 fw-bold mb-3 text-capitalize section-title">
+            {mes}
+          </h2>
+
+          <div class="row ">
+            {eventos.map((ev) => (
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <CiesEventCard
+                  dia={ev.dia}
+                  tipo={ev.tipo}
+                  titulo={ev.titulo}
+                  hora={ev.hora}
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      </>
+    ))}
+  </div>
+
+  
+  <script is:inline>
+  document.addEventListener('DOMContentLoaded', function () {
+    const select = document.getElementById('monthSelector');
+    if (!select) return;
+
+    select.addEventListener('change', function (event) {
+      const target = event.target;
+      if (!(target instanceof HTMLSelectElement)) return;
+
+      const value = target.value;
+      if (!value) return;
+
+      const section = document.getElementById('month-' + value);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+
+  <style>
+    .section-title {
+      border-left: 4px solid var(--cies-green-primary);
+      padding-left: 0.75rem;
+      color: var(--cies-green-secondary);
+    }
+
+    .month-selector select {
+      border-radius: 999px;
+      border-color: var(--cies-green-acent);
+    }
+
+    .month-selector select:focus {
+      border-color: var(--cies-green-secondary);
+      box-shadow: 0 0 0 0.2rem rgba(0, 168, 89, 0.15);
+    }
+
+    .cies-month-section {
+    scroll-margin-top: var(--navbar-h, 120px);
+  }
+  </style>
+</BaseLayout>

@@ -3,10 +3,7 @@ import logo from "@assets/cies-logo.png";
 ---
 
 <header>
-  <nav
-    id="cies-nav"
-    class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-  >
+  <nav id="cies-nav" class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container-fluid d-flex flex-column align-items-center">
       <!-- Logo centrado inicial -->
       <a class="logo-wrapper-center" href="/">
@@ -15,12 +12,7 @@ import logo from "@assets/cies-logo.png";
 
       <!-- Logo scroll -->
       <a class="logo-wrapper-brand" href="/">
-        <img
-          src={logo.src}
-          alt="Logo Cies"
-          class="logo-navbar-brand"
-          height="40"
-        />
+        <img src={logo.src} alt="Logo Cies" class="logo-navbar-brand" height="40" />
       </a>
 
       <button
@@ -34,15 +26,34 @@ import logo from "@assets/cies-logo.png";
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
-      >
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
         <ul class="navbar-nav flex-grow-1">
           <li class="nav-item">
             <a class="nav-link" href="/">Nosotros</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/">Programas</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dwnProgramas" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas Académicos</a>
+            <ul class="dropdown-menu" aria-labelledby="dwnProgramas">
+              <li><a class="dropdown-item" href="/programas/licenciatura/psicologia"><i class="bi bi-mortarboard me-2"></i>Licenciatura en Psicología</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="/programas/maestria/psicomotricidad"><i class="bi bi-mortarboard me-2"></i>Maestría en Psicomotricidad</a></li>
+              <li><a class="dropdown-item" href="/programas/maestria/psicoterapia-psicoanalitica"><i class="bi bi-mortarboard me-2"></i>Maestría en Psicoterapia Psicoanalítica</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="/programas/doctorado/investigacion-psicoanalitica"><i class="bi bi-mortarboard me-2"></i>Doctorado en Investigación Psicoanalítica</a></li>
+              <li><a class="dropdown-item" href="/programas/doctorado/ciencias-del-desarrollo-humano"><i class="bi bi-mortarboard me-2"></i>Doctorado en Ciencias del Desarrollo Humano</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dwnCursos" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formación Continua</a>
+            <ul class="dropdown-menu" aria-labelledby="dwnCursos">
+              <li><a class="dropdown-item" href="/formacion/dominicales-psicoanalisis"><i class="bi bi-journal-text me-2"></i>Cursos dominicales de psicoanálisis</a></li>
+              <li><a class="dropdown-item" href="/formacion/dominicales-psicomotricidad"><i class="bi bi-journal-text me-2"></i>Cursos dominicales de psicomotricidad</a></li>
+              <li><a class="dropdown-item" href="/formacion/cursos-diplomados"><i class="bi bi-journal-text me-2"></i>Cursos y Diplomados</a></li>
+              <!-- <li><a class="dropdown-item" href="/programas/maestria/psicoterapia-psicoanalitica"><i class="bi bi-book me-2"></i>Maestría en Psicoterapia Psicoanalítica</a></li> -->
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="/formacion/encuentros-congresos"><i class="bi bi-person-arms-up me-2"></i>Encuentros y Congresos</a></li>
+              <!-- <li><a class="dropdown-item" href="/programas/doctorado/ciencias-del-desarrollo-humano"><i class="bi bi-book me-2"></i>Doctorado en Ciencias del Desarrollo Humano</a></li> -->
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/">Instalaciones</a>
@@ -58,17 +69,19 @@ import logo from "@assets/cies-logo.png";
 
 <script>
   (function () {
+    // Realiza el juego de imagenes al hacer scroll
     const THRESHOLD = 60;
-    const nav = document.getElementById("cies-nav");
 
     function update() {
+      const nav = document.getElementById("cies-nav");
+      if (!nav) return;
+
       const scrolled = window.scrollY > THRESHOLD;
-      if (nav) {
-        nav.classList.toggle("scrolled", scrolled);
-      }
+      nav.classList.toggle("scrolled", scrolled);
     }
 
-    window.addEventListener("load", update, { once: true });
+    //window.addEventListener("load", update, { once: true });
+    document.addEventListener("DOMContentLoaded", update);
     window.addEventListener("scroll", update, { passive: true });
   })();
 </script>
@@ -105,7 +118,7 @@ import logo from "@assets/cies-logo.png";
     top: 5px; /* ajusta el valor a tu gusto */
     left: 50%;
     transform: translateX(-50%);
-    z-index: 5;
+    z-index: 0;
   }
 
   .logo-wrapper-brand {
@@ -126,6 +139,7 @@ import logo from "@assets/cies-logo.png";
 
   /* Estado inicial: logo grande centrado visible, brand oculto */
   .logo-navbar {
+    margin-top: 10px;
     opacity: 1;
     transform: translateY(0);
   }
@@ -136,7 +150,8 @@ import logo from "@assets/cies-logo.png";
     pointer-events: none; /* que no se pueda clickear mientras está oculto */
   }
 
-  #cies-nav .nav-item > .nav-link:hover {
+  #cies-nav .nav-item > .nav-link:hover,
+  #cies-nav .nav-link.show {
     color: var(--cies-green-primary);
     font-weight: bolder;
   }
@@ -152,5 +167,9 @@ import logo from "@assets/cies-logo.png";
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+  }
+  #cies-nav .dropdown-item:focus, .dropdown-item:hover {
+    color: var(--cies-green-primary);
+    background-color: var(--bs-dropdown-link-hover-bg);
   }
 </style>
