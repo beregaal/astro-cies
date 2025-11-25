@@ -1,0 +1,84 @@
+---
+const { videoId } = Astro.props;
+
+/** Fecha actual */
+const now = new Date();
+
+// Nos aseguramos de que TODO sea number
+const currentYear: number = Number(now.getFullYear());
+const currentMonth: number = Number(now.getMonth() + 1);
+
+/** Regla: hasta marzo usa año actual; desde abril, año siguiente */
+const aperturaYear: number = currentMonth >= 4 ? currentYear + 1 : currentYear;
+
+/** Generación base: 27 (XXVII) en 2025 */
+const GENERACION_BASE = 27;  // number
+const ANIO_BASE = 2025;      // number
+
+const generacion: number = GENERACION_BASE + (aperturaYear - ANIO_BASE);
+
+/** helper para convertir a romano */
+function toRoman(num: number): string {
+  const map: [number, string][] = [
+    [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+    [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+    [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I'],
+  ];
+  let result = '';
+  for (const [value, numeral] of map) {
+    while (num >= value) {
+      result += numeral;
+      num -= value;
+    }
+  }
+  return result;
+}
+
+const generacionRoman = toRoman(generacion);
+---
+
+<section class="cies-pre-rvoe mb-5">
+  <h2 class="h5 fw-bold mb-3 cies-rvoe-heading">Próximas aperturas académicas</h2>
+
+  <p>
+    Te invitamos a unirte a la experiencia presencial de nuestros programas de estudio, todos reconocidos por la SEP.
+    <br /><br />
+    Iniciamos clases en <strong>marzo {aperturaYear}</strong>.
+    <br /><br />
+    Extendemos nuestras felicitaciones a la <strong>{generacionRoman}° generación de graduados</strong>.
+    Que su éxito inspire a seguir alcanzando nuevas metas.
+  </p>
+
+  <p>
+    Somos una institución especializada en áreas fundamentales como <strong>Psicología</strong>,
+    <strong>Psicoanálisis</strong>, <strong>Psicomotricidad</strong> y <strong>Adicciones</strong>.
+    ¡Descubre el conocimiento que transforma en cada aula!
+  </p>
+
+  <div class="ratio ratio-16x9 mt-4">
+    <iframe
+      src={`https://www.youtube.com/embed/${videoId}`}
+      title="Video del programa"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </div>
+</section>
+
+<style>
+  .cies-pre-rvoe p {
+    line-height: 1.7;
+    color: #374151;
+    font-size: 1rem;
+  }
+
+  .cies-pre-rvoe strong {
+    color: var(--cies-green-700, #0c4a23);
+  }
+
+  .cies-pre-rvoe .ratio {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  }
+</style>
