@@ -9,6 +9,10 @@ import CiesSeccionProgramaForm from "@components/programas/Form.astro";
 
 // Contenidos específicos
 import CiesContenidoLicPsicologia from '@components/programas/contenido/LicPsicologia.astro';
+import CiesContenidoMtrPsicomotricidad from '@components/programas/contenido/MtrPsicomotricidad.astro';
+import CiesContenidoMtrPsicoterapia from '@components/programas/contenido/MtrPsicoterapia.astro';
+import CiesContenidoDctInvPsicoanalitica from '@components/programas/contenido/DctPsicoanalitica.astro';
+import CiesContenidoDctDesarrolloHumano from '@components/programas/contenido/DctDesarrolloHumano.astro';
 
 
 
@@ -35,9 +39,11 @@ console.log(programa);
 
 // Mapa de key -> componente de contenido
 const contentMap: Record<string, any> = {
-  'lic-psicologia': CiesContenidoLicPsicologia
-  //'mtr-psicomotricidad': CiesContenidoMtrPsicomotricidad,
-  //'mtr-psicoterapia': CiesContenidoMtrPsicoterapia,
+  'lic-psicologia': CiesContenidoLicPsicologia,
+  'mtr-psicomotricidad': CiesContenidoMtrPsicomotricidad,
+  'mtr-psicoterapia': CiesContenidoMtrPsicoterapia,
+  'dct-investigacion-psicoanalítica': CiesContenidoDctInvPsicoanalitica,
+  'dct-desarrollo-humano': CiesContenidoDctDesarrolloHumano
   // ...
 };
 

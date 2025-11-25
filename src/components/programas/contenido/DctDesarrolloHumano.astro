@@ -1,0 +1,196 @@
+---
+import CiesAccordionGroup from "@components/AccordionGroup.astro";
+import CiesAccordionItem from "@components/AccordionItem.astro";
+import CiesInfoPrevioRvoe from "@components/programas/InfoPrevioRvoe.astro";
+---
+
+<section class="cies-programa-detalle">
+  <div class="row g-5">
+    <!-- Contenido -->
+    <div class="col-12 col-lg-8">
+      <CiesInfoPrevioRvoe videoId="1rJCFo2l8sw" />
+
+      <!-- Bloque de RVOE e introducción -->
+      <article class="container bg-white rounded-4 shadow p-5 mb-3">
+        <h2 class="h5 fw-bold mb-3 cies-rvoe-heading">Reconocimiento de Validez Oficial de Estudios (RVOE) <br />SEP 20081083 del 05/06/2008.</h2>
+        <p>
+          El Doctorado en Ciencias del Desarrollo Humano de CiES cultiva recursos humanos de alto nivel en investigación. Desarrollarás habilidades conceptuales, metodológicas y técnicas que te
+          capacitarán para llevar a cabo investigaciones en Ciencias del Desarrollo Humano a nivel nacional e internacional.
+        </p>
+        <p>Adquirirás una actitud crítica, ética y creativa, aplicando metodologías cualitativas, cuantitativas o mixtas según tu Proyecto de investigación.</p>
+
+        <h3 class="h6 fw-bold mt-4 mb-2">Metodología de Trabajo:</h3>
+        <ul class="mb-0">
+          <li>Participación en seminarios de teoría y metodología, coloquios y congresos internacionales.</li>
+          <li>Presentación de avances de investigación ante el grupo de doctorandos.</li>
+          <li>Redacción de artículos y papers.</li>
+          <li>Tutoría personalizada con profesores investigadores y psicoanalistas.</li>
+          <li>Participación en un entorno de reflexión e intercambio de ideas, fomentando la problematización de pensamientos y procedimientos.</li>
+        </ul>
+
+        <h3 class="h6 fw-bold mt-4 mb-2">Algunas de las Investigaciones son:</h3>
+        <ul>
+          <li><strong>Almada, Consuelo:</strong> Análisis de los diálogos sobre las experiencias ante manifestaciones artísticas que muestran fluidos corporales.</li>
+          <li><strong>Arredondo, María Celina:</strong> Andamiajes de la sexualidad femenina en mujeres con displasia cérvico-uterina, 2013.</li>
+          <li>
+            <strong>Blanco, Pantoja L.:</strong> Desarrollo de una metodología de grafología para análisis del contenido en una autobiografía manuscrita, como indicador de personalidad e identidad.
+          </li>
+          <li><strong>Cielo Piñón, Cruz:</strong> Propuesta de una intervención humanista en un centro preventivo de readaptación social.</li>
+          <li><strong>Gómez Gallegos, Ma. Elena:</strong> Validez interna del instrumento: Evaluación de procesos y estilos de aprendizaje en primer grado de educación primaria “La ballena”.</li>
+          <li><strong>González Beristaín, Josefina:</strong> Género y cultura en la identidad profesional de enfermería, 2013.</li>
+          <li><strong>Molina Ramírez, Macario:</strong> Malestar corporal y motricidad en estudiantes de educación básica. La tendencia hacia la inmovilidad en educación secundaria.</li>
+          <li><strong>Murad Robles, María Oswelia:</strong> Impacto de la arteterapia en el desarrollo integral de las personas discapacitadas, 2014.</li>
+          <li>
+            <strong>Parra Carriedo, Alicia:</strong> Significado de ser delgada en mujeres que acuden a una clínica de nutrición universitaria para manejo ponderal. Un análisis psicosocial, 2011.
+          </li>
+          <li><strong>Romero Uscanga, Karla:</strong> Importancia de la filosofía en la formación humana de adolescentes.</li>
+          <li><strong>Urdaibay Zubillaga, David Enrique:</strong> Abuelo ¿tú quién eres?; una mirada fenomenológica desde las representaciones sociales al mundo del adulto mayor.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Acordeones -->
+    <div class="col-12 col-lg-4">
+      <section aria-labelledby="estructura-formativa-title">
+        <h2 id="estructura-formativa-title" class="h5 fw-bold mb-3 cies-rvoe-heading">Estructura Formativa</h2>
+
+        <div class="row">
+          <!-- Primera columna -->
+          <section class="col-6 col-lg-12">
+            <CiesAccordionGroup id="lic-psico-programa-izq">
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="objetivos" heading="Objetivos" startOpen={true} icon="bullseye">
+                <p>Formar psicólogas y psicólogos capaces de comprender, evaluar e intervenir en los procesos psicológicos en diferentes ámbitos, con una perspectiva ética, humanista y científica.</p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="perfil-ingreso" heading="Perfil de ingreso" icon="person-plus">
+                <p>Dirigido a profesionales con Maestría en:</p>
+                <ul>
+                  <li>Humanidades</li>
+                  <li>Educación</li>
+                  <li>Ciencias Sociales</li>
+                  <li>Salud</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="perfil-egreso" heading="Perfil de egreso" icon="person-check">
+                <p>El Doctorado en Ciencias del Desarrollo Humano del CiES implica para el doctorante:</p>
+                <ul>
+                  <li>Analizar, decidir y aplicar la metodología cualitativa, cuantitativa o mixta de acuerdo a la cuestión a investigar.</li>
+                  <li>Investigar los procesos del arte, la literatura, los movimientos sociales u otros.</li>
+                  <li>Discutir sobre su objeto de estudio y articularlo a la metodología.</li>
+                  <li>Valorar el impacto del investigador en la investigación.</li>
+                  <li>Participar en grupos de discusión durante los seminarios del doctorado.</li>
+                  <li>Tomar parte en congresos y encuentros nacionales e internacionales.</li>
+                  <li>Publicar los resultados del proceso de investigación durante esta, en la revista <em>Psicomotricidad: movimiento y emoción</em>, o en otras revistas indexadas.</li>
+                </ul>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+
+          <!-- Segunda columna -->
+          <section class="col-6 col-lg-12">
+            <CiesAccordionGroup id="lic-psico-programa-der">
+              <CiesAccordionItem parentId="lic-psico-programa-der" itemId="horarios" heading="Horarios" icon="clock">
+                <p>Se asiste a seminarios en horario a elegir: viernes o sábados, turno matutino.</p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-der" itemId="fechas" heading="Fechas" icon="calendar-event">
+                <p class="mb-0">Se abren grupos en marzo y septiembre de cada año (sujeto a cupo y a calendario oficial).</p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-der" itemId="requisitos" heading="Requisitos" icon="list-check">
+                <ul class="mb-0">
+                  <li>Tema o Protocolo de Investigación</li>
+                  <li>Acta de Nacimiento (original)</li>
+                  <li>Certificado Total de Maestría afín al Doctorado (original y copia)</li>
+                  <li>Grado Académico de Maestria ambos lados (copia)</li>
+                  <li>Cédula de Maestría (copia)</li>
+                  <li>CURP (actualizado)</li>
+                  <li>4 Fotografías Tamaño Infantil</li>
+                  <li>Currículo Documentado</li>
+                  <li>Carta de Motivos (escrita a mano)</li>
+                  <li>Autobiografía (dos cuartillas)</li>
+                  <li>Proceso de Admisión</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-der" itemId="becas" heading="Becas" icon="award">
+                <p class="mb-0">CiES ofrece distintos esquemas de becas académicas y apoyos económicos. Pregunta por los requisitos en el área de admisiones.</p>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <!-- Plan de estudios -->
+    <div class="col-12">
+      <section aria-labelledby="plan-estudios-title">
+        <h2 id="plan-estudios-title" class="h5 fw-bold mb-3 cies-rvoe-heading">Plan de estudios</h2>
+
+        <div class="row">
+          <!-- Primera columna -->
+          <section class="col-12 col-lg-6">
+            <CiesAccordionGroup id="lic-psico-programa-plan-izq">
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-1" heading="1er. Semestre" startOpen={true} icon="layers">
+                <ul>
+                  <li>Filosofía de la Investigación Aplicada a la Cultura y la Educación.</li>
+                  <li>Etología y Desarrollo Humano.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-2" heading="2° Semestre" icon="layers">
+                <ul>
+                  <li>Antecedentes y Diseños de Investigación.</li>
+                  <li>Economía, Sociedad e Índice de Desarrollo Humano.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-3" heading="3er. Semestre" icon="layers">
+                <ul>
+                  <li>Estadística Paramétrica y No Paramétrica.</li>
+                  <li>Filosofía de la Investigación Aplicada a la Cultura y la Educación.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-4" heading="4° Semestre" icon="layers">
+                <ul>
+                  <li>Estudio del investigador en la Investigación.</li>
+                  <li>Estudio del Desarrollo Humano en su Articulación Social-Humanista: la Educación y la Creatividad.</li>
+                </ul>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+
+          <!-- Segunda columna -->
+          <section class="col-12 col-lg-6">
+            <CiesAccordionGroup id="lic-psico-programa-plan-der">
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-5" heading="5° Semestre" icon="layers">
+                <ul>
+                  <li>Seguimiento de la Investigación.</li>
+                  <li>Estudio del Proceso Creativo y Desarrollo Humano.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-6" heading="6° Semestre" icon="layers">
+                <ul>
+                  <li>Modelos de Redacción y Reportes de Investigación.</li>
+                  <li>Creatividad en la Literatura, Historia, Mitos y Religiones.</li>
+                </ul>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cies-instituciones-practicas {
+    padding: 40px 30px;
+  }
+  .cies-list-instituciones li {
+    padding-left: 0.2rem;
+  }
+</style>

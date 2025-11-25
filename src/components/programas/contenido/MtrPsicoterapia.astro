@@ -1,0 +1,221 @@
+---
+import CiesAccordionGroup from "@components/AccordionGroup.astro";
+import CiesAccordionItem from "@components/AccordionItem.astro";
+import CiesInfoPrevioRvoe from "@components/programas/InfoPrevioRvoe.astro";
+---
+
+<section class="cies-programa-detalle">
+  <div class="row g-5">
+    <!-- Contenido -->
+    <div class="col-12 col-lg-8">
+      <CiesInfoPrevioRvoe videoId="u-V3C020H-U" />
+
+      <!-- Bloque de RVOE e introducción -->
+      <article class="container bg-white rounded-4 shadow p-5 mb-3">
+        <h2 class="h5 fw-bold mb-3 cies-rvoe-heading">Reconocimiento de Validez Oficial de Estudios (RVOE) <br />SEP 2014067 del 09/03/2001.</h2>
+        <p>
+          Optimiza y enriquece tu práctica clínica desde hoy mismo a través de nuestros seminarios y supervisión. Descubre una propuesta única desde el psicoanálisis, explorando las perspectivas de
+          Freud, la escuela inglesa y la francesa, para abordar la clínica de la neurosis, psicosis, perversiones y las agonías primitivas. ¿Cómo se despliega el inconsciente en estos procesos?
+        </p>
+
+        <h3 class="h6 fw-bold mt-4 mb-2">En este recorrido académico, se profundizan las obras de los psicoanalistas:</h3>
+        <ul class="mb-0">
+          <li>Sigmund Freud</li>
+          <li>Jacques Lacan</li>
+          <li>Melanie Klein</li>
+          <li>D.W. Winnicott</li>
+          <li>André Green</li>
+          <li>Jean Laplanche</li>
+          <li>Jean Bertrand Pontalis</li>
+          <li>Piera Aulagnier</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Acordeones -->
+    <div class="col-12 col-lg-4">
+      <section aria-labelledby="estructura-formativa-title">
+        <h2 id="estructura-formativa-title" class="h5 fw-bold mb-3 cies-rvoe-heading">Estructura Formativa</h2>
+
+        <div class="row">
+          <!-- Primera columna -->
+          <section class="col-6 col-lg-12">
+            <CiesAccordionGroup id="mtr-psicoterapia-programa-izq">
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="objetivos" heading="Objetivos" startOpen={true} icon="bullseye">
+                <p>
+                  Te forma como psicoterapeuta con orientación psicoanalítica con capacidad de escucha del discurso de tus pacientes a la captura de las formaciones del inconsciente hacia la
+                  experiencia de la cura.
+                </p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="perfil-ingreso" heading="Perfil de ingreso" icon="person-plus">
+                <p>Licenciados en:</p>
+                <ul>
+                  <li>Psicología</li>
+                  <li>Salud en sus diferentes áreas (Medicina, Enfermería, Trabajo social).</li>
+                  <li>Educación</li>
+                  <li>Antropología</li>
+                  <li>Sociología</li>
+                  <li>Filosofía</li>
+                  <li>Historia</li>
+                </ul>
+                <p>Otros perfiles requieren ser valorados para considerarse en un semestre de Curso propedéutico.</p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="perfil-egreso" heading="Perfil de egreso" icon="person-check">
+                <p>La persona egresada contará con bases para:</p>
+                <ul>
+                  <li>Escuchar discurso del paciente con el encuadre analítico.</li>
+                  <li>Posicionarse ante el dolor psíquico del paciente desde los indicadores del inconsciente.</li>
+                  <li>Plantear la cura desde la transferencia.</li>
+                  <li>Vivir la experiencia del proceso analítico propio.</li>
+                  <li>Transmitir didáctica y críticamente los conocimientos de la teoría psicoanalítica de las diferentes corrientes del pensamiento analítico.</li>
+                  <li>Participar activamente en los procesos institucionales de la salud incluyendo los aspectos sociales en instituciones públicas y privadas.</li>
+                  <li>Aplicar los conocimientos de la teoría psicoanalítica en el entendimiento de los fenómenos sociales, las artes y las ciencias.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="campos-trabajo" heading="Campos de trabajo" icon="briefcase">
+                <ul>
+                  <li>En el consultorio.</li>
+                  <li>En la docencia.</li>
+                  <li>En instituciones públicas y privadas que se dediquen a la educación, la salud mental, al tratamiento, la prevención, la investigación.</li>
+                  <li>En grupos de reflexión sobre problemáticas de tipo social.</li>
+                </ul>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+
+          <!-- Segunda columna -->
+          <section class="col-6 col-lg-12">
+            <CiesAccordionGroup id="mtr-psicoterapia-programa-der">
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-der" itemId="horarios" heading="Horarios" icon="clock">
+                <p>Se asiste a seminarios durante los días sábados a partir de las 7:30 horas.</p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-der" itemId="fechas" heading="Fechas" icon="calendar-event">
+                <p class="mb-0">Se abren grupos en marzo y septiembre de cada año (sujeto a cupo y a calendario oficial).</p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-der" itemId="requisitos" heading="Requisitos" icon="list-check">
+                <ul class="mb-0">
+                  <li>Acta de Nacimiento (original y copia) o Documentos Migratorios</li>
+                  <li>Certificado Total de Licenciatura (original y copia)</li>
+                  <li>Título ambos lados (copia). O documento de la escuela de procedencia de que se encuentra en trámite.</li>
+                  <li>Cédula (copia). O documento de la escuela de procedencia de que se encuentra en trámite.</li>
+                  <li>CURP (actualizado)</li>
+                  <li>Currículo Documentado</li>
+                  <li>Autobiografía (dos cuartillas máximo)</li>
+                  <li>Carta de Motivos (manuscrita) (una ó dos cuartillas)</li>
+                  <li>4 Fotografías Tamaño Infantil (blanco y negro ó a color)</li>
+                  <li>Proceso de Admisión</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-der" itemId="becas" heading="Becas" icon="award">
+                <p class="mb-0">CiES ofrece distintos esquemas de becas académicas y apoyos económicos. Pregunta por los requisitos en el área de admisiones.</p>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <!-- Plan de estudios -->
+    <div class="col-12">
+      <section aria-labelledby="plan-estudios-title">
+        <h2 id="plan-estudios-title" class="h5 fw-bold mb-3 cies-rvoe-heading">Plan de estudios</h2>
+
+        <div class="row">
+          <!-- Primera columna -->
+          <section class="col-12 col-lg-6">
+            <CiesAccordionGroup id="mtr-psicoterapia-programa-plan-izq">
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="semestre-1" heading="1er. Semestre" startOpen={true} icon="layers">
+                <ul>
+                  <li>Métodos de Investigación en Clínica.</li>
+                  <li>El Aparato Psíquico: su Estructura y Estructuración.</li>
+                  <li>El Primer Año de Vida.</li>
+                  <li>Entrevista y Diagnóstico.</li>
+                  <li>Antecedentes del Psicoanálisis en la Filosofía.</li>
+                  <li>Estudio de las Neurosis.</li>
+                  <li>Supervisión Colectiva I.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="semestre-2" heading="2° Semestre" icon="layers">
+                <ul>
+                  <li>Antecedentes y Diseños en Investigación.</li>
+                  <li>El Aparato Psíquico y su Funcionamiento.</li>
+                  <li>Desarrollo de la Infancia y la Niñez.</li>
+                  <li>Teoría de las Técnicas de Psicoterapia I.</li>
+                  <li>Filosofía y Psicoanálisis.</li>
+                  <li>Estudio de las Psicosis, los Trastornos del Estado de Ánimo y las Demencias.</li>
+                  <li>Supervisión Colectiva II.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="semestre-3" heading="3er. Semestre" icon="layers">
+                <ul>
+                  <li>Técnicas de Investigación Cualitativa.</li>
+                  <li>Teoría Psicoanalítica de las Relaciones de Objeto.</li>
+                  <li>Desarrollo de la Adolescencia.</li>
+                  <li>Teoría de las Técnicas de Psicoterapia II.</li>
+                  <li>Lingüística y Semiótica.</li>
+                  <li>Trastornos de la Personalidad.</li>
+                  <li>Supervisión Colectiva III.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="semestre-4" heading="4° Semestre" icon="layers">
+                <ul>
+                  <li>El Investigador en la Investigación.</li>
+                  <li>Corrientes Francesas de la Teoría Psicoanalítica.</li>
+                  <li>Desarrollo de la Adultez y Vejez.</li>
+                  <li>Teoría de las Técnicas de Psicoterapia III.</li>
+                  <li>Elaboración del Material para la Tesis.</li>
+                  <li>Trastornos Sexuales y de la Identidad Sexual.</li>
+                  <li>Supervisión Colectiva IV.</li>
+                </ul>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+
+          <!-- Segunda columna -->
+          <section class="col-12 col-lg-6">
+            <CiesAccordionGroup id="mtr-psicoterapia-programa-plan-der">
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="semestre-5" heading="5° Semestre" icon="layers">
+                <ul>
+                  <li>Primer Reporte Escrito de la Investigación.</li>
+                  <li>Corrientes Francesas de la Teoría Psicoanalítica: Lacan.</li>
+                  <li>Teoría de las Técnicas Especiales de Psicoterapia.</li>
+                  <li>Hermenéutica y Psicoanálisis.</li>
+                  <li>Psicopatología Psicosomática.</li>
+                  <li>Supervisión Colectiva V.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="mtr-psicoterapia-programa-izq" itemId="semestre-6" heading="6° Semestre" icon="layers">
+                <ul>
+                  <li>Revisión Final, Redacción y Entrega de la Investigación.</li>
+                  <li>Introducción a las Técnicas de Psicoterapia de Grupo, Pareja y Familia.</li>
+                  <li>Introducción a la Terapéutica Psicofarmacológica.</li>
+                  <li>Psicopatología de la Pareja y la Familia.</li>
+                  <li>Supervisión Colectiva VI.</li>
+                </ul>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cies-instituciones-practicas {
+    padding: 40px 30px;
+  }
+  .cies-list-instituciones li {
+    padding-left: 0.2rem;
+  }
+</style>
