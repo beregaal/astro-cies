@@ -1,0 +1,163 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+
+const seo = {
+  title: "CiES | Convenios",
+  description: "Conoce los convenios del CiES con preparatorias, universidades, instituciones de salud y organismos nacionales e internacionales.",
+  canonical: "/convenios",
+};
+
+const programa = {
+  titulo: "Convenios",
+  descripcion: "Conoce los diferentes convenios que tenemos exclusivamente para ti.",
+  grado: "",
+};
+---
+
+<BaseLayout title={seo.title} description={seo.description} canonical={seo.canonical}>
+  <CiesSeccionProgramaHeader programa={programa} />
+
+  <section class="cies-programa-detalle py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <!-- Institución -->
+          <article class="mb-5">
+            <h2 class="h5 cies-titulo mb-3">Institución especializada en Psicología, Psicoanálisis, Psicomotricidad y Adicciones</h2>
+            <p class="mb-0">
+              A través de estos convenios y afiliaciones fortalecemos la formación académica y el vínculo con instituciones educativas, de salud y de servicio social, tanto nacionales como
+              internacionales.
+            </p>
+          </article>
+
+          <!-- Convenios con preparatorias o bachilleres -->
+          <article class="mb-5">
+            <h3 class="h5 fw-bold mb-3">Convenios con preparatorias o bachilleres</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1">
+                Dirección General de Educación Tecnológica Industrial de la Ciudad de México:
+                <strong> CETIS y CBTIS</strong>
+              </li>
+              <li class="mb-1">
+                <strong>CETIS 2</strong>, <strong>CETIS 5</strong>, <strong>CETIS 10</strong>, <strong>CETIS 52</strong>
+              </li>
+              <li class="mb-1">
+                Conalep <strong>SECOFI</strong>, <strong>Álvaro Obregón I</strong>, <strong>Álvaro Obregón II</strong>, <strong>Xochimilco</strong>
+              </li>
+              <li class="mb-1">
+                Colegio <strong>Avant</strong>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Convenios con universidades nacionales e internacionales -->
+          <article class="mb-5">
+            <h3 class="h5 fw-bold mb-3">Convenios con universidades nacionales e internacionales</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1">
+                Asociación Autónoma del Personal Académico de la UNAM (<strong>AAPAUNAM</strong>)
+              </li>
+              <li class="mb-1">
+                Universidad Autónoma Metropolitana (<strong>UAM</strong>)
+              </li>
+              <li class="mb-1">Universidad Autónoma de Chihuahua</li>
+              <li class="mb-1">Centro de Estudios Superiores NET</li>
+              <li class="mb-1">Universidad de Morón, Buenos Aires, Argentina</li>
+            </ul>
+          </article>
+
+          <!-- Convenios con instituciones -->
+          <article class="mb-5">
+            <h3 class="h5 fw-bold mb-3">Convenios con instituciones</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1">
+                Asociación para la Intervención Psicológica y Promoción de la Salud A.C. (<strong>AIPPS</strong>)
+              </li>
+              <li class="mb-1">
+                Centro de Atención en Psicología y Psicoanálisis (<strong>CAPP</strong>)
+              </li>
+              <li class="mb-1">
+                Centro de Formación y Selección México, <strong>ZARA</strong>
+              </li>
+              <li class="mb-1">
+                Centros de Integración Juvenil (<strong>CIJ</strong>)
+              </li>
+              <li class="mb-1">Clínica Especializada Condesa</li>
+              <li class="mb-1">Federación de Hemofilia de la República Mexicana, A.C.</li>
+              <li class="mb-1">Fundación Amparo I.A.P.</li>
+              <li class="mb-1">
+                Hospital Psiquiátrico Infantil “<strong>Juan N. Navarro</strong>”
+              </li>
+              <li class="mb-1">
+                Instituto Mexicano del Seguro Social (<strong>IMSS</strong>)
+              </li>
+              <li class="mb-1">
+                Instituto Tecnológico de la Construcción (<strong>ITC</strong>)
+              </li>
+              <li class="mb-1">Patronato Francisco Méndez I.A.P.</li>
+              <li class="mb-1">
+                <strong>SAGARPA</strong>
+              </li>
+              <li class="mb-1">
+                Secretaría de Salud del Gobierno del Distrito Federal (<strong>SSDF</strong>)
+              </li>
+              <li class="mb-1">
+                Sistema Nacional DIF (<strong>SNDIF</strong>)
+              </li>
+              <li class="mb-1">Sociedad Mexicana de Fisiatría</li>
+            </ul>
+          </article>
+
+          <!-- Afiliaciones -->
+          <article class="mb-4">
+            <h3 class="h5 fw-bold mb-3">Afiliaciones</h3>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1">Consejo Mexicano de Psicoterapia y Psicoanálisis</li>
+              <li class="mb-1">Federación Mexicana de Salud Mental</li>
+              <li class="mb-1">Federación Panamericana de Psicomotricidad</li>
+              <li class="mb-1">
+                Registro Nacional de Empresas e Instituciones Científicas y Tecnológicas (<strong>RENIECyT</strong> – CONACyT). Número de inscripción definitiva:
+                <strong>1804302</strong>
+              </li>
+              <li class="mb-1">
+                World Federation for Mental Health (<strong>WFMH</strong>)
+              </li>
+            </ul>
+          </article>
+
+          <!-- Logos y reconocimientos -->
+          <article class="mb-5">
+            <h3 class="h5 fw-bold mb-4">Reconocimientos y documentos institucionales</h3>
+
+            <div class="row g-4">
+              <div class="col-12 col-md-4">
+                <a href="/images/convenios/Conv.jpg" data-lightbox="convenios">
+                  <div class="border rounded shadow-sm p-2 bg-white h-100">
+                    <img src="/images/convenios/Conv.jpg" alt="Logotipos de instituciones con convenio CiES" class="img-fluid w-100 rounded" />
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <a href="/images/convenios/IMG_1847.jpg" data-lightbox="convenios">
+                  <div class="border rounded shadow-sm p-2 bg-white h-100">
+                    <img src="/images/convenios/IMG_1847.jpg" alt="Mención honorífica UNAM al Colegio Internacional de Educación Superior" class="img-fluid w-100 rounded" />
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <a href="/images/convenios/Reconocimiento.jpeg" data-lightbox="convenios">
+                  <div class="border rounded shadow-sm p-2 bg-white h-100">
+                    <img src="/images/convenios/Reconocimiento.jpeg" alt="Reconocimiento Centros de Integración Juvenil al Colegio Internacional de Educación Superior" class="img-fluid w-100 rounded" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

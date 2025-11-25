@@ -1,0 +1,366 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+
+// OBJETO FAKE PARA EL HEADER
+const programa = {
+  titulo: "Historia",
+  descripcion: "Formando de manera continua profesionales en Psicología, Psicoanálisis, Psicomotricidad y Adicciones.",
+  grado: "",
+};
+
+// SEO
+const pageTitle = "CiES | Historia del CiES";
+const pageDescription =
+  "Conoce la trayectoria del CiES desde 1998: su filosofía, misión, visión, valores y los hitos académicos que lo han consolidado como institución líder en Psicología, Psicoanálisis, Psicomotricidad y Adicciones.";
+const pageUrl = "https://cies.online/historia";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} canonical={pageUrl}>
+  <!-- Encabezado reutilizado -->
+  <CiesSeccionProgramaHeader programa={programa} />
+
+  <!-- Contenido -->
+  <main class="container py-5">
+    <!-- Filosofía -->
+    <section class="mb-5">
+      <h2 class="cies-titulo mb-4">Institución especializada en Psicología, Psicoanálisis, Psicomotricidad y Adicciones</h2>
+
+      <article class="mb-4">
+        <h3 class="h5 fw-bold mb-2">Filosofía institucional</h3>
+        <p>Dentro de su filosofía el CiES alberga como misión, visión y valores lo siguiente.</p>
+      </article>
+
+      <article class="mb-4">
+        <h3 class="h5 fw-bold mb-2">Misión</h3>
+        <p>Formación académica de profesionistas especializados en salud mental, preparados con un perfil humanista y con los conocimientos científicos más avanzados.</p>
+      </article>
+
+      <article class="mb-4">
+        <h3 class="h5 fw-bold mb-2">Visión</h3>
+        <p>Ser factor de cambio en el país, formando profesionistas que participen de manera activa en el bienestar emocional de las personas, reforzando el tejido social.</p>
+      </article>
+
+      <article class="mb-4">
+        <h3 class="h5 fw-bold mb-2">Valores</h3>
+        <p>Siendo una institución con enfoque humanista, alberga seis valores esenciales: igualdad, solidaridad, respeto, honestidad, compromiso y justicia.</p>
+      </article>
+    </section>
+
+    <!-- Línea de tiempo -->
+    <section class="mb-5">
+      <h2 class="cies-titulo mb-4">Línea de tiempo</h2>
+      <p class="mb-4">
+        Desde su creación en 1998, el CiES ha desarrollado una trayectoria académica integral para formar profesionales capaces de promover el bienestar emocional en la comunidad. Aquí presentamos un
+        registro histórico de las actividades más relevantes.
+      </p>
+
+      <div class="cies-timeline">
+        <!-- Cada bloque se vuelve un item -->
+        <!-- 1998 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">1998</span>
+          <p>
+            Fundación del Colegio Internacional de Educación Superior (CiES), creado por un grupo de psicoanalistas, psicoterapeutas y psicomotricistas conducidos por el doctor Jaime F. Ayala
+            Villarreal y la doctora Concepción Rabadán. Su objetivo es proporcionar una formación profesional sólida con un sentido humanista a los futuros profesionistas en salud mental.
+          </p>
+        </div>
+
+        <!-- 2001 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2001</span>
+          <p>
+            Obtención de los reconocimientos de validez oficial por parte de la Secretaría de Educación Pública, después de la elaboración de los programas de Licenciatura en Psicología y las
+            Maestrías en Psicomotricidad, Psicoterapia Psicoanalítica y Psicoterapia de las Adicciones.
+          </p>
+        </div>
+
+        <!-- 2002 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2002</span>
+          <p>
+            Organización del Primer Congreso Internacional: <em>Observación, Detección e Intervención Temprana en Bebés: Una Visión Interdisciplinaria.</em>
+          </p>
+        </div>
+
+        <!-- 2003 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2003</span>
+          <p>
+            Organización del Segundo Congreso Internacional: <em>Psicología, Psicoterapia y Psicomotricidad: Estudios Interdisciplinarios</em>, con la participación de Pedro Pablo Berruezo (España).
+          </p>
+          <p>
+            Organización del curso–taller <em>Los Procesos del Desarrollo del Tono y de la Emoción</em>, impartido por Félix Fernández Vidal (España).
+          </p>
+        </div>
+
+        <!-- 2004 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2004</span>
+          <p>
+            Seminario <em>Estructuración Psíquica: el Narcisismo en la Formación del Yo y los Ideales</em>, impartido por la doctora Myrta Casas de Pereda (Uruguay). Incluyó supervisiones clínicas en
+            el propio CiES.
+          </p>
+        </div>
+
+        <!-- 2005 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2005</span>
+          <p>
+            Organización del Primer Congreso Mundial de Psicomotricidad: <em>Posmodernidad y Psicomotricidad</em>, con colaboración de instituciones nacionales e internacionales como FES Iztacala,
+            IPN, CONADIC, entre otras.
+          </p>
+          <p>Participación de especialistas internacionales: Pablo L. Bottini, Daniel Calmels, Vitor da Fonseca, André Lapierre, Juan Mila, Robert Rigal, Miguel Sassano y Leopoldo Vieyra.</p>
+        </div>
+
+        <!-- 2006 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2006</span>
+          <p>Inicio de diplomados con temáticas como Psicomotricidad, Pruebas Psicológicas, Neuropsicología, Evaluación temprana y Clínica Psicoanalítica.</p>
+          <p>
+            Congreso Internacional <em>Actualidades en Psicomotricidad</em> en el Centro Médico Nacional Siglo XXI.
+          </p>
+          <p>
+            Primer Congreso Psicoanalítico del CiES: <em>Las Prácticas Psicoanalíticas en el México Contemporáneo</em>.
+          </p>
+          <p>
+            Congreso Internacional <em>Convergencias en Psicomotricidad</em> en Guanajuato, México.
+          </p>
+          <p>
+            Diplomado <em>Las enseñanzas de Lacan</em>, con doctores Modesto Garrido, Adalberto Levi, Lucía Rangel y Marcelo Pasternac.
+          </p>
+        </div>
+
+        <!-- 2007 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2007</span>
+          <p>Visita del doctor André Green. Impartió conferencias en la Asociación Psicoanalítica de México, Universidad Iberoamericana y la Facultad de Psicología de la UNAM.</p>
+          <p>
+            Impartición de seminarios <em>Actualidad y Futuro del Psicoanálisis</em> y <em>Encuentro entre Psicoanalistas</em>.
+          </p>
+        </div>
+
+        <!-- 2008 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2008</span>
+          <p>Obtención del RVOE para el Doctorado en Ciencias del Desarrollo Humano y el Doctorado en Investigación Psicoanalítica.</p>
+        </div>
+
+        <!-- 2009 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2009</span>
+          <p>
+            Conferencia <em>Nuestro Lado Oscuro. Psicoanálisis de la Perversión</em>, impartida por Élizabeth Roudinesco en el auditorio Wilberto Cantón (CDMX).
+          </p>
+        </div>
+
+        <!-- 2010 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2010</span>
+          <p>El CiES obtiene su registro RENIECyT por parte del CONACyT como institución dedicada a la investigación y desarrollo científico.</p>
+        </div>
+
+        <!-- 2011 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2011</span>
+          <p>Segunda visita de Luis Hornstein, impartiendo cursos y supervisiones clínicas.</p>
+          <p>
+            Publicación del libro <em>Green, A. (2011). Conferencias en México. Vol. 1.</em>
+          </p>
+        </div>
+
+        <!-- 2012 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2012</span>
+          <p>
+            Organización del Congreso <em>Psicoterapia de las Adicciones y las Compulsiones</em>.
+          </p>
+          <p>
+            Coloquio sobre Melancolía, en colaboración con la revista <em>Espectros del Psicoanálisis</em>.
+          </p>
+          <p>Primer Congreso de Centros de Atención a la Comunidad de Instituciones de Educación Superior.</p>
+          <p>
+            Publicación del libro <em>Green, A. (2012). Conferencias en México. Vol. 2.</em>
+          </p>
+        </div>
+
+        <!-- 2013 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2013</span>
+          <p>Creación del cine club con enfoque en temáticas psicológicas, con motivo del 15 aniversario.</p>
+        </div>
+
+        <!-- 2014 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2014</span>
+          <p>Inicio de los cursos dominicales de actualización (vigentes hasta la fecha).</p>
+        </div>
+
+        <!-- 2015 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2015</span>
+          <p>
+            Lanzamiento de las revistas electrónicas <em>Letra en Psicoanálisis</em> y <em>Psicomotricidad: Movimiento y Emoción</em>.
+          </p>
+          <p>Visita de Vítor da Fonseca (Portugal), impartiendo curso–taller de evaluación psicomotriz.</p>
+          <p>Mención honorífica de la Secretaría de Servicios a la Comunidad (UNAM) en el Encuentro del Mañana.</p>
+        </div>
+
+        <!-- 2016 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2016</span>
+          <p>Coloquio sobre TDAH e Inhibición Psicomotriz, con participación remota del Dr. Esteban Levin y especialistas internacionales.</p>
+        </div>
+
+        <!-- 2017 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2017</span>
+          <p>
+            Congreso <em>Malestar, Civilización y Subjetividad: Psicoanálisis y Psicomotricidad</em>.
+          </p>
+          <p>RVOE para la Maestría en Psicoterapia Psicoanalítica con Niños, Púberes y Adolescentes.</p>
+          <p>Diplomado en Psicodiagnóstico Clínico (Niños, Adolescentes y Adultos).</p>
+          <p>Participación del CiES en brigadas de apoyo psicológico tras el sismo del 19 de septiembre.</p>
+          <p>Convenio con AAPAUNAM para becas especiales.</p>
+        </div>
+
+        <!-- 2018 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2018</span>
+          <p>
+            Conferencia <em>La Psicomotricidad en la Educación</em>, impartida por Philippe Lemenu (Bélgica).
+          </p>
+          <p>Obtención de constancia definitiva RENIECyT (clave 1804302).</p>
+        </div>
+
+        <!-- 2019 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2019</span>
+          <p>
+            Taller <em>Del cuerpo a la Escritura</em>, impartido por Nayeli Díaz Bolio.
+          </p>
+          <p>Inauguración del Instituto de Educación Superior Internacional (IESI) para cursos en línea.</p>
+          <p>
+            Seminario <em>El Padre. Lacan interroga a Freud</em>.
+          </p>
+          <p>
+            Taller sobre codependencia <em>Falta de Padre y Anhelo de Madre</em>.
+          </p>
+          <p>Curso dominical sobre Patología Dual en las Adicciones impartido por la directora de Centros de Integración Juvenil.</p>
+          <p>Participación internacional de Juan Manuel Martínez (Argentina).</p>
+          <p>Primer Encuentro de la Publicación Psicoanalítica.</p>
+          <p>
+            Presentación del libro <em>Manual de Neuropsicología</em> (Dr. Jaime Ayala Villarreal).
+          </p>
+          <p>
+            Ponencia <em>Los Efectos Traumáticos de la Violencia Social</em> (Francia).
+          </p>
+          <p>Participación en el 20° Congreso Internacional en Adicciones.</p>
+          <p>
+            Diplomado <em>Psicología del Delito. Estudio de la Mente Criminal</em>.
+          </p>
+          <p>Expansión del CACiES a guarderías y empresas en CDMX.</p>
+        </div>
+
+        <!-- 2020 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2020</span>
+          <p>Migración de actividades académicas a modalidad virtual por SARS-CoV-2.</p>
+          <p>
+            Congreso Mundial <em>Actualidad y Futuro de la Psicomotricidad</em> vía plataforma CiES.
+          </p>
+          <p>
+            Segundo Encuentro de la Publicación Psicoanalítica, celebrando
+            <em>Más allá del principio del placer</em> (Freud).
+          </p>
+        </div>
+
+        <!-- 2021 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2021</span>
+          <p>Continuación del programa académico virtual.</p>
+          <p>Publicación del Volumen 7 de las revistas electrónicas del CiES.</p>
+          <p>
+            Tercer Encuentro de la Publicación Psicoanalítica, celebrando
+            <em>Psicología de las masas y análisis del yo</em> (Freud).
+          </p>
+        </div>
+
+        <!-- 2022 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2022</span>
+          <p>Continuidad de los cursos dominicales en línea.</p>
+          <p>Publicación de los Volúmenes 8 (No. 1 y 2) de las revistas del CiES.</p>
+          <p>Cuarto Encuentro de la Publicación Psicoanalítica (retomado de manera presencial).</p>
+          <p>Primer Congreso de Psicología de Enlace entre disciplinas (en línea) con colaboración de Red INPHEI.</p>
+        </div>
+
+        <!-- 2023 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2023</span>
+          <p>Celebración del 25 aniversario del CiES.</p>
+          <p>Diez años ininterrumpidos de cursos dominicales.</p>
+          <p>Publicación del Volumen 9 (No. 1 y 2) de las revistas del CiES, con más de 22,625 impresiones.</p>
+          <p>Quinto Encuentro de la Publicación Psicoanalítica con 61 autores presenciales y en línea.</p>
+        </div>
+
+        <!-- 2024 -->
+        <div class="cies-timeline-item">
+          <span class="cies-timeline-year">2024</span>
+          <p>La Sociedad de Alumnos organiza actividades como Día de Muertos y Navidad; creación del podcast de CiES en Spotify y contenido digital.</p>
+          <p>Oficialización de Joffi como mascota institucional.</p>
+          <p>Celebración del 2º Congreso de la Licenciatura en Psicología.</p>
+          <p>Publicación de los Volúmenes 10 (No. 1 y 2) de las revistas académicas.</p>
+          <p>La Maestría en Psicoterapia Psicoanalítica y el Doctorado en Investigación Psicoanalítica impulsan el 7º Encuentro Internacional de la Publicación Psicoanalítica.</p>
+          <p>Los cursos dominicales cumplen once años de impartirse de manera ininterrumpida.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "Historia del Colegio Internacional de Educación Superior",
+      "description": "Línea de tiempo, misión, visión y valores del CiES desde 1998.",
+      "url": "https://cies.online/historia",
+      "publisher": {
+        "@type": "CollegeOrUniversity",
+        "name": "Colegio Internacional de Educación Superior"
+      }
+    }
+  </script>
+</BaseLayout>
+
+<style>
+  .cies-timeline {
+    border-left: 3px solid var(--cies-green-primary);
+    padding-left: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .cies-timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .cies-timeline-year {
+    font-weight: bold;
+    color: var(--cies-green-primary);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .cies-timeline-item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--cies-green-primary);
+    border-radius: 50%;
+    position: absolute;
+    left: -1.9rem;
+    top: 4px;
+  }
+</style>

@@ -80,19 +80,3 @@
 .cies-programa-detalle p {
       line-height: 1.7;
     }
-
-    .cies-rvoe-heading {
-      position: relative;
-      padding-left: 1rem;
-    }
-
-    .cies-rvoe-heading::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.2rem;
-      bottom: 0.2rem;
-      width: 4px;
-      border-radius: 999px;
-      background-color: var(--cies-green-600, #00a859);
-    }

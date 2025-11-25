@@ -92,6 +92,9 @@ const {
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="/vendor/lightbox/css/lightbox.min.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <CiesNavbar />
@@ -103,6 +106,24 @@ const {
     </div>
 
     <CiesFooter />
+    <!-- Bootstrap JS -->
     <script src="/vendor/bootstrap.bundle.min.js" defer></script>
+    <!-- Lightbox JS -->
+    <script src="/vendor/lightbox/lightbox-plus-jquery.min.js" defer></script>
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.lightbox) {
+          // @ts-ignore
+          window.lightbox.option({
+            alwaysShowNavOnTouchDevices: false,
+            albumLabel: 'Foto %1 de %2',
+            showImageNumberLabel: true,
+            positionFromTop: 100,
+            resizeDuration: 300,
+            wrapAround: true
+          });
+        }
+      });
+    </script>
   </body>
 </html>
