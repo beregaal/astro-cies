@@ -35,8 +35,13 @@ body {
 }
 
 a {
+  color: var(--cies-green-primary);
   cursor: pointer;
   text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--cies-green-acent);
 }
 
 footer a {

@@ -1,0 +1,131 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+
+// SEO
+const pageTitle = "CiES | ONU – CiES";
+const pageDescription = "Objetivos de desarrollo sostenible que el CiES apoya a cumplir mediante educación de calidad, salud y bienestar, trabajo decente e igualdad de género.";
+
+const programa = {
+  titulo: "Desarrollo Sostenible",
+  descripcion: "Objetivos de desarrollo sostenible que ayudamos a cumplir en el CiES",
+  grado: "",
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <!-- Encabezado reutilizado -->
+  <CiesSeccionProgramaHeader programa={programa} />
+
+  <!-- Contenido -->
+  <section class="container py-5 cies-programa-detalle">
+    <div class="row g-5">
+      <div class="col-12">
+        <!-- <h2 class="h4 fw-bold mb-4">Objetivos de desarrollo sostenible que ayudamos a cumplir en el CiES</h2> -->
+
+        <h2 class="fw-semibold mb-2">¿Qué son los objetivos de desarrollo sostenible?</h2>
+        <a href="/images/ods/ods0.png" data-lightbox="ods" data-title="ODS 0 – Objetivos">
+          <img src="/images/ods/ods0.png" alt="ODS Objetivos" class="rounded mb-3" />
+        </a>
+
+        <p>
+          Ante la rápida degradación de los ecosistemas a causa de la actividad económica, así como por la falta de una distribución equitativa en los ingresos de la población a nivel mundial, en 1987
+          surgió el concepto Desarrollo sostenible.
+        </p>
+
+        <p>Este concepto hace referencia al desarrollo económico, social y medio ambiental que satisface las necesidades actuales sin comprometer la capacidad de las futuras generaciones.</p>
+
+        <p>
+          La Organización de las Naciones Unidas diseñó una estrategia que propone la explotación mesurada de los recursos naturales, garantizando el bienestar social, la protección al medio ambiente
+          y el crecimiento económico de los sectores marginados.
+        </p>
+
+        <p>
+          Por iniciativa propia, el CiES se unió a este proyecto internacional con el objetivo de formar profesionales sensibles y preocupados por el medio ambiente y un futuro sustentable. Para tal
+          fin, ha implementado cuatro puntos:
+        </p>
+
+        <ul>
+          <li>Brindar una formación académica de calidad con enfoque humanista.</li>
+          <li>Ofrecer atención psicológica a poblaciones vulnerables y de escasos recursos.</li>
+          <li>Promover el trabajo digno y el crecimiento económico.</li>
+          <li>Fomentar la igualdad de género con un equipo académico igualitario.</li>
+        </ul>
+
+        <!-- BLOQUE 1 -->
+        <article class="my-5">
+          <h3 class="h5 fw-bold mb-3">1.- Educación de calidad</h3>
+
+          <p class="fst-italic">“La educación es la base para mejorar nuestra vida y el desarrollo sostenible...” (ONU).</p>
+
+          <a href="/images/ods/ods4.jpg" data-lightbox="ods" data-title="ODS 4 – Educación de calidad">
+            <img src="/images/ods/ods4.jpg" alt="ODS Educación de calidad" class="img-fluid rounded mb-3" />
+          </a>
+
+          <p>En el CiES formamos constantemente profesionistas de calidad, con colegiaturas accesibles, becas y variedad de horarios para que nadie se quede sin la oportunidad de estudiar.</p>
+          <p>Muchos de nuestros estudiantes regresan a enseñar, creando un ciclo de educación de calidad. También contamos con cursos, diplomados y congresos para formación continua.</p>
+        </article>
+
+        <!-- BLOQUE 2 -->
+        <article class="my-5">
+          <h3 class="h5 fw-bold mb-3">2.- Salud y Bienestar</h3>
+
+          <p class="fst-italic">“Garantizar una vida sana y promover el bienestar de todos...” (ONU).</p>
+
+          <a href="/images/ods/ods3.jpg" data-lightbox="ods" data-title="ODS 3 – Salud y bienestar">
+            <img src="/images/ods/ods3.jpg" alt="ODS Salud y Bienestar" class="img-fluid rounded mb-3" />
+          </a>
+
+          <p>En el CiES no sólo formamos profesionales de la salud mental, sino que contamos con el CaCiES: un centro de atención psicológica, psicoanalítica y psicomotriz accesible y de calidad.</p>
+        </article>
+
+        <!-- BLOQUE 3 -->
+        <article class="my-5">
+          <h3 class="h5 fw-bold mb-3">3.- Trabajo decente y crecimiento económico</h3>
+
+          <a href="/images/ods/ods8.jpg" data-lightbox="ods" data-title="ODS 8 – Trabajo decente y crecimiento económico">
+            <img src="/images/ods/ods8.jpg" alt="ODS Trabajo decente" class="img-fluid mb-3" />
+          </a>
+
+          <p>
+            Obtener educación superior en el CiES brinda a nuestros alumnos mejores oportunidades de crecimiento económico y empleo. Además, más de 80 personas entre maestros y personal administrativo
+            encuentran aquí un trabajo digno.
+          </p>
+        </article>
+
+        <!-- BLOQUE 4 -->
+        <article class="my-5">
+          <h3 class="h5 fw-bold mb-3">4.- Igualdad de género</h3>
+
+          <a href="/images/ods/ods5.jpg" data-lightbox="ods" data-title="ODS 5 – Igualdad de género">
+            <img src="/images/ods/ods5.jpg" alt="ODS Igualdad de género" class="img-fluid mb-3" />
+          </a>
+
+          <p>La mayoría de nuestro cuerpo estudiantil está integrado por mujeres profesionistas. Sin embargo, en el CiES hombres y mujeres cuentan con las mismas oportunidades de estudio y empleo.</p>
+
+          <p>
+            Para conocer más sobre los ODS visite:
+            <a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/" target="_blank">
+              https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
+            </a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "ONU – CiES",
+      "description": "Página informativa sobre los Objetivos de Desarrollo Sostenible que el CiES apoya mediante educación, salud, trabajo e igualdad.",
+      "url": "https://cies.online/onu-cies",
+      "publisher": {
+        "@type": "CollegeOrUniversity",
+        "name": "Colegio Internacional de Educación Superior"
+      }
+    }
+  </script>
+</BaseLayout>
