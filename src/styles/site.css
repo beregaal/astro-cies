@@ -69,14 +69,20 @@ footer a:hover {
 
 
 .cies-btn-primary {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: var(--cies-primary, #00a859);
   border-color: var(--cies-primary, #00a859);
   border-radius: 999px;
   font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .cies-btn-primary:hover,
 .cies-btn-primary:focus {
+  color: #fff;
   background-color: #0c4a23;
   border-color: #0c4a23;
 }

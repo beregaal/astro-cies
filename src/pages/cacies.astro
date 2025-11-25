@@ -1,0 +1,194 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+
+// SEO
+const pageTitle = "CiES | CACiES";
+const pageDescription = "Atención psicológica, psicodinámica, psicomotricidad, orientación vocacional y servicios clínicos para la comunidad. Conoce los servicios del CACiES.";
+
+// Datos del encabezado
+const programa = {
+  titulo: "CACiES",
+  descripcion: "Centro de Atención a la Comunidad del CiES",
+  grado: "",
+};
+
+// Contenido estructurado por secciones
+const data = {
+  intro: {
+    descripcion: `
+Institución especializada en **Psicología, Psicoanálisis, Psicomotricidad y Adicciones**.
+Aplicación de **Prueba de Orientación Vocacional Profesional Sin Costo**.
+    `,
+  },
+
+  contacto: {
+    email: "centrodeatencion@cies-mex.edu.mx",
+    horario: "Lunes a Sábado 10:00 – 17:00 hrs",
+  },
+
+  servicios: [
+    "Psicoterapia psicomotriz",
+    "Psicoterapia Psicoanalítica",
+    "Test Vocacional Online",
+    "Psicodiagnóstico Infantil Online",
+    "Valoración neuropsicológica",
+    "Valoración Psicomotriz",
+    "Asesoría en Currículum Vitae",
+    "Escuela para padres",
+    "Talleres para alumnos y docentes (atención a escuelas)",
+    "Acompañamiento Terapéutico / Sombra Monitor (en escuelas)",
+    "Atención a empresas",
+  ],
+
+  videos: [
+    { t: "Orientación vocacional como garantía de éxito", url: "https://www.youtube.com/watch?v=M12tx4o10dc&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=10" },
+    { t: "7 síntomas para detectar la depresión", url: "https://www.youtube.com/watch?v=HLN9SXgguNc&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=15" },
+    { t: "Infidelidad", url: "https://youtu.be/tCfKVy_tugo" },
+    { t: "5 maneras de ayudar a tu hijo a ser sociable", url: "https://www.youtube.com/watch?v=fHHamPGrx1Q&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=1" },
+    { t: "Estimulación temprana con Piaget", url: "https://www.youtube.com/watch?v=6z9ZFtxS2cU&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=2" },
+    { t: "5 hábitos del sueño para que los niños sean más exitosos", url: "https://www.youtube.com/watch?v=x0EkM6Ot46A&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=3" },
+    { t: "Cómo entender al adolescente  y no morir en el intento", url: "https://www.youtube.com/watch?v=u01MtseuuB4&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=4" },
+    { t: "Terror a los números", url: "https://www.youtube.com/watch?v=ANM8AUqt_Xk&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=5" },
+    { t: "7 factores de riesgo en la vida del adolescente", url: "https://www.youtube.com/watch?v=tFljuNaoDIQ&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=6" },
+    { t: "6 beneficios de tener un pasatiempo", url: "https://www.youtube.com/watch?v=RlBTcK8mmaE&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=7" },
+    { t: "¿Cuándo duermes realmente descansas?", url: "https://www.youtube.com/watch?v=garmaXbIt20&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=11" },
+    { t: "6 acciones para un envejecimiento activo", url: "https://www.youtube.com/watch?v=dKscfsqXFoE&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=12" },
+    { t: "6 mitos del envejecimiento", url: "https://www.youtube.com/watch?v=yFXcBXUTFWw&list=PLErYIkzPVJz-O-pb8gQ87gOym6lh-kcwq&index=13" },
+  ],
+
+  pandemia: [
+    "Carta previa de solicitud de atención emitida por la escuela o institución.",
+    "Revisión del caso y asignación de psicoterapeuta.",
+    "Comunicación con la institución o escuela para completar registro.",
+  ],
+
+  serviciosOnline: [
+    "Aplicación de Test Vocacional para adolescentes o adultos; edad aproximada de 17 años o más que estén próximos a cursar la universidad y/o tengan el interés. Es gratuita y con registro previo.",
+    "Aplicación del Psicodiagnóstico Infantil online para niños de 6 a 12 años, con solicitud o carta previa de la escuela o institución, además de la autorización y conocimiento de los padres o tutores.",
+    "Valoración psicomotriz desde bebés hasta adultos mayores, permitiendo detectar si existe algún daño orgánico o problema emocional que impida un desarrollo saludable.",
+    "Asesoría en Currículum Vitae. Debido a la situación derivada de la pandemia, CACiES brinda este servicio sin costo; para acceder se requiere registro telefónico o por correo electrónico, ofreciendo asesoría personalizada.",
+    "Escuela para padres y/o Talleres para Grupo con un tema previamente solicitado y registrado; se brindan a través de la plataforma virtual del CiES.",
+  ],
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <CiesSeccionProgramaHeader programa={programa} />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "Centro de Atención a la Comunidad del CiES (CACiES)",
+      "description": "{pageDescription}",
+      "url": "https://cies.online/cacies",
+      "department": {
+        "@type": "Psychiatric",
+        "medicalSpecialty": ["Psychology", "Psychoanalysis", "Psychomotricity", "Addictions"]
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "centrodeatencion@cies-mex.edu.mx",
+        "contactType": "customer service",
+        "hoursAvailable": "Mo-Sa 10:00-17:00"
+      }
+    }
+  </script>
+
+  <section class="container py-5 cies-programa-detalle">
+    <!-- Intro -->
+    <!-- <article class="mb-5">
+      <p class="lead">
+        {data.intro.descripcion}
+      </p>
+    </article> -->
+
+    <!-- Cuwstionario -->
+    <article class="mb-5">
+      <h2 class="h5 fw-bold mb-3 cies-titulo">Cuestionario de Desgaste emocional</h2>
+      <p>
+        Este cuestionario facilita identificar a l@s jóvenes que cursan la preparatoria o la universidad, indicadores de desgaste o cansancio emocional, y de esta manera poder acudir con un
+        psicoterapeuta para revisar su condición de vida, y así evitar llegar a manifestar stress emocional. Si estás interesad@, te podemos enviar el cuestionario de desgaste emocional que se
+        contesta en 5 o 10 minutos. Únicamente envía un correo a promocion@cies.online solicitando el cuestionario. El resultado te llegará a tu correo.
+      </p>
+    </article>
+
+    <!-- Contacto -->
+    <article class="mb-5">
+      <h2 class="h5 fw-bold mb-3 cies-titulo">Centro de Atención</h2>
+      <p><strong>Email:</strong> {data.contacto.email}</p>
+      <p><strong>Horario:</strong> {data.contacto.horario}</p>
+    </article>
+
+    <!-- Servicios -->
+    <article class="mb-5">
+      <h2 class="h5 fw-bold mb-3 cies-titulo">Servicios</h2>
+      <p>
+        La vida nos enfrenta a diferentes experiencias, unas las resolvemos exitosamente, otras nos causan un nivel de sufrimiento que, en general, somos capaces de manejar sin mayor dificultad, y
+        otras por más que las queremos resolver no logramos conseguirlo. Cuando estas situaciones nos desbordan por una intensidad, una duración excesiva, resulta conveniente consultar con un
+        profesional para evitarnos un sufrimiento más allá del que requiere cualquier proceso de crecimiento personal o familiar en la vida.
+      </p>
+      <p>
+        El Colegio Internacional de Educación Superior CiES en su visión por ser líder en la formación, atención e investigación en psicología, psicomotricidad, psicoanálisis y adicciones cuenta con
+        Centro de Atención a la Comunidad (CACiES).
+      </p>
+      <p>Comprometidos en nuestra labor como clínica y actualizados en los temas que demanda la sociedad, es que hacemos mención de nuestros servicios a la comunidad, interesados y solicitantes:</p>
+      <ul>
+        {data.servicios.map((s) => <li>{s}</li>)}
+      </ul>
+
+      <p>
+        Además de atender problemas como déficit de atención, de conducta, de aprendizaje, de lenguaje, orientación vocacional, angustia, fobias, relaciones de pareja, violencia intrafamiliar, duelos,
+        problemas psicomotrices, adicciones, solo por mencionar algunos.
+      </p>
+      <p>
+        El programa <strong>“Psicodiagnóstico Clínico”</strong> y <strong>“Valoración Neuropsicológica”</strong>, consiste en la aplicación de una batería de pruebas psicológicas ó neuropsicológicas,
+        para realizar una evaluación psicodiagnóstica a quien lo requiera, con el objetivo de valorar qué opción terapéutica es más adecuada para su desarrollo físico, emocional y mental.
+      </p>
+      <p>Además se realiza “Orientación Vocacional” para adolescentes y adultos, con el objetivo de que puedan elegir una carrera profesional de acuerdo a sus intereses y aptitudes.</p>
+      <p>
+        A través de la vinculación con diversas Instituciones Educativas, el <strong>CACiES</strong> lleva programas de pláticas y talleres, según las solicitudes y necesidades de las escuelas e instituciones.
+      </p>
+    </article>
+
+    <!-- Videos -->
+    <article class="mb-5">
+      <h2 class="h5 fw-bold mb-3 cies-titulo">Videos recomendados</h2>
+      <ul>
+        {
+          data.videos.map((v) => (
+            <li>
+              {v.t}: <a href={v.url} target="_blank">aquí</a>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+
+    <!-- Servicios Online -->
+    <article class="mb-5">
+      <h2 class="h5 fw-bold mb-3 cies-titulo">Servicios Online</h2>
+      <p>También nos es grato comunicarle que extendimos nuestros servicios online:</p>
+
+      <ul>
+        {data.serviciosOnline.map((item) => <li>{item}</li>)}
+      </ul>
+    </article>
+
+    <!-- Procedimiento pandemia -->
+    <article class="mb-5">
+      <h2 class="h5 fw-bold mb-3 cies-titulo">Procedimiento actual</h2>
+      <ol>
+        {data.pandemia.map((p) => <li>{p}</li>)}
+      </ol>
+    </article>
+
+    <!-- Cierre -->
+    <article class="mb-5">
+      <h2 class="h5 fw-bold mb-3 cies-titulo">Estamos para ayudarte</h2>
+      <p>Agradecemos tu atención. Si lo deseas, déjanos tus datos y nos pondremos en contacto contigo.</p>
+    </article>
+  </section>
+</BaseLayout>

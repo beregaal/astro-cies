@@ -1,6 +1,14 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
 import docentes from "@data/docentes.json";
+
+// Datos del encabezado
+const programa = {
+  titulo: "Equipo Académico",
+  descripcion: "Conoce a las y los especialistas que integran nuestros programas de licenciatura, maestría y formación continua. Haz clic en la foto de cada docente para ver su trayectoria académica.",
+  grado: "",
+};
 ---
 
 <BaseLayout
@@ -15,16 +23,16 @@ import docentes from "@data/docentes.json";
     ]
   }}
 >
-
+  <CiesSeccionProgramaHeader programa={programa} />
   <section class="container py-5">
-    <header class="text-center mb-5">
+    <!-- <header class="text-center mb-5">
       <h1 class="cies-titulo">Equipo Académico</h1>
       <p class="lead text-muted mx-auto cies-docentes-intro">
         Conoce a las y los especialistas que integran nuestros programas de
         licenciatura, maestría y formación continua. Haz clic en la foto de cada
         docente para ver su trayectoria académica.
       </p>
-    </header>
+    </header> -->
 
     <!-- Card de docentes -->
     <div class="row g-4">
