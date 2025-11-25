@@ -16,7 +16,22 @@ import CiesContenidoDctDesarrolloHumano from '@components/programas/contenido/Dc
 
 
 
-
+const siteUrl = "https://cies.mx"; // ajustar
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+interface Programa {
+  key: string;
+  titulo: string;
+  grado: string;
+  descripcion: string;
+  link: string;
+  imgSrc: string;
+  tituloSeo?: string;
+  descripcionSeo?: string;
+  faq?: FaqItem[];
+}
 
 // Genera las rutas estaticas desde json
 export const getStaticPaths = (() => {
@@ -34,8 +49,9 @@ const { grado, name } = Astro.params;
 
 // Recupera información del programa
 const programa = json_programas.find((p) => p.link.endsWith(`/${grado}/${name}`));
-console.log(programa);
-
+if (!programa) {
+  throw new Error(`Programa no encontrado para /programas/${grado}/${name}`);
+}
 
 // Mapa de key -> componente de contenido
 const contentMap: Record<string, any> = {
@@ -47,11 +63,59 @@ const contentMap: Record<string, any> = {
   // ...
 };
 
+// URL canónica de la página
+const pageUrl = new URL(programa.link, siteUrl).toString();
+
+// Título SEO (ej: "CIES | Licenciatura en Psicología")
+const tituloCompleto = `${programa.grado} en ${programa.titulo}`;
+const title = `CiES | ${tituloCompleto}`;
+
+// Descripción SEO 
+const description =
+  programa.descripcionSeo ??
+  programa.descripcion ??
+  "Formación universitaria y de posgrado en psicología, educación y humanidades en CiES.";
+
+// Breadcrumbs para Structured Data
+const breadcrumbs = [
+  { name: "Inicio", url: `${siteUrl}/` },
+  { name: "Programas", url: `${siteUrl}/programas` },
+  {
+    name: programa.grado, // Licenciatura / Maestría / Doctorado
+    url: `${siteUrl}/programas/${grado}`
+  },
+  { name: programa.titulo, url: pageUrl }
+];
+
+// Datos del Course para Structured Data
+const courseData = {
+  name: tituloCompleto,
+  url: pageUrl,
+  description,
+  providerName: "Colegio Internacional de Educación Superior CiES",
+  providerUrl: siteUrl
+};
+
+// FAQ se toma del JSON (si no hay, queda [])
+const faq: FaqItem[] = programa.faq ?? [];
+
 // Resolve el componente según la key
-const ContentComponent = programa ? contentMap[programa.key] : null;
+const ContentComponent = contentMap[programa.key] ?? null;
 ---
 
-<BaseLayout title={`${programa?.grado ?? ""}  ${programa?.titulo ?? "Programa"}`}>
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pageUrl}
+  type="article"
+  image={programa.imgSrc}
+  structuredData={{
+    organization: true,
+    breadcrumbs,
+    course: courseData,
+    faq
+  }}
+>
   <CiesSeccionProgramaHeader programa={programa} />
   <CiesSeccionProgramaForm />
 

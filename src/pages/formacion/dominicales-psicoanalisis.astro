@@ -20,7 +20,19 @@ const curso = {
 }
 ---
 
-<BaseLayout title="Cursos dominicales de psicoanálisis">
+<BaseLayout
+  title="CiES | Cursos dominicales de Psicoanálisis"
+  description="Consulta el calendario anual de cursos, pláticas y diálogos dominicales de Psicoanálisis en CiES. Actividades abiertas al público y especialistas en formación continua."
+  canonical="https://cies.mx/formacion/dominicales-psicoanalisis"
+  structuredData={{
+    organization: true,
+    breadcrumbs: [
+      { name: "Inicio", url: "https://cies.mx/" },
+      { name: "Formación Continua", url: "https://cies.mx/formacion" },
+      { name: "Cursos Dominicales de Psicoanálisis", url: "https://cies.mx/formacion/dominicales-psicoanalisis" }
+    ]
+  }}
+>
   <CiesSeccionCursoHeader curso={curso} />
 
   <div class="container py-5">

@@ -13,7 +13,14 @@ import CiesSeccionCacies from "@components/inicio/SeccionCacies.astro";
 const data: CiesProgramas[] = json_programas as CiesProgramas[];
 ---
 
-<BaseLayout title="Inicio">
+<BaseLayout
+  title="CiES | Colegio Internacional de Educación Superior"
+  description="CiES es un centro de estudios superiores especializado en psicología, psicoanálisis, desarrollo humano y formación continua. Conoce nuestras licenciaturas, maestrías, doctorados y programas dominicales."
+  canonical="https://cies.mx"
+  structuredData={{
+    organization: true
+  }}
+>
   <div id="cies-home">
     <div class="row">
       <div class="col-12">

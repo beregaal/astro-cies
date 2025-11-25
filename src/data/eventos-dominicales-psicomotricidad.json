@@ -1,0 +1,80 @@
+{
+  "octubre": [
+    {
+      "dia": "13 oct",
+      "tipo": "Curso",
+      "titulo": "Curso 1",
+      "hora": "18:00 - 21:00"
+    },
+    {
+      "dia": "14 oct",
+      "tipo": "Plática informativa",
+      "titulo": "Curso 2",
+      "hora": "17:00 - 18:30"
+    },
+    {
+      "dia": "14 oct",
+      "tipo": "Plática informativa",
+      "titulo": "Curso 3",
+      "hora": "19:00 - 21:00"
+    },
+    {
+      "dia": "18 oct",
+      "tipo": "Diálogo psicoanalítico",
+      "titulo": "Curso 4",
+      "hora": "10:00 - 13:00"
+    }
+  ],
+  "noviembre": [
+    {
+      "dia": "13 nov",
+      "tipo": "Curso",
+      "titulo": "Curso 1",
+      "hora": "18:00 - 21:00"
+    },
+    {
+      "dia": "14 nov",
+      "tipo": "Plática informativa",
+      "titulo": "Curso 2",
+      "hora": "17:00 - 18:30"
+    },
+    {
+      "dia": "14 nov",
+      "tipo": "Plática informativa",
+      "titulo": "Curso 3",
+      "hora": "19:00 - 21:00"
+    },
+    {
+      "dia": "18 nov",
+      "tipo": "Diálogo psicoanalítico",
+      "titulo": "Curso 4",
+      "hora": "10:00 - 13:00"
+    }
+  ],
+  "diciembre": [
+    {
+      "dia": "13 nov",
+      "tipo": "Curso",
+      "titulo": "Curso 1",
+      "hora": "18:00 - 21:00"
+    },
+    {
+      "dia": "14 nov",
+      "tipo": "Plática informativa",
+      "titulo": "Curso 2",
+      "hora": "17:00 - 18:30"
+    },
+    {
+      "dia": "14 nov",
+      "tipo": "Plática informativa",
+      "titulo": "Curso 3",
+      "hora": "19:00 - 21:00"
+    },
+    {
+      "dia": "18 nov",
+      "tipo": "Diálogo psicoanalítico",
+      "titulo": "Curso 4",
+      "hora": "10:00 - 13:00"
+    }
+  ]
+}

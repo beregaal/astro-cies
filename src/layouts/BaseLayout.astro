@@ -1,5 +1,6 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import SEO from '@components/SEO.astro';
+import StructuredData from '@components/StructuredData.astro';
 import CiesNavbar from '@components/Navbar.astro';
 import CiesFooter from '@components/Footer.astro';
 
@@ -7,20 +8,90 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@styles/site.css';
 
-interface Props {
-  title: string;
-  optionalProp?: any;
+interface BreadcrumbItem {
+  name: string;
+  url: string;
 }
-const { title } = Astro.props;
+
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface CourseData {
+  name: string;
+  url: string;
+  description?: string;
+  providerName?: string;
+  providerUrl?: string;
+}
+
+interface ArticleData {
+  headline: string;
+  url: string;
+  image?: string;
+  datePublished?: string;
+  dateModified?: string;
+  authorName?: string;
+}
+
+interface StructuredDataProps {
+  organization?: boolean;
+  breadcrumbs?: BreadcrumbItem[];
+  course?: CourseData;
+  faq?: FaqItem[];
+  article?: ArticleData;
+}
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  image?: string;
+  noIndex?: boolean;
+  type?: 'website' | 'article';
+  structuredData?: StructuredDataProps;
+}
+
+const {
+  title = 'CiES | Colegio Internacional de Educación Superior',
+  description = 'Formación universitaria y de posgrado en psicología, educación y humanidades con RVOE SEP.',
+  canonical,
+  image,
+  noIndex = false,
+  type = 'website',
+  structuredData
+} = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
+    <SEO
+      title={title}
+      description={description}
+      canonical={canonical}
+      image={image}
+      noIndex={noIndex}
+      type={type}
+    />
+
+    <!-- Datos estructurados (solo si se mandan) -->
+    {structuredData && (
+      <StructuredData
+        organization={structuredData.organization}
+        breadcrumbs={structuredData.breadcrumbs}
+        course={structuredData.course}
+        faq={structuredData.faq}
+        article={structuredData.article}
+      />
+    )}
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <CiesNavbar />

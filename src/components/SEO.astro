@@ -1,0 +1,48 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  noIndex?: boolean;
+}
+
+const siteUrl = 'https://cies.mx'; // ajustar
+
+const {
+  title,
+  description = 'Formación en psicología, educación y humanidades con RVOE SEP en CIES.',
+  canonical,
+  image = `${siteUrl}/assets/cies-logo.png`,
+  type = 'website',
+  noIndex = false
+} = Astro.props;
+
+// Sin canonical, se arma con la ruta actual
+const canonicalUrl =
+  canonical ?? new URL(Astro.url.pathname, siteUrl).toString();
+---
+
+<title>{title}</title>
+
+<meta name="description" content={description} />
+
+{noIndex && <meta name="robots" content="noindex, nofollow" />}
+{!noIndex && <meta name="robots" content="index, follow" />}
+
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Open Graph -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={image} />
+<meta property="og:site_name" content="CIES" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />

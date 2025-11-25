@@ -1,0 +1,55 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CardPrograma from "@components/ComponenteCardPrograma.astro";
+import json_programas from "@data/programas.json";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+
+// SEO para la página /programas
+const title = "CIES | Programas Académicos";
+const description = "Conoce la oferta académica de CIES: Licenciaturas, Maestrías y Doctorados con programas de excelencia educativa.";
+
+// Datos estructurados (solo Organization + Breadcrumb, no Course aquí)
+const breadcrumbs = [
+  { name: "Inicio", url: "https://cies.mx/" },
+  { name: "Programas Académicos", url: "https://cies.mx/programas" },
+];
+
+const programa = {
+  titulo: 'Programas Académicos',
+  descripcion: description
+}
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical="https://cies.mx/programas"
+  structuredData={{
+    organization: true,
+    breadcrumbs
+  }}
+>
+  <CiesSeccionProgramaHeader programa={programa} />
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 my-5">
+        <div class="row">
+          {
+            json_programas.map((programa) => (
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-4 p-3">
+                <CardPrograma
+                  titulo={programa.titulo}
+                  grado={programa.grado}
+                  descripcion={programa.descripcion}
+                  link={programa.link}
+                  imgSrc={programa.imgSrc}
+                />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

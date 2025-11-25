@@ -1,0 +1,141 @@
+---
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface CourseData {
+  name: string;
+  url: string;
+  description?: string;
+  providerName?: string;
+  providerUrl?: string;
+}
+
+interface ArticleData {
+  headline: string;
+  url: string;
+  image?: string;
+  datePublished?: string;
+  dateModified?: string;
+  authorName?: string;
+}
+
+interface Props {
+  organization?: boolean;
+  breadcrumbs?: BreadcrumbItem[];
+  course?: CourseData;
+  faq?: FaqItem[];
+  article?: ArticleData;
+}
+
+const siteUrl = "https://cies.mx";
+
+const {
+  organization = false,
+  breadcrumbs = [],
+  course,
+  faq = [],
+  article
+} = Astro.props;
+
+const graph: any[] = [];
+
+// Organización
+if (organization) {
+  graph.push({
+    "@type": "CollegeOrUniversity",
+    "@id": `${siteUrl}#organization`,
+    name: "Colegio Internacional de Educación Superior CiES",
+    url: siteUrl,
+    logo: `${siteUrl}/images/logo.png`
+  });
+}
+
+// Breadcrumbs
+if (breadcrumbs.length > 0) {
+  graph.push({
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbs.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url
+    }))
+  });
+}
+
+// Course
+if (course) {
+  graph.push({
+    "@type": "Course",
+    name: course.name,
+    description: course.description,
+    url: course.url,
+    provider: {
+      "@type": "CollegeOrUniversity",
+      name: course.providerName ?? "Colegio Internacional de Educación Superior CiES",
+      sameAs: course.providerUrl ?? siteUrl
+    }
+  });
+}
+
+// FAQ
+if (faq.length > 0) {
+  graph.push({
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
+  });
+}
+
+// Article (por si después usas blog)
+if (article) {
+  graph.push({
+    "@type": "Article",
+    headline: article.headline,
+    url: article.url,
+    image: article.image,
+    datePublished: article.datePublished,
+    dateModified: article.dateModified ?? article.datePublished,
+    author: {
+      "@type": "Organization",
+      name: article.authorName ?? "CIES"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "CIES",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/images/logo.png`
+      }
+    }
+  });
+}
+
+const structuredData =
+  graph.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@graph": graph
+      }
+    : null;
+---
+
+{structuredData && (
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(structuredData)}
+  />
+)}

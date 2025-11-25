@@ -3,7 +3,19 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import docentes from "@data/docentes.json";
 ---
 
-<BaseLayout title="Docentes">
+<BaseLayout
+  title="CiES | Docentes"
+  description="Conoce al equipo académico de CiES: especialistas con trayectoria en psicología, psicoanálisis, desarrollo humano y áreas afines que integran nuestros programas de licenciatura, maestría y formación continua."
+  canonical="https://cies.mx/docentes"
+  structuredData={{
+    organization: true,
+    breadcrumbs: [
+      { name: "Inicio", url: "https://cies.mx/" },
+      { name: "Docentes", url: "https://cies.mx/docentes" }
+    ]
+  }}
+>
+
   <section class="container py-5">
     <header class="text-center mb-5">
       <h1 class="cies-titulo">Equipo Académico</h1>

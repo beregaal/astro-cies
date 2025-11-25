@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import CiesEventCard from "@components/ComponenteCardEvento.astro";
-import data from "@data/eventos-dominicales-psicoanalisis.json";
+import data from "@data/eventos-dominicales-psicomotricidad.json";
 
 import CiesSeccionCursoHeader from "@components/cursos/Header.astro";
 
@@ -19,7 +19,19 @@ const curso = {
 }
 ---
 
-<BaseLayout title="Cursos dominicales de psicomotricidad">
+<BaseLayout
+  title="CiES | Cursos dominicales de Psicomotricidad"
+  description="Consulta el calendario anual de cursos, pláticas y diálogos dominicales de Psicomotricidad en CiES. Actividades para profundizar en el trabajo con cuerpo y movimiento en distintos contextos."
+  canonical="https://cies.mx/formacion/dominicales-psicomotricidad"
+  structuredData={{
+    organization: true,
+    breadcrumbs: [
+      { name: "Inicio", url: "https://cies.mx/" },
+      { name: "Formación Continua", url: "https://cies.mx/formacion" },
+      { name: "Cursos Dominicales de Psicomotricidad", url: "https://cies.mx/formacion/dominicales-psicomotricidad" }
+    ]
+  }}
+>
   <CiesSeccionCursoHeader curso={curso} />
 
   <div class="container py-5">
