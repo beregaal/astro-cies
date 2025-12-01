@@ -1,0 +1,36 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+import CiesSeccionProgramaForm from "@components/programas/Form.astro";
+
+// Datos del encabezado
+const programa = {
+  titulo: "Inicia tu proceso de admisión",
+  descripcion: "Todos nuestros programas de estudio reconocidos por la SEP se cursan de manera presencial.",
+  grado: "",
+};
+---
+
+<BaseLayout
+  title="CiES | Proceso de admisión"
+  description="Sé parte de la comunidad CiES: inicia tu proceso de admisión en el programa de tu interés."
+  canonical="https://cies.mx/proceso-admision",
+  type="article"
+  structuredData={{
+    organization: true,
+    breadcrumbs: [
+      { name: "Inicio", url: "https://cies.mx/" },
+      { name: "Proceso de admisión", url: "https://cies.mx/proceso-admision" }
+    ]
+  }}
+>
+  <CiesSeccionProgramaHeader programa={programa} />
+  <CiesSeccionProgramaForm />
+
+  <script src="/js/views/programas.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      ComponentPrograma.init({});
+    });
+  </script>
+</BaseLayout>

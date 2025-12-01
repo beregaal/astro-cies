@@ -58,7 +58,7 @@ const contentMap: Record<string, any> = {
   'lic-psicologia': CiesContenidoLicPsicologia,
   'mtr-psicomotricidad': CiesContenidoMtrPsicomotricidad,
   'mtr-psicoterapia': CiesContenidoMtrPsicoterapia,
-  'dct-investigacion-psicoanalítica': CiesContenidoDctInvPsicoanalitica,
+  'dct-investigacion': CiesContenidoDctInvPsicoanalitica,
   'dct-desarrollo-humano': CiesContenidoDctDesarrolloHumano
   // ...
 };
@@ -117,7 +117,7 @@ const ContentComponent = contentMap[programa.key] ?? null;
   }}
 >
   <CiesSeccionProgramaHeader programa={programa} />
-  <CiesSeccionProgramaForm />
+  <CiesSeccionProgramaForm programaKey={programa.key} />
 
   <div class="container my-5">
     <div class="row g-5">
@@ -130,6 +130,7 @@ const ContentComponent = contentMap[programa.key] ?? null;
 
   <script src="/js/views/programas.js" defer></script>
   <script>
+    // @ts-ignore
     document.addEventListener("DOMContentLoaded", () => {
       ComponentPrograma.init({});
     });

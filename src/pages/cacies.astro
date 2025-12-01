@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+import CaciesForm from "@components/cacies/Form.astro";
 
 // SEO
 const pageTitle = "CiES | CACiES";
@@ -75,6 +76,8 @@ Aplicación de **Prueba de Orientación Vocacional Profesional Sin Costo**.
 
 <BaseLayout title={pageTitle} description={pageDescription}>
   <CiesSeccionProgramaHeader programa={programa} />
+  <div id="registro" style="padding-top: 62px;"></div>
+  <CaciesForm  />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -188,7 +191,16 @@ Aplicación de **Prueba de Orientación Vocacional Profesional Sin Costo**.
     <!-- Cierre -->
     <article class="mb-5">
       <h2 class="h5 fw-bold mb-3 cies-titulo">Estamos para ayudarte</h2>
-      <p>Agradecemos tu atención. Si lo deseas, déjanos tus datos y nos pondremos en contacto contigo.</p>
+      <p>Agradecemos tu atención. Si lo deseas, <a href="/cacies#registro">déjanos tus datos</a> y nos pondremos en contacto contigo.</p>
     </article>
   </section>
+
+
+  <script src="/js/views/cacies.js" defer></script>
+  <script>
+    // @ts-ignore
+    document.addEventListener("DOMContentLoaded", () => {
+      ComponentCacies.init({});
+    });
+  </script>
 </BaseLayout>

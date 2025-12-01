@@ -1,14 +1,3 @@
----
-interface Props {
-  programaKey?: string;
-}
-
-const { programaKey } = Astro.props;
-
-const headingTitle = programaKey
-  ? "¿Te interesa este programa?"
-  : "¿Te interesa alguno de nuestros programas?";
----
 
 <section class="cies-program-register my-5" id="registro">
     <div class="container">
@@ -19,26 +8,25 @@ const headingTitle = programaKey
             <div>
               <span class="cies-pill mb-2 d-inline-flex align-items-center gap-2">
                 <i class="bi bi-stars"></i>
-                Nuevo registro
+                Solicitar una cita
               </span>
-              <h2 class="h4 fw-bold mb-3">{headingTitle}</h2>
+              <h2 class="h4 fw-bold mb-3">¿Te interesa alguno de nuestros servicios?</h2>
               <p class="mb-3">
-                Déjanos tus datos y el equipo del CiES se pondrá en contacto contigo para compartirte fechas, requisitos y proceso de
-                inscripción.
+                Déjanos tus datos y el equipo del CiES se pondrá en contacto contigo para dar seguimiento a tu solicitud.
               </p>
             </div>
             <ul class="list-unstyled small mb-0">
               <li class="d-flex align-items-center mb-2">
                 <i class="bi bi-check2-circle me-2"></i>
-                Atención personalizada
+                Evaluaciones
               </li>
               <li class="d-flex align-items-center mb-2">
                 <i class="bi bi-check2-circle me-2"></i>
-                Información de próximas aperturas
+                Asesorías
               </li>
               <li class="d-flex align-items-center">
                 <i class="bi bi-check2-circle me-2"></i>
-                Invitaciones a actividades del CiES
+                Talleres
               </li>
             </ul>
           </div>
@@ -55,7 +43,7 @@ const headingTitle = programaKey
                 </span>
               </div>
 
-              <form id="programa-registro-form" data-programa-actual={programaKey} novalidate>
+              <form id="programa-registro-form" novalidate>
                 <div class="row mb-3">
                   <div class="col-12">
                     <div id="programa-registro-success" class="alert alert-success d-none mb-0" role="alert">
@@ -109,71 +97,22 @@ const headingTitle = programaKey
                     </div>
                   </div>
 
-                  <!-- Programa de interés -->
-                  <div class="col-12" id="campo-programa-interes-wrapper">
-                    <div class="form-floating">
-                      <select
-                        class="form-select"
-                        id="ProgramaInteres"
-                        name="ProgramaInteres"
-                        required
-                      >
-                        <option value="" selected disabled>Selecciona un programa</option>
-                        <!-- propiedad key  -->
-                        <option value="lic-psicologia">Licenciatura en Psicología</option>
-                        <option value="mtr-psicomotricidad">Maestría en Psicomotricidad</option>
-                        <option value="mtr-psicoterapia">Maestría en Psicoterapia Psicoanalítica</option>
-                        <option value="dct-investigacion">Doctorado en Investigación Psicoanalítica</option>
-                        <option value="dct-desarrollo-humano">
-                          Doctorado en ciencias del Desarrollo Humano
-                        </option>
-                      </select>
-                      <label for="ProgramaInteres">
-                        ¿Cuál es tu programa de interés?
-                        <span class="text-danger">*</span>
-                      </label>
-                      <div class="invalid-feedback">
-                        Por favor selecciona un programa.
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Cómo te enteraste -->
+                  <!-- Servicio de interés -->
                   <div class="col-12">
                     <div class="form-floating">
-                      <select class="form-select" id="ComoTeEnteraste" name="ComoTeEnteraste" required>
+                      <select class="form-select" id="ServicioInteres" name="ServicioInteres" required>
                         <option value="" selected disabled>Selecciona una opción</option>
-                        <option value="google">Google</option>
-                        <option value="facebook-anuncio">Facebook (anuncio)</option>
-                        <option value="facebook-pagina">Facebook (página)</option>
-                        <option value="recomendaciones">Recomendaciones</option>
-                        <option value="email-newsletter">Email / newsletter</option>
-                        <option value="youtube">YouTube</option>
-                        <option value="instagram">Instagram</option>
-                        <option value="twitter-x">Twitter (X)</option>
-                        <option value="whatsapp">WhatsApp</option>
-                        <option value="otros">Otros</option>
+                        <option value="terapia-psicoanalitica">Terapia psicoanalítica</option>
+                        <option value="terapia-psicomotriz">Terapia psicomotriz</option>
+                        <option value="valoracion-psicologica">Valoración Psicológica</option>
+                        <option value="valoracion-neuropsicologica">Valoración neuropsicológica</option>
+                        <option value="orientacion-vocacional">Orientación vocacional</option>
+                        <option value="escuela-para-padres">Escuela para padres</option>
+                        <option value="platica-docentes">Platica docentes</option>
+                        <option value="otro">Otro</option>
                       </select>
-                      <label for="ComoTeEnteraste">¿Cómo te enteraste del CiES?<span class="text-danger">*</span></label>
+                      <label for="ServicioInteres">¿Servicio de interés?<span class="text-danger">*</span></label>
                       <div class="invalid-feedback">Por favor selecciona una opción.</div>
-                    </div>
-                  </div>
-
-                  <!-- Escuela / institución (opcional) -->
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="EscuelaProcedencia"
-                        name="EscuelaProcedencia"
-                        placeholder="Escuela o institución de procedencia"
-                      />
-                      <div class="invalid-feedback">Por favor completa este campo.</div>
-                      <label for="EscuelaProcedencia">
-                        Escuela o institución de procedencia
-                        <span class="text-muted">(opcional)</span>
-                      </label>
                     </div>
                   </div>
 

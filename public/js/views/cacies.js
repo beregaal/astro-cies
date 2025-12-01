@@ -1,4 +1,4 @@
-const ComponentPrograma = (function () {
+const ComponentCacies = (function () {
     // Objeto público
     const outside = {};
 
@@ -49,35 +49,13 @@ const ComponentPrograma = (function () {
         const spinner = document.querySelector(options.selector.spinner);
         const successAlert = document.querySelector(options.selector.successAlert);
 
-        // --- Programa de interés: ocultar/mostrar según data-programa-actual ---
-        const programaActual = form.dataset.programaActual;; // clave del programa actual
-        const programaSelect = form.querySelector('[name="ProgramaInteres"]');
-        const programaWrapper = document.getElementById("campo-programa-interes-wrapper");
-
-        if (programaSelect) {
-            if (programaActual && programaActual !== "") {
-                // Página de un programa específico
-                programaSelect.value = programaActual;
-
-                if (programaWrapper) {
-                    programaWrapper.classList.add("d-none");
-                }
-            } else {
-                // Página genérica (ej. index.astro)
-                if (programaWrapper) {
-                    programaWrapper.classList.remove("d-none");
-                }
-            }
-        }
-
         /* --- Validaciones --- */
         const campos = {
             Nombre: (v) => v.trim() !== "",
             Apellidos: (v) => v.trim() !== "",
             Correo: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),
             Celular: (v) => v.trim() !== "",
-            ComoTeEnteraste: (v) => v !== "",
-            ProgramaInteres: (v) => v !== "",
+            ServicioInteres: (v) => v !== "",
         };
 
         const validarCampo = (input, regla) => {

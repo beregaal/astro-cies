@@ -1,0 +1,73 @@
+
+/** ----------------------
+    FORMULARIO
+-------------------------*/
+.cies-program-register {
+  scroll-margin-top: 80px; /*  #registro desde el navbar */
+}
+
+.cies-program-register-info {
+  border-radius: 1.25rem;
+  padding: 1.8rem 1.6rem;
+  background: radial-gradient(circle at top left, #7ab728 0, #00a859 45%, #0c4a23 100%);
+  color: #fff;
+}
+
+.cies-program-register-info .cies-pill {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.cies-program-register-info h2 {
+  letter-spacing: 0.01em;
+}
+
+.cies-program-register-info .bi-check2-circle {
+  font-size: 1rem;
+}
+
+.cies-program-register-card {
+  border-radius: 1.25rem;
+}
+
+.cies-program-register-card .form-floating > label {
+  color: #6c757d;
+}
+
+.cies-program-register-card .form-control,
+.cies-program-register-card .form-select {
+  border-radius: 0.75rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+  .cies-program-register-info {
+    text-align: left;
+  }
+}
+
+/* Bordes más suaves */
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #d9534f;
+}
+
+/* Mensaje más suave */
+.invalid-feedback {
+  font-size: 0.8rem;
+  color: #b93737;
+}
+
+#programa-registro-success {
+  border-radius: 0.75rem;
+}
+
+/* Spinner y botón más suaves */
+#programa-registro-submit {
+  color: #fff;
+  min-width: 180px;
+}
+
+
