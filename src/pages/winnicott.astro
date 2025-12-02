@@ -1,0 +1,160 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+
+// Datos del encabezado
+const programa = {
+  titulo: "Introducción a la práctica de Winnicott",
+  descripcion: "",
+  grado: "",
+};
+
+// Datos del Course para Structured Data
+const courseData = {
+  name: "Introducción a la práctica de Winnicott",
+  url: "https://cies.mx/winnicott",
+  description: "Curso en línea sobre la práctica de Winnicott, agonías primitivas, espacio transicional y patologías del self.",
+  providerName: "Colegio Internacional de Educación Superior CiES",
+  providerUrl: "https://cies.mx",
+};
+---
+
+<BaseLayout
+  title="CiES | Winnicott"
+  description="Curso Introducción a la práctica de Winnicott en CiES: formación en línea para profundizar en las agonías primitivas, el espacio transicional y las patologías del self, con enfoque clínico-teórico."
+  canonical="https://cies.mx/winnicott"
+  type="course"
+  structuredData={{
+    organization: true,
+    course: courseData,
+    breadcrumbs: [
+      { name: "Inicio", url: "https://cies.mx/" },
+      { name: "Winnicott", url: "https://cies.mx/winnicott" },
+    ],
+  }}
+>
+  <CiesSeccionProgramaHeader programa={programa} />
+
+  <section id="winnicott" class="container py-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="card border-0 rounded-4 shadow">
+          <div class="card-body px-5 py-4" style="text-align:justify;">
+            <p>
+              Más allá de las neurosis, Winnicott estudia y teoriza la clínica de las agonías primitivas, aquellas en las que no se trata de la angustia de castración, sino de la experiencia de
+              existir o desaparecer. En este curso exploraremos, a través de lecturas y un diálogo teórico-clínico, las diversas formas de las agonías primitivas. Podrás enriquecer tu comprensión
+              diagnóstica y distinguir los trastornos del espacio transicional ( de las fronteras del self), el miedo al derrumbe y la tendencia antisocial.
+            </p>
+            <p>Aprenderás a reconocer la diferencia entre una vida creativa y las agonías primitivas, actualizando así tus conocimientos y tu práctica clínica sobre las patologías del self.</p>
+            <ul>
+              <li><b>Imparten:</b> Dra. Diana Maya y Dra. Concepción Rabadán.</li>
+              <li><b>Formato:</b> En línea.</li>
+              <li><b>Periodo:</b> Inicia 11 de febrero y concluye el 24 de junio de 2026.</li>
+              <li><b>Horario:</b> Miércoles de 19:00 a 21:30 horas.</li>
+              <li>
+                <b>Programa:</b><a href="/images/winnicott/programa-winnicott.jpeg" title="Descargar" download> Descargar imagen</a>
+                <a href="/images/winnicott/programa-winnicott.jpeg" data-lightbox="Programa winnicott">
+                  <div class="border rounded shadow-sm p-2 bg-white my-4" style="width:300px">
+                    <img src="/images/winnicott/programa-winnicott.jpeg" alt="Programa winnicott" class="img-fluid w-100 rounded" />
+                  </div>
+                </a>
+              </li>
+              <li>
+                <b>Inversión:</b>
+                <table class="table table-sm align-middle text-center w-75 my-3 cies-table">
+                  <thead>
+                    <tr>
+                      <th class="align-middle text-center">Fecha</th>
+                      <th class="align-middle text-center">Pago único <br />(Público en general)</th>
+                      <th class="align-middle text-center">Pago único <br />(Comunidad CiES)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Hasta el 29 de noviembre</td>
+                      <td>$16,000</td>
+                      <td>$15,000</td>
+                    </tr>
+                    <tr>
+                      <td>Hasta el 29 de noviembre</td>
+                      <td>$17,150</td>
+                      <td>$15,590</td>
+                    </tr>
+                    <tr>
+                      <td>Hasta el 29 de noviembre</td>
+                      <td>$18,000</td>
+                      <td>$16,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table table-sm align-middle text-end my-5 w-75 cies-table">
+                  <thead>
+                    <th class="align-middle text-center">Fecha</th>
+                    <th class="align-middle text-center">Inscripción</th>
+                    <th class="align-middle text-center">Cinco pagos</th>
+                    <th class="align-middle text-center">Total</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-start">Hasta el 29 de noviembre</td>
+                      <td>General: $1,000 <br />Comunidad CiES: $500</td>
+                      <td>General: $3,500<br />CiES: $3150</td>
+                      <td>General: $18,500<br />CiES: $16,150</td>
+                    </tr>
+                    <tr>
+                      <td class="text-start">Hasta el 29 de noviembre</td>
+                      <td>General: $1,200<br />Comunidad CiES: $800</td>
+                      <td><br /></td>
+                      <td>General: $18,700<br />CiES: $16,550</td>
+                    </tr>
+                    <tr>
+                      <td class="text-start">Hasta el 29 de noviembre</td>
+                      <td>General: $1,500<br />Comunidad CiES: $1,000</td>
+                      <td><br /></td>
+                      <td>General: $19,000<br />CiES: $16,750</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </li>
+              <li>
+                <b>Datos de pago:</b> Colegio Internacional de Educación Superior
+                <ul>
+                  <li><b>Banco:</b> Bancomer</li>
+                  <li><b>Cuenta:</b> 04 50 85 73 27 <a class="copy" title="copiar" data-copy="0450857327"><i class="bi bi-copy"></i></a></li>
+                  <li><b>Clabe:</b> 012 180 004508573273 <a class="copy" title="copiar" data-copy="012180004508573273"><i class="bi bi-copy"></i></a></li>
+                </ul>
+              </li>
+            </ul>
+            <p class="text-start">
+              Enviar el comprobante de pago agregando el nombre completo al correo: <a href="mailto:posgrados@cies.online" title="Enviar mensaje al correo posgrados@cies.online"
+                >posgrados@cies.online</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .cies-table tbody,
+    .cies-table td,
+    .cies-table th,
+    .cies-table thead,
+    .cies-table tr {
+      border-color: var(--cies-green-primary);
+    }
+  </style>
+
+  <script src="/js/views/winnicott.js" defer></script>
+  <script>
+    // @ts-ignore
+    document.addEventListener("DOMContentLoaded", () => {
+      ComponentWinnicott.init({});
+    });
+  </script>
+</BaseLayout>
