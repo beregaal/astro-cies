@@ -1,0 +1,189 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+
+// Datos del encabezado
+const programa = {
+  titulo: "Aviso de Privacidad",
+  descripcion: "Ponemos a tu disposición los términos del aviso de privacidad previo al tratamiento de tus datos personales.",
+  grado: "",
+};
+---
+
+<BaseLayout
+  title="CiES | Aviso de Privacidad"
+  description="Ponemos a tu disposición los términos del aviso de privacidad previo al tratamiento de tus datos personales."
+  canonical="https://cies.mx/aviso-de-privacidad"
+  noIndex={true}
+  type="article"
+  structuredData={{
+    organization: true,
+    breadcrumbs: [
+      { name: "Inicio", url: "https://cies.mx/" },
+      { name: "Aviso de Privacidad", url: "https://cies.mx/aviso-de-privacidad" },
+    ],
+  }}
+>
+  <CiesSeccionProgramaHeader programa={programa} />
+
+  <section id="aviso-privacidad" class="container py-5">
+    <div class="card border-0 rounded-4 shadow">
+      <div class="card-body px-5 py-4" style="text-align:justify;">
+        <p>
+          En cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (“La Ley”) y con el fin de asegurar la protección y privacidad de sus datos personales
+          y/o sensibles, así como regular los derechos ARCO (Acceso, Rectificación, Cancelación y Oposición del manejo de sus datos personales) con fundamento en el Artículo 1 y 2 la misma Ley,
+          Colegio Internacional de Educación Superior establece el siguiente:
+        </p>
+        <h2 class="text-center mt-5">Aviso de Privacidad</h2>
+
+        <h5 class="mt-5">Responsable:</h5>
+        <p>
+          Colegio Internacional de Educación Superior, S.C. ( Rómulo O´farril #351, Col. Olivar de los Padres , Delegación Álvaro Obregón, C.P. 01780, Ciudad de México, sitio web www.cies.online; es
+          el responsable del tratamiento de los datos personales y/o sensibles del “Titular” (Persona física a quien corresponden los datos personales, tales como alumnos, ex alumnos, egresados,
+          profesores, participantes en actividades de Educación Continua, pacientes de la Clínica colaboradores, proveedores y cualquier persona relacionada o interesada en los servicios académicos,
+          clínicos o administrativos proporcionados por el CiES.
+        </p>
+
+        <h5 class="mt-5">Objeto:</h5>
+        <p>
+          Esta política de privacidad tiene como fin asegurar la privacidad de los datos personales o sensibles del Titular.
+        </p>
+
+        <h5 class="mt-5">Tipo de información que se obtiene:</h5>
+        <p>
+          Los datos personales en estas políticas se refieren a cualquier información concerniente a una persona física identificada o identificable, 
+          incluyendo sin limitar el nombre, fecha de nacimiento, domicilio, teléfono, estado civil, correo electrónico, nacionalidad, entre otros.
+          <br /><br />
+          Mientras que los datos personales sensibles se refieren a aquellos datos que afecten la esfera más íntima de su titular, o cuya utilización indebida pueda dar origen a 
+          discriminación o conlleve a un riesgo grave para este. En particular aquellos que puedan revelar aspectos como origen racial o étnico, estado de salud presente o futuro, 
+          información genética, creencias religiosas, filosóficas y morales, afiliación sindical y opiniones políticas y preferencias sexuales, entre otros.
+        </p>
+
+        <h5 class="mt-5">Finalidad:</h5>
+        <p>
+          El Responsable informa que los datos personales o sensibles del Titular, se utilizarán de forma enunciativa y no limitativa para la identificación, operación, administración, 
+          prestación y promoción de servicios académicos, educación continua, pacientes de clínica y administrativos, así como para la elaboración de estadísticas e informes requeridos 
+          por las autoridades.
+          <br /><br />
+          El Titular en este acto autoriza a El Responsable a utilizar los Datos Personales y/o Sensibles para los fines previamente mencionados, así como para 
+          enviarle publicidad que le pudiera llegar a ser de interés a consideración del CiES por cualquier medio analógico o digital conocido o por conocer.
+          <br /><br />
+          El Titular acepta que el CiES utilice estos datos personales para fines estadísticos, ya sean cualitativos o cuantitativos, para realizar investigaciones de mercado 
+          y otras actividades relacionadas.
+        </p>
+
+        <h5 class="mt-5">Obtención de datos:</h5>
+        <p>
+          El CiES observa los principios de licitud, finalidad, proporcionalidad, confidencialidad, consentimiento, información, calidad, lealtad y responsabilidad en la protección 
+          de sus datos personales y/o sensibles. Por esta razón, el CiES únicamente recopila los datos antes mencionados de forma Expresa (Cuando la voluntad del titular se manifieste 
+          verbalmente, por escrito, por medios electrónicos, ópticos o cualquier otra tecnología o por signos inequívocos), o en forma Tácita (Cuando habiéndose puesto a disposición el 
+          Aviso de Privacidad por cualquiera de los medios antes mencionados), El Titular no manifieste su oposición.
+        </p>
+
+        <h5 class="mt-5">Limitación de uso y divulgación:</h5>
+        <p>
+          El tratamiento de los datos personales y/o sensibles será el que resulte necesario, adecuado, relevante y conveniente en relación con las finalidades previstas en el 
+          numeral 4 de este Aviso de Privacidad.
+          <br /><br />
+          El CiES adoptará las medidas suficientes y necesarias para respetar este Aviso de Privacidad y mantener la confidencialidad de los datos personales y/o sensibles por si mismo o 
+          por terceros con los que guarde alguna relación contractual para prestar los servicios pactados con El Titular.
+        </p>
+
+        <h5 class="mt-5">Ejercicio de los Derechos Acceso, Rectificación, Cancelación y Oposición (ARCO):</h5>
+        <p>
+          Cualquier titular puede ejercer sus derechos ARCO y el CiES le proveerá gratuitamente, los medios necesarios para hacerlos valer, a través de un escrito pacífico y respetuoso 
+          dirigido al Departamento de Datos Personales, quien es el encargado del área de protección de datos, a la dirección de correo electrónico medios@cies-mex.edu.mx, o en forma 
+          directa en el domicilio del CiES, en días y horas hábiles.
+          <br /><br />
+          La solicitud que realice el titular, ya sea escrita y/o electrónica, para ejercitar cualquiera de los derechos ARCO, 
+          deberá cumplir los requisitos contemplados en el artículo 29 de la Ley:
+          <ul>
+            <li>Se debe proporcionar el nombre del titular y domicilio u otro medio para comunicarle la respuesta a su solicitud</li>
+            <li>Proporcionar los documentos que acrediten la identidad o, en su caso, la representación legal del titular</li>
+            <li>La descripción clara y precisa de los datos personales respecto de los que se busca ejercer alguno de los derechos antes mencionados</li>
+            <li>Cualquier otro elemento o documento que facilite la localización de los datos personales</li>
+            <li>Para el caso de las solicitudes de rectificación el titular deberá indicar las modificaciones a realizarse y aportar la documentación que sustente su petición</li>
+            <li>El CiES comunicará al titular en 20 días hábiles, contados desde la fecha en que recibió la solicitud, la determinación adoptada con respecto al ejercicio de cualquiera de los derechos ARCO por parte del Titular de la misma forma en que éste último hizo llegar su petición al CiES.</li>
+            <li>El Titular tendrá la obligación de actualizar sus personales o sensibles, con el fin de evitar algún conflicto en el tratamiento de sus datos en el futuro.</li>
+          </ul>
+        </p>
+
+        <p>
+          El CiES podrá negar el acceso a los derechos ARCO, en los siguientes supuestos con fundamento en el Artículo 34 de la Ley:
+          <ul>
+            <li>Cuando el solicitante no sea el titular de los datos personales, o el representante legal no esté debidamente acreditado para ello</li>
+            <li>Cuando en su base de datos no se encuentren los datos personales del solicitante</li>
+            <li>Cuando se lesionen los derechos de un tercero</li>
+            <li>Cuando exista un impedimento legal, o la resolución de una autoridad competente que restrinja el acceso a los datos personales o que no permita la rectificación, cancelación u oposición de los mismos</li>
+            <li>Cuando la rectificación, cancelación u oposición haya sido previamente realizada</li>
+          </ul>
+        </p>
+
+        <p>
+          De acuerdo al artículo 26 de la Ley, el CiES limitará el uso de los datos personales y datos personales sensibles a petición expresa del titular, 
+          y no estará obligada a cancelar los datos personales cuando:
+          <ul>
+            <li>Se refiera a las partes de un contrato privado, social o administrativo, y sean necesarios para su desarrollo y cumplimiento</li>
+            <li>Deban ser tratados por disposición legal</li>
+            <li>Obstaculice actuaciones judiciales o administrativas vinculadas a obligaciones fiscales, la investigación y persecución de delitos, o la actualización de sanciones administrativas</li>
+            <li>Sean necesarios para proteger los intereses jurídicamente tutelados del titular</li>
+            <li>Sean necesarios para realizar una acción en función del interés público</li>
+            <li>Sean necesarios para cumplir con una obligación legalmente adquirida por el titular</li>
+            <li>Sean objeto de tratamiento para la prevención o el diagnóstico médico o la gestión de servicios de salud; siempre que dicho tratamiento se realice por un profesional de la salud sujeto a un deber de secreto</li>
+          </ul>
+        </p>
+
+        <h5 class="mt-5">Transferencia:</h5>
+        <p>
+          El CiES no procesará ni pondrá a disposición de terceros los datos personales sin previo consentimiento expreso del Titular, ya sea de forma analógica o digital conocida o por conocer. 
+          Salvo los casos en que expresamente el CiES esté obligado por la Ley, de conformidad al artículo 37 de la misma; así como a realizar estas transferencias en los mismos términos y 
+          condiciones que fija dicho ordenamiento legal.
+        </p>
+
+        <h5 class="mt-5">Protección de la información personal:</h5>
+        <p>
+          Aunque la información proporcionada por el Titular está protegida por diversos mecanismos de seguridad, el CiES no garantiza la inexistencia de interrupciones o errores en el 
+          acceso al website o base de datos y su contenido, ni que éstas se encuentren permanentemente actualizadas sin imprecisiones o inexactitudes. El CiES llevará a cabo, 
+          siempre que no concurran causas que lo hagan imposible o de difícil ejecución, y tan pronto tenga noticias de los errores, desconexión o falta de actualización en los contenidos, 
+          todas aquellas labores tendentes a subsanar dichos fallos.
+        </p>
+
+        <h5 class="mt-5">Cookies:</h5>
+        <p>
+          Las cookies son archivos de texto que son descargados automáticamente y almacenados en el disco duro del usuario al navegar en una página web específica, que permiten recordar al servidor de Internet, algunos datos sobre este usuario, entre ellos, sus preferencias para la visualización de las páginas en ese servidor, nombre y contraseña.
+          <br /><br />
+          Por su parte las web beacons son imágenes insertadas en una página de Internet o correo electrónico, que pueden ser utilizadas para monitorear el comportamiento de un visitante, como almacenar información sobre la dirección IP del usuario, duración del tiempo de interacción en dicha página y el tipo de navegador utilizado, entre otros.
+          <br /><br />
+          Le informamos que utilizamos cookies y web beacons para obtener información personal de usted, como la siguiente:
+          <ul>
+            <li>Su tipo de navegador y sistema operativo</li>
+            <li>Las páginas web que visita</li>
+            <li>Los vínculos que sigue</li>
+            <li>La dirección IP</li>
+            <li>El sitio que visitó antes de entrar al nuestro</li>
+          </ul>
+        </p>
+          
+        <p>
+          Estas cookies y otras tecnologías pueden ser deshabilitadas. Para conocer como hacerlo, consulte la documentación de su navegador de internet.
+        </p>
+
+        <h5 class="mt-5">Modificaciones al Aviso de Privacidad:</h5>
+        <p>
+          El CiES podrá realizar cualquier modificación o actualización de la información contenida en el presente Aviso de Privacidad, y lo hará saber al Titular a través 
+          de un comunicado en su sitio web www.cies-mex.edu.mx, con el fin de atender novedades legislativas, políticas internas o nuevos requerimientos para la prestación 
+          de nuestros servicios.
+        </p>
+
+        <h5 class="mt-5">Consentimiento:</h5>
+        <p>
+          El Titular acepta la recopilación, uso, transferencia y almacenamiento de su información personal y personal sensible, lo que significa que ha leído, entendido y aceptado 
+          los términos y condiciones expuestos en el presente Aviso de Privacidad.
+          <br /><br />
+          Se entiende que el Titular en este acto consiente tácita y expresamente el tratamiento de sus datos personales y/o sensibles, los cuales fueron puestos a disposición del CiES 
+          por su propia y deliberada voluntad y sin mediar coacción, presión alguna. Así mismo, acepta haber entendido en su totalidad los términos del presente aviso de privacidad.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
