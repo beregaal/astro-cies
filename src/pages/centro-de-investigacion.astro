@@ -1,0 +1,96 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+import CiesSeccionProgramaForm from "@components/programas/Form.astro";
+
+// Datos del encabezado
+const programa = {
+  titulo: "Centro de Investigación",
+  descripcion: "Espacio de formación en investigación y docencia en Psicoterapia Psicoanalítica y Psicomotricidad.",
+  grado: "",
+};
+---
+
+<BaseLayout
+  title="CiES | Centro de Investigación"
+  description="El Centro de Investigación y Documentación en Psicoterapia Psicoanalítica y Psicomotricidad (CIDPPP-CiES) es un espacio de formación en investigación y docencia, vinculado al RENIECYT del CONACyT."
+  canonical="https://cies.mx/centro-de-investigacion"
+  type="article"
+  structuredData={{
+    organization: true,
+    breadcrumbs: [
+      { name: "Inicio", url: "https://cies.mx/" },
+      { name: "Centro de Investigación", url: "https://cies.mx/centro-de-investigacion" },
+    ],
+    article: {
+      headline: "Centro de Investigación y Documentación en Psicoterapia Psicoanalítica y Psicomotricidad (CIDPPP-CiES)",
+      url: "https://cies.mx/centro-de-investigacion",
+      image: "https://cies.mx/images/centro-investigacion/logo-reniecyt-mx.jpg"
+      // datePublished, dateModified, authorName ...
+    }
+  }}
+>
+  <CiesSeccionProgramaHeader programa={programa} />
+  <section class="container py-5">
+    <div class="row g-5">
+      <div class="col-12" style="text-align: justify;">
+        <div class="card border-0 rounded-4 p-5">
+          <div class="card-body">
+            <div class="text-center mb-5">
+              <a href="/images/centro-investigacion/logo-reniecyt-mx.jpg" data-lightbox="ods" data-title="Logo RENIECYT">
+                <img src="/images/centro-investigacion/logo-reniecyt-mx.jpg" alt="Logo RENIECYT" class="w-100 rounded mb-3" style="max-width: 400px;" />
+              </a>
+            </div>
+
+            <h2 class="cies-rvoe-heading mb-5">Centro de Investigación y Documentación en Psicoterapia Psicoanalítica y Psicomotricidad (CIDPPP-CiES)</h2>
+            <p>
+              El Centro de Investigación y Documentación en Psicoterapia Psicoanalítica y Psicomotricidad (CIDPPP-CiES) es el espacio de formación en investigación y docencia en Psicoterapia
+              Psicoanalítica y Psicomotricidad del Colegio Internacional de Educación Superior (CiES).
+              <br /><br />
+              El CiES está incorporado al Registro Nacional de Instituciones y Empresas Científicas y Tecnológicas (RENIECYT) del Consejo Nacional de Ciencia y Tecnología (CONACyT) con la constancia de
+              inscripción definitiva <b>número: 1804302</b>
+              <br /><br />
+              El Registro Nacional de Instituciones y Empresas Científicas y Tecnológicas es un instrumento de apoyo a la investigación científica, el desarrollo tecnológico y la innovación del país a
+              cargo del CONACYT a través del cual identifica a las instituciones, centros, organismos, empresas y personas físicas o morales de los sectores público, social y privado que llevan a cabo
+              actividades relacionadas con la investigación y el desarrollo de la ciencia y la tecnología en México.
+              <br /><br />
+              RENIECYT constituye una base de datos sobre las empresas, instituciones y personas inscritas, esta se publica (con las reservas de la información identificada como confidencial) en el 
+              <a href="http://www.siicyt.gob.mx/" target="_blank">Sistema Integrado de Información Científica y Tecnológica</a>.
+            </p>
+
+            <p>En este marco el CIDPPP-CiES ha registrado las siguientes Líneas de Generación y Aplicación del Conocimiento (LGAC):</p>
+            <ul>
+              <li>Psicoterapia Psicoanalítica</li>
+              <li>Psicomotricidad</li>
+            </ul>
+
+            <p>En las cuales se ha creado las siguientes piezas del conocimiento:</p>
+            <ul>
+              <li>Revista electrónica Letra en Psicoanálisis (LeP).</li>
+              <li>Revista electrónica Psicomotricidad, Movimiento y Emoción (PsiME).</li>
+            </ul>
+            <p>
+              Estas revistas están conformadas por grupos de investigación de índole nacional e internacional y con trayectorias académicas destacadas en diferentes instituciones de educación
+              superior.
+              <br /><br />
+              De igual forma el CiES ha consolidado un amplio acervo de tesis de licenciatura, maestría y doctorado relacionadas con estas LGAC y así como congresos, conferencias, seminarios y talleres
+              que consolidan el conocimiento en estas líneas.
+              <br /><br />
+              En este esfuerzo, y con la finalidad de transferir el conocimiento a la sociedad en el 2016 se inauguran dos cátedras:
+              <ul>
+                <li>La cátedra André Green.</li>
+                <li>La cátedra Julián de Ajuriaguerra.</li>
+              </ul>
+
+              En estos espacios se estarán realizando actividades permanentes de difusión de los hallazgos e investigaciones que se realizan en el CiES y así ir dando respuesta a la sociedad entorno a
+              las problemáticas principales de estos campos de estudio.
+              <br /><br />
+              Los investigadores, profesores y alumnos del CiES podrán participar en diferentes proyectos de investigación con base a las diferentes convocatorias del CONACYT para más información con la
+              Lic. Victoria Mancera: <a href="mailto:posgrados@cies-mex.edu.mx">posgrados@cies-mex.edu.mx</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
