@@ -1,0 +1,296 @@
+---
+import CiesAccordionGroup from "@components/AccordionGroup.astro";
+import CiesAccordionItem from "@components/AccordionItem.astro";
+import CiesInfoPrevioRvoe from "@components/programas/InfoPrevioRvoe.astro";
+---
+
+<section class="cies-programa-detalle">
+  <div class="row g-5">
+    <!-- Contenido -->
+    <div class="col-12 col-lg-8">
+      <CiesInfoPrevioRvoe videoId="MhX3Lv9bq14" />
+
+      <!-- Bloque de RVOE e introducción -->
+      <article class="container bg-white rounded-4 shadow p-5 mb-3">
+        <h2 class="h5 fw-bold mb-3 cies-rvoe-heading">Reconocimiento de Validez Oficial de Estudios (RVOE) <br />SEP 2012064 del 09/03/2001.</h2>
+        <p>
+          Descubre el camino para seguir transformando vidas a través de la Licenciatura en Psicología en CiES. Abre las puertas de tu propio consultorio y conviértete en un agente de cambio en
+          distintos contextos, acompañando a personas, familias e instituciones.
+        </p>
+
+        <p>
+          En nuestra institución de excelencia, te prepararás en las cinco áreas fundamentales de la Psicología: Clínica, Educativa, Social, Organizacional y del Delito. Nuestro Programa Integral de
+          Licenciatura en Psicología, respaldado por más de 26 años de experiencia, se basa en las Neurociencias y en una formación teórica y práctica sólida y actualizada.
+        </p>
+
+        <h3 class="h6 fw-bold mt-4 mb-2">Ventajas únicas en CiES:</h3>
+        <ul class="mb-0">
+          <li>Experiencia sólida en la enseñanza especializada de la Psicología.</li>
+          <li>Reconocida calidad académica de nuestros docentes.</li>
+          <li>Enfoque exclusivo en la formación psicológica.</li>
+          <li>Programa Integral de Formación en Psicología (PIFP).</li>
+          <li>Seguimiento personalizado con un profesor por cada 5 estudiantes.</li>
+          <li>Diseño curricular que abarca las principales áreas de la Psicología con énfasis en Neurociencias.</li>
+          <li>Horarios flexibles: matutino y mixto (sabatino).</li>
+          <li>Becas y apoyos a la vocación.</li>
+        </ul>
+
+        <h3 class="h6 fw-bold mt-4 mb-2">Métodos de titulación</h3>
+        <ul class="mb-0">
+          <li>Promedio de 9.0</li>
+          <li>Reporte de Servicio Social</li>
+          <li>Consejo Académico</li>
+          <li>45% de créditos en Maestría CiES</li>
+          <li>Publicación en Revistas Indexadas</li>
+          <li>Tesis</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Acordeones -->
+    <div class="col-12 col-lg-4">
+      <section aria-labelledby="estructura-formativa-title">
+        <h2 id="estructura-formativa-title" class="h5 fw-bold mb-3 cies-rvoe-heading">Estructura Formativa</h2>
+
+        <div class="row">
+          <!-- Primera columna -->
+          <section class="col-6 col-lg-12">
+            <CiesAccordionGroup id="lic-psico-programa-izq">
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="objetivos" heading="Objetivos" startOpen={true} icon="bullseye">
+                <p>Formar psicólogas y psicólogos capaces de comprender, evaluar e intervenir en los procesos psicológicos en diferentes ámbitos, con una perspectiva ética, humanista y científica.</p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="perfil-ingreso" heading="Perfil de ingreso" icon="person-plus">
+                <ul>
+                  <li>Interés por el comportamiento humano, la salud mental y los procesos de aprendizaje.</li>
+                  <li>Habilidad para la observación, la escucha y el trabajo colaborativo.</li>
+                  <li>Sensibilidad social y disposición para el trabajo con personas en contextos diversos.</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="perfil-egreso" heading="Perfil de egreso" icon="person-check">
+                <p>
+                  La persona egresada contará con bases teóricas, metodológicas y técnicas para realizar evaluación, diagnóstico e intervención psicológica en los ámbitos clínico, educativo, social,
+                  organizacional y del delito, así como para participar en proyectos de investigación.
+                </p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="campos-trabajo" heading="Campos de trabajo" icon="briefcase">
+                <ul>
+                  <li>Consultorio psicológico privado.</li>
+                  <li>Instituciones educativas y de atención a la salud.</li>
+                  <li>Organizaciones públicas y privadas.</li>
+                  <li>Centros comunitarios y de intervención social.</li>
+                  <li>Proyectos de investigación y docencia.</li>
+                </ul>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+
+          <!-- Segunda columna -->
+          <section class="col-6 col-lg-12">
+            <CiesAccordionGroup id="lic-psico-programa-der">
+              <CiesAccordionItem parentId="lic-psico-programa-der" itemId="horarios" heading="Horarios" icon="clock">
+                <ul class="mb-0">
+                  <li>Matutino.</li>
+                  <li>Vespertino</li>
+                  <li>Sabatino</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-der" itemId="fechas" heading="Fechas" icon="calendar-event">
+                <p class="mb-0">Se abren grupos en marzo y septiembre de cada año (sujeto a cupo y a calendario oficial).</p>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-der" itemId="requisitos" heading="Requisitos" icon="list-check">
+                <ul class="mb-0">
+                  <li>Acta de Nacimiento (original)</li>
+                  <li>Certificado de Preparatoria (original)</li>
+                  <li>CURP (actualizado)</li>
+                  <li>Comprobante de Domicilio</li>
+                  <li>Carta de Motivos (a mano)</li>
+                  <li>4 Fotografías Tamaño Infantil</li>
+                  <li>Credencial Oficial Vigente (INE)</li>
+                  <li>Autobiografía (dos cuartillas)</li>
+                  <li>Proceso de Admisión</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-der" itemId="becas" heading="Becas" icon="award">
+                <p class="mb-0">CiES ofrece distintos esquemas de becas académicas y apoyos económicos. Pregunta por los requisitos en el área de admisiones.</p>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+
+          <section class="col-12">
+            <div class="w-100 text-center">
+              <a href="/images/programas/MamasProfesionistas.jpg" data-lightbox="Mamas Profesionistas">
+                <div class="border rounded shadow-sm p-2 bg-white my-4">
+                  <img src="/images/programas/MamasProfesionistas.jpg" alt="Mamas Profesionistas" class="img-fluid w-100 rounded" />
+                </div>
+              </a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-12">
+      <section class="cies-instituciones-practicas mb-3">
+        <h2 class="h5 fw-bold mb-3 cies-rvoe-heading">Instituciones para prácticas profesionales y servicio social</h2>
+        <p>
+          Los estudiantes del CiES realizan prácticas profesionales y servicio social en instituciones con sólido prestigio académico, científico y comunitario, lo que enriquece su formación y
+          fortalece su experiencia profesional en contextos reales.
+        </p>
+
+        <ul class="cies-list-instituciones mt-3">
+          <li>CENTRO DE ESTUDIOS TECNOLÓGICOS INDUSTRIALES Y DE SERVICIOS No. 49</li>
+          <li>CENTRO DE FORMACIÓN Y ACCIÓN SOCIAL ERNESTO MENESES</li>
+          <li>CENTRO DE INTEGRACIÓN JUVENIL, A.C.</li>
+          <li>COLEGIO HÉROES</li>
+          <li>COLEGIO MARÍA DEL CARMEN MURIEL</li>
+          <li>COLEGIO NACIONAL DE EDUCACIÓN PROFESIONAL TÉCNICA (CONALEP)</li>
+          <li>COMUNIDAD EDUCATIVA Y PSICOPEDAGÓGICA INTEGRAL (CEPI)</li>
+          <li>CRUZ ROJA MEXICANA</li>
+          <li>DOMUS INSTITUTO DE AUTISMO</li>
+          <li>EMPRESAS NACIONALES Y TRANSNACIONALES</li>
+          <li>FISCALÍA GENERAL DE JUSTICIA DE LA CIUDAD DE MÉXICO</li>
+          <li>GUARDERÍAS, PREESCOLARES, PRIMARIAS, SECUNDARIAS Y PREPARATORIAS, PÚBLICAS Y PRIVADAS</li>
+          <li>HOSPITAL FRAY BERNARDINO ÁLVAREZ</li>
+          <li>HOSPITAL INFANTIL DE MÉXICO FEDERICO GÓMEZ</li>
+          <li>HOSPITAL PSIQUIÁTRICO INFANTIL JUAN N. NAVARRO</li>
+          <li>INSTITUTO FRANCISCO POSSENTI</li>
+          <li>INSTITUTO NACIONAL DE NEUROLOGÍA DR. MANUEL VELASCO SUÁREZ</li>
+          <li>INSTITUTO PEDAGÓGICO PARA PROBLEMAS DE LENGUAJE</li>
+          <li>PATRONATO FRANCISCO MÉNDEZ, IAP</li>
+          <li>SECRETARÍA DE EDUCACIÓN, CIENCIA, TECNOLOGÍA E INNOVACIÓN</li>
+          <li>SECRETARÍA DE INCLUSIÓN Y BIENESTAR SOCIAL GOBIERNO DE LA CIUDAD DE MÉXICO</li>
+          <li>SECRETARÍA DE SALUD</li>
+          <li>SECRETARÍA DEL SEGURO SOCIAL ZONA SUR</li>
+          <li>SECRETARIA DE SEGURIDAD CIUDADANA CDMX</li>
+          <li>SISTEMA DE DESARROLLO INTEGRAL DE LA FAMILIA (DIF) DE LA CIUDAD DE MÉXICO</li>
+          <li>VOLUNTARIAS VICENTINAS DE LA STA. CRUZ DEL PEDREGAL I.A.P CADI N⁰ 62</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Plan de estudios -->
+    <div class="col-12">
+      <section aria-labelledby="plan-estudios-title">
+        <h2 id="plan-estudios-title" class="h5 fw-bold mb-3 cies-rvoe-heading">Plan de estudios</h2>
+
+        <div class="row">
+          <!-- Primera columna -->
+          <section class="col-12 col-lg-6">
+            <CiesAccordionGroup id="lic-psico-programa-plan-izq">
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-1" heading="1er. Semestre" startOpen={true} icon="layers">
+                <ul>
+                  <li>Teorías y Sistemas en Psicología I</li>
+                  <li>Psicología del Desarrollo I</li>
+                  <li>Bases Biológicas del Comportamiento Humano</li>
+                  <li>Aprendizaje y Memoria</li>
+                  <li>Técnicas de Investigación en Psicología</li>
+                  <li>Personalidad y Conducta Humana</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-2" heading="2° Semestre" icon="layers">
+                <ul>
+                  <li>Teorías y Sistemas en Psicología II</li>
+                  <li>Psicología del Desarrollo II</li>
+                  <li>Neuroanatomía y Neurofisiología I</li>
+                  <li>Comunicación Humana</li>
+                  <li>Diseños y Análisis de Investigación</li>
+                  <li>Teoría y Técnica de la Entrevista I</li>
+                  <li>Principios Básicos de la Psicología Educativa</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-3" heading="3er. Semestre" icon="layers">
+                <ul>
+                  <li>Psicología del Desarrollo III</li>
+                  <li>Neuroanatomía y Neurofisiología II</li>
+                  <li>Psicología Clínica</li>
+                  <li>Pensamiento y Lenguaje</li>
+                  <li>Psicopatología I</li>
+                  <li>Teoría y Técnica de la Entrevista II</li>
+                  <li>Patología del Aprendizaje y del Comportamiento Escolar</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-4" heading="4° Semestre" icon="layers">
+                <ul>
+                  <li>Psicología del Desarrollo IV</li>
+                  <li>Neuropsicología I</li>
+                  <li>Motivación y Emoción</li>
+                  <li>Técnicas de Evaluación e Intervención Educativa</li>
+                  <li>Psicopatología II</li>
+                  <li>Métodos de Estadística Descriptiva</li>
+                </ul>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+
+          <!-- Segunda columna -->
+          <section class="col-12 col-lg-6">
+            <CiesAccordionGroup id="lic-psico-programa-plan-der">
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-5" heading="5° Semestre" icon="layers">
+                <ul>
+                  <li>Psicología del Desarrollo V</li>
+                  <li>Neuropsicología II</li>
+                  <li>Orientación Educativa y Vocacional</li>
+                  <li>Psicopatología III</li>
+                  <li>Psicometría I</li>
+                  <li>Psicología Social I</li>
+                  <li>Métodos de Estadística Inferencial</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-6" heading="6° Semestre" icon="layers">
+                <ul>
+                  <li>Adicciones y Compulsiones</li>
+                  <li>Neuropsicología III</li>
+                  <li>Psicometría II</li>
+                  <li>Psicología Social II</li>
+                  <li>Los Pequeños Grupos y el Grupo Terapéutico</li>
+                  <li>Psicología Organizacional I</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-7" heading="7° Semestre" icon="layers">
+                <ul>
+                  <li>Psicofarmacología</li>
+                  <li>Psicometría III</li>
+                  <li>Estudio de las Instituciones</li>
+                  <li>Psicología Organizacional II</li>
+                  <li>Seminario de Tesis I</li>
+                  <li>Introducción a la Psicología del Delito</li>
+                </ul>
+              </CiesAccordionItem>
+
+              <CiesAccordionItem parentId="lic-psico-programa-izq" itemId="semestre-8" heading="8° Semestre" icon="layers">
+                <ul>
+                  <li>Fenómenos Sociales en México</li>
+                  <li>Psicología Organizacional III</li>
+                  <li>Seminario de Tesis II</li>
+                  <li>Ética Profesional</li>
+                  <li>Psicoterapia</li>
+                </ul>
+              </CiesAccordionItem>
+            </CiesAccordionGroup>
+          </section>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .cies-instituciones-practicas {
+    padding: 40px 30px;
+  }
+.cies-list-instituciones li {
+  padding-left: 0.2rem;
+}
+</style>

@@ -1,0 +1,112 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import json_programas from "@data/programas.json";
+import "@styles/views/programas.css";
+
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+import CiesSeccionProgramaForm from "@components/programas/Form.astro";
+
+// Contenidos específicos
+import CiesContenidoLicPsicologiaMadres from '@components/programas/contenido/LicPsicologiaMadres.astro'
+
+
+
+const siteUrl = "https://cies.online"; // ajustar
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+interface Programa {
+  key: string;
+  titulo: string;
+  grado: string;
+  descripcion: string;
+  link: string;
+  imgSrc: string;
+  tituloSeo?: string;
+  descripcionSeo?: string;
+  faq?: FaqItem[];
+}
+
+
+// Recupera información del programa
+const programaBase = json_programas.find((p) => p.key == 'lic-psicologia');
+if (!programaBase) {
+  throw new Error(`Programa base 'lic-psicologia' no encontrado`);
+}
+
+// Realiza la copia del objeto base y cambia valores
+const programa: Programa = {
+  ...programaBase,
+  titulo: "Mamás Profesionistas",
+  descripcion: "Estudia mientras tus hijos lo hacen."
+};
+
+
+// URL canónica de la página
+const pageUrl = "https://cies.online/mamas-profesionistas";
+
+// Título SEO (ej: "CIES | Licenciatura en Psicología")
+const tituloCompleto = `${programa.grado} en ${programa.titulo}`;
+const title = `CiES | ${tituloCompleto}`;
+
+// Descripción SEO 
+const description = "Estudia la Licenciatura en Psicología en CiES con un programa pensado para mamás profesionistas: horarios flexibles para que puedas formarte mientras tus hijos estudian.";
+
+// Breadcrumbs para Structured Data
+const breadcrumbs = [
+  { name: "Inicio", url: `${siteUrl}/` },
+  { name: programa.titulo, url: pageUrl }
+];
+
+// Datos del Course para Structured Data
+const courseData = {
+  name: tituloCompleto,
+  url: pageUrl,
+  description,
+  providerName: "Colegio Internacional de Educación Superior CiES",
+  providerUrl: siteUrl
+};
+
+// FAQ se toma del JSON (si no hay, queda [])
+const faq: FaqItem[] = programa.faq ?? [];
+
+// Resolve el componente según la key
+const ContentComponent = CiesContenidoLicPsicologiaMadres;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={pageUrl}
+  type="article"
+  image={programa.imgSrc}
+  structuredData={{
+    organization: true,
+    breadcrumbs,
+    course: courseData,
+    faq
+  }}
+>
+  <CiesSeccionProgramaHeader programa={programa} />
+  <CiesSeccionProgramaForm programaKey={programa.key} />
+
+  <div class="container my-5">
+    <div class="row g-5">
+      <div class="col-12">
+        {ContentComponent && <ContentComponent />}
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="/js/views/programas.js" defer></script>
+  <script>
+    // @ts-ignore
+    document.addEventListener("DOMContentLoaded", () => {
+      ComponentPrograma.init({});
+    });
+  </script>
+</BaseLayout>
+
