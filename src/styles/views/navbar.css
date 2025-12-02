@@ -1,0 +1,95 @@
+#cies-nav {
+    height: var(--navbar-h);
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(0px);
+    transition:
+      backdrop-filter 0.25s ease,
+      background-color 0.25s ease,
+      box-shadow 0.25s ease,
+      height 0.25s ease;
+  }
+
+  /* Da espacio vertical a la zona del menú */
+  #cies-nav .navbar-collapse {
+    padding-top: 2rem;
+    padding-bottom: 0.4rem;
+  }
+
+  #cies-nav.scrolled {
+    height: 60px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  }
+
+  .logo-wrapper-center {
+    position: absolute;
+    top: 5px; /* ajusta el valor a tu gusto */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  .logo-wrapper-brand {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    /* que no estorbe al principio en mobile */
+  }
+
+  /* Logos con transición */
+  .logo-navbar,
+  .logo-navbar-brand {
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  /* Estado inicial: logo grande centrado visible, brand oculto */
+  .logo-navbar {
+    margin-top: 10px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .logo-navbar-brand {
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none; /* que no se pueda clickear mientras está oculto */
+  }
+
+  #cies-nav .nav-item > .nav-link:hover,
+  #cies-nav .nav-link.show,
+  #cies-nav-mobile .nav-item > .nav-link:hover,
+  #cies-nav-mobile .nav-link.show {
+    color: var(--cies-green-primary);
+    font-weight: bolder;
+  }
+
+  /* Estado con scroll: se cruza uno por otro */
+  #cies-nav.scrolled .logo-navbar {
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+  }
+
+  #cies-nav.scrolled .logo-navbar-brand {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  #cies-nav .dropdown-item:focus, #cies-nav .dropdown-item:hover,
+  #cies-nav-mobile .dropdown-item:focus, #cies-nav-mobile .dropdown-item:hover  {
+    color: var(--cies-green-primary);
+    background-color: var(--bs-dropdown-link-hover-bg);
+  }
+
+  #cies-nav-mobile .navbar-toggler {
+    border: 2px solid var(--cies-green-primary);
+  }
+  #cies-nav-mobile .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2300a859' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }

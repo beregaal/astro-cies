@@ -1,9 +1,11 @@
 ---
 import logo from "@assets/cies-logo.png";
+import CiesNavbarItems from "@components/NavbarItems.astro";
+import "@styles/views/navbar.css";
 ---
 
 <header>
-  <nav id="cies-nav" class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+  <nav id="cies-nav" class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom shadow mb-3 d-none d-lg-flex">
     <div class="container-fluid d-flex flex-column align-items-center">
       <!-- Logo centrado inicial -->
       <a class="logo-wrapper-center" href="/">
@@ -28,65 +30,29 @@ import logo from "@assets/cies-logo.png";
       </button>
       <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
         <ul class="navbar-nav flex-grow-1">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="dwnCies" role="button" data-bs-toggle="dropdown" aria-expanded="false">CiES</a>
-            <ul class="dropdown-menu" aria-labelledby="dwnCies">
-              <li><a class="dropdown-item" href="/onu-cies">ONU - CiES</a></li>
-              <li><a class="dropdown-item" href="/historia">Historia</a></li>
-              <li><a class="dropdown-item" href="/convenios">Convenios</a></li>
-              <li><a class="dropdown-item" href="/docentes">Docentes</a></li>
-              <li><a class="dropdown-item" href="/cacies">CACiES</a></li>
-              <li><a class="dropdown-item" href="/centro-de-investigacion">Centro de Investigación</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="dwnProgramas" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programas Académicos</a>
-            <ul class="dropdown-menu" aria-labelledby="dwnProgramas">
-              <li><h6 class="dropdown-header">Licenciatura</h6></li>
-              <li><a class="dropdown-item" href="/programas/licenciatura/psicologia">Psicología</a></li>
-              <li><a class="dropdown-item" href="/programas/mamas-profesionistas">Psicología - Mamás Profesionistas</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><h6 class="dropdown-header">Maestría</h6></li>
-              <li><a class="dropdown-item" href="/programas/maestria/psicomotricidad">Psicomotricidad</a></li>
-              <li><a class="dropdown-item" href="/programas/maestria/psicoterapia-psicoanalitica">Psicoterapia Psicoanalítica</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><h6 class="dropdown-header">Doctorado</h6></li>
-              <li><a class="dropdown-item" href="/programas/doctorado/investigacion-psicoanalitica">Investigación Psicoanalítica</a></li>
-              <li><a class="dropdown-item" href="/programas/doctorado/ciencias-del-desarrollo-humano">Ciencias del Desarrollo Humano</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="dwnCursos" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formación Continua</a>
-            <ul class="dropdown-menu" aria-labelledby="dwnCursos">
-              <li><h6 class="dropdown-header">Cursos</h6></li>
-              <li><a class="dropdown-item" href="/formacion/dominicales-psicoanalisis">Dominicales de psicoanálisis</a></li>
-              <li><a class="dropdown-item" href="/formacion/dominicales-psicomotricidad">Dominicales de psicomotricidad</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><h6 class="dropdown-header">Diplomados</h6></li>
-              <li><a class="dropdown-item" href="/winnicott">Práctica de Winnicott</a></li>
-              <!-- <li><a class="dropdown-item" href="/programas/maestria/psicoterapia-psicoanalitica"><i class="bi bi-book me-2"></i>Maestría en Psicoterapia Psicoanalítica</a></li> -->
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="/formacion/encuentros-congresos">Encuentros y Congresos</a></li>
-              <!-- <li><a class="dropdown-item" href="/programas/doctorado/ciencias-del-desarrollo-humano"><i class="bi bi-book me-2"></i>Doctorado en Ciencias del Desarrollo Humano</a></li> -->
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="dwnRevistasdigitales" role="button" data-bs-toggle="dropdown" aria-expanded="false">Revistas Digitales</a>
-            <ul class="dropdown-menu" aria-labelledby="dwnRevistasdigitales">
-              <li><a class="dropdown-item" href="http://cies-revistas.mx/index.php/Psicoanalisis">Letra en Psicoanálisis </a></li>
-              <li><a class="dropdown-item" href="http://cies-revistas.mx/index.php/Psicomotricidad">Psicomotricidad Movimiento y Emoción</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/proceso-admision">Inicia tu proceso de admisión</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/">Contacto</a>
-          </li>
+          <CiesNavbarItems />
         </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile -->
+  <nav id="cies-nav-mobile" class="navbar bg-body-tertiary fixed-top shadow border-bottom d-flex d-lg-none">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img src={logo.src} alt="Logo Cies" height="40" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand" href="/"><img src={logo.src} alt="Logo Cies" height="40"  /></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <CiesNavbarItems />
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -111,90 +77,4 @@ import logo from "@assets/cies-logo.png";
   })();
 </script>
 
-<style>
-  #cies-nav {
-    height: var(--navbar-h);
-    tbackground-color: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(0px);
-    transition:
-      backdrop-filter 0.25s ease,
-      background-color 0.25s ease,
-      box-shadow 0.25s ease,
-      height 0.25s ease;
-  }
-
-  /* Da espacio vertical a la zona del menú */
-  #cies-nav .navbar-collapse {
-    padding-top: 2rem;
-    padding-bottom: 0.4rem;
-  }
-
-  #cies-nav.scrolled {
-    height: 60px;
-    padding-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-  }
-
-  .logo-wrapper-center {
-    position: absolute;
-    top: 5px; /* ajusta el valor a tu gusto */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0;
-  }
-
-  .logo-wrapper-brand {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    /* que no estorbe al principio en mobile */
-  }
-
-  /* Logos con transición */
-  .logo-navbar,
-  .logo-navbar-brand {
-    transition:
-      opacity 0.25s ease,
-      transform 0.25s ease;
-  }
-
-  /* Estado inicial: logo grande centrado visible, brand oculto */
-  .logo-navbar {
-    margin-top: 10px;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .logo-navbar-brand {
-    opacity: 0;
-    transform: translateY(-6px);
-    pointer-events: none; /* que no se pueda clickear mientras está oculto */
-  }
-
-  #cies-nav .nav-item > .nav-link:hover,
-  #cies-nav .nav-link.show {
-    color: var(--cies-green-primary);
-    font-weight: bolder;
-  }
-
-  /* Estado con scroll: se cruza uno por otro */
-  #cies-nav.scrolled .logo-navbar {
-    opacity: 0;
-    transform: translateY(-6px);
-    pointer-events: none;
-  }
-
-  #cies-nav.scrolled .logo-navbar-brand {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-  #cies-nav .dropdown-item:focus, .dropdown-item:hover {
-    color: var(--cies-green-primary);
-    background-color: var(--bs-dropdown-link-hover-bg);
-  }
-</style>
+<style></style>
