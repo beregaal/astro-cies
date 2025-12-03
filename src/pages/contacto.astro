@@ -1,0 +1,103 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CiesSeccionProgramaHeader from "@components/programas/Header.astro";
+
+// Datos del encabezado
+const programa = {
+  grado: "",
+  titulo: "Contacto",
+  descripcion: "Encuentra aquí la información de contacto, teléfonos, WhatsApp y la ubicación del Colegio Internacional de Educación Superior.",
+};
+
+const plantelImages = [
+  "/images/plantel/plantel-1.jpg",
+  "/images/plantel/plantel-2.jpg",
+  "/images/plantel/plantel-3.jpg",
+  "/images/plantel/plantel-4.jpg",
+  "/images/plantel/plantel-5.jpg",
+  "/images/plantel/plantel-6.jpg",
+];
+---
+
+<BaseLayout
+  title="CiES | Contacto"
+  description="Dirección, teléfonos, WhatsApp y ubicación del Colegio Internacional de Educación Superior (CiES) en Ciudad de México."
+  ;
+  canonical="https://cies.mx/contacto"
+  ,
+  structuredData={{
+    organization: true,
+    breadcrumbs: [
+      { name: "Inicio", url: "https://cies.mx/" },
+      { name: "Contacto", url: "https://cies.mx/contacto" },
+    ],
+  }}
+>
+  <CiesSeccionProgramaHeader programa={programa} />
+
+  <section class="container py-5 cies-programa-detalle">
+    <div class="row g-4">
+      <!-- Información de contacto -->
+      <div class="col-12 col-lg-6">
+        <h2 class="h4 fw-bold mb-4 cies-rvoe-heading">Información de contacto</h2>
+
+        <div class="mb-4">
+          <h3 class="h6 fw-bold text-uppercase mb-2">Dirección</h3>
+          <p class="mb-0">
+            Rómulo O'Farril 351,<br />
+            Col. Olivar de los Padres,<br />
+            C.P. 01780, Ciudad de México.
+          </p>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h6 fw-bold text-uppercase mb-2">Teléfonos</h3>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <strong>Conmutador:</strong> 55 5681 4287
+            </li>
+            <li class="mb-1">
+              <strong>Información de los programas:</strong> ext. 1
+            </li>
+            <li class="mb-1">
+              <strong>Servicios escolares:</strong> ext. 2
+            </li>
+            <li class="mb-1">
+              <strong>Contabilidad:</strong> ext. 3
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="h6 fw-bold text-uppercase mb-2">WhatsApp</h3>
+          <p class="mb-1">
+            Informes también por WhatsApp:
+            <a href="https://wa.me/525551014882" target="_blank" rel="noopener noreferrer"> 55 5101 4882 </a>
+          </p>
+          <p class="small text-muted mb-0">Atención para dudas generales, programas académicos y proceso de admisión.</p>
+        </div>
+      </div>
+
+      <!-- Mapa de Google con ubicación -->
+      <div class="col-12 col-lg-6">
+        <h2 class="h6 fw-bold text-uppercase mb-3 cies-rvoe-heading">Ubicación</h2>
+        <div class="ratio ratio-4x3 shadow-sm rounded-3 overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps?q=R%C3%B3mulo+O%27Farril+351,+Col.+Olivar+de+los+Padres,+01780+Ciudad+de+M%C3%A9xico&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            style="border:0;"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conoce la institución (grid para lightbox) -->
+
+
+
+  <style>
+
+  </style>
+</BaseLayout>
