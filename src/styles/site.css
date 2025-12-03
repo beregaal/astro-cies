@@ -98,6 +98,23 @@ footer a:hover {
 }
 
 
+
+
+/* ================================
+   ENCABEZADO SECCION
+   =============================== */
+  .cies-section-kicker {
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--cies-green-primary);
+  }
+
+  .cies-section-title {
+    font-weight: 700;
+  }
+
+
 /* ================================
    CIES PAGE - HERO
    ================================ */

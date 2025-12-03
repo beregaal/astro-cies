@@ -9,6 +9,8 @@ import CardPrograma from "@components/ComponenteCardPrograma.astro";
 import CiesSeccionEducacionContinua from "@components/inicio/SeccionEducacionContinua.astro";
 import CiesSeccionRevistas from "@components/inicio/SeccionRevistasCarrusel.astro";
 import CiesSeccionCacies from "@components/inicio/SeccionCacies.astro";
+import CiesSeccionFundadores from "@components/inicio/SeccionFundadores.astro";
+import CiesSeccionLibros from "@components/inicio/SeccionLibros.astro";
 
 const data: CiesProgramas[] = json_programas as CiesProgramas[];
 ---
@@ -61,16 +63,16 @@ const data: CiesProgramas[] = json_programas as CiesProgramas[];
     </div>
 
     <div class="row">
-      <div class="col-12 text-center py-4 fundadores-wrapper">Fundadores y Docentes (Coordinadores)</div>
+      <div class="col-12 text-center py-4 fundadores-wrapper">
+        <CiesSeccionFundadores />
+      </div>
+    </div>
 
-      <div class="col-12 text-center py-4 libros-wrapper">Libros</div>
+    <div class="row">
+      <div class="col-12 text-center py-4 libros-wrapper">
+        <CiesSeccionLibros />
+      </div>
     </div>
   </div>
 
-  <style>
-    .cies-revista-wrapper {
-      /* background-color: #fff; */
-      border-radius: 1rem;
-    }
-  </style>
 </BaseLayout>

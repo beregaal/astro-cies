@@ -1,0 +1,50 @@
+[
+  {
+    "key": "libro-1",
+    "titulo": "Título del libro",
+    "autor": "Nombre del autor",
+    "portada": "/images/libros/libro-1.jpg",
+    "amazon": "https://www.amazon.com/...",
+    "gandhi": "https://www.gandhi.com.mx/..."
+  },
+  {
+    "key": "libro-2",
+    "titulo": "Título del libro",
+    "autor": "Nombre del autor",
+    "portada": "/images/libros/libro-2.jpg",
+    "amazon": "https://www.amazon.com/...",
+    "gandhi": "https://www.gandhi.com.mx/..."
+  },
+  {
+    "key": "libro-2",
+    "titulo": "Título del libro",
+    "autor": "Nombre del autor",
+    "portada": "/images/libros/libro-2.jpg",
+    "amazon": "https://www.amazon.com/...",
+    "gandhi": "https://www.gandhi.com.mx/..."
+  },
+  {
+    "key": "libro-2",
+    "titulo": "Título del libro",
+    "autor": "Nombre del autor",
+    "portada": "/images/libros/libro-2.jpg",
+    "amazon": "https://www.amazon.com/...",
+    "gandhi": "https://www.gandhi.com.mx/..."
+  },
+  {
+    "key": "libro-2",
+    "titulo": "Título del libro",
+    "autor": "Nombre del autor",
+    "portada": "/images/libros/libro-2.jpg",
+    "amazon": "https://www.amazon.com/...",
+    "gandhi": "https://www.gandhi.com.mx/..."
+  },
+  {
+    "key": "libro-2",
+    "titulo": "Título del libro",
+    "autor": "Nombre del autor",
+    "portada": "/images/libros/libro-2.jpg",
+    "amazon": "https://www.amazon.com/...",
+    "gandhi": "https://www.gandhi.com.mx/..."
+  }
+]
