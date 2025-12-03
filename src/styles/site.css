@@ -29,9 +29,15 @@ html {
 }
 
 body {
-  padding-top: var(--navbar-h);
+  padding-top: 64px;
   background-color: var(--cies-white-secondary);
   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: var(--navbar-h);
+  }
 }
 
 a {
@@ -87,6 +93,10 @@ footer a:hover {
   border-color: #0c4a23;
 }
 
+.cies-revista-wrapper {
+  background-color: var(--cies-green-secondary)
+}
+
 
 /* ================================
    CIES PAGE - HERO
@@ -97,8 +107,8 @@ footer a:hover {
   overflow: hidden;
   background-color: var(--cies-green-900, #0c4a23);
   color: #fff;
-  margin-left: -12px;
-  margin-right: -12px;
+  /* margin-left: -12px;
+  margin-right: -12px; */
 }
 
 .cies-page-hero .container {

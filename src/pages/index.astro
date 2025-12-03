@@ -18,75 +18,52 @@ const data: CiesProgramas[] = json_programas as CiesProgramas[];
   description="CiES es un centro de estudios superiores especializado en psicología, psicoanálisis, desarrollo humano y formación continua. Conoce nuestras licenciaturas, maestrías, doctorados y programas dominicales."
   canonical="https://cies.mx"
   structuredData={{
-    organization: true
+    organization: true,
   }}
 >
-  <div id="cies-home">
+  <div id="cies-home" class="container-fluid">
     <div class="row">
       <div class="col-12">
-        <img
-          src={wallpaper.src}
-          alt="Logo Cies"
-          class="img-fluid w-100"
-          style="height:600px;margin-bottom:30px;"
-        />
+        <img src={wallpaper.src} alt="Logo Cies" class="img-fluid w-100" style="height:600px;margin-bottom:30px;" />
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mt-5">
-          <h1 class="cies-titulo">Programas Académicos</h1>
-        </div>
-
-        <div class="col-12 my-5">
-          <div class="row">
-            {
-              data.map((programa) => (
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-4 p-3">
-                  <CardPrograma
-                    titulo={programa.titulo}
-                    grado={programa.grado}
-                    descripcion={programa.descripcion}
-                    link={programa.link}
-                    imgSrc={programa.imgSrc}
-                  />
-                </div>
-              ))
-            }
-          </div>
+      <div class="col-12 my-5">
+        <h1 class="cies-titulo my-4 text-center">Programas Académicos</h1>
+        <div class="row">
+          {
+            data.map((programa) => (
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-4 p-3">
+                <CardPrograma titulo={programa.titulo} grado={programa.grado} descripcion={programa.descripcion} link={programa.link} imgSrc={programa.imgSrc} />
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
 
-
-    <div class="row rounded-3 mb-5" style="background-color:#fff;">
+    <div class="row rounded-3 my-5" style="background-color:#fff;">
       <div class="col-12 col-md-7 text-center py-4">
         <CiesSeccionEducacionContinua />
       </div>
     </div>
 
-    <div class="col-12 text-center py-4 cies-revista-wrapper">
-      <CiesSeccionRevistas />
+    <div class="row my-5">
+      <div class="col-12 text-center py-4 cies-revista-wrapper">
+        <CiesSeccionRevistas />
+      </div>
     </div>
 
     <div class="row rounded-3 mb-5" style="background-color:#fff;">
-      <div class="col-12 col-md-5 text-center py-4">
-        
-      </div>
+      <div class="col-12 col-md-5 text-center py-4"></div>
       <div class="col-12 text-center py-4">
         <CiesSeccionCacies />
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-12 text-center py-4 fundadores-wrapper">Fundadores y Docentes (Coordinadores)</div>
 
-
-    <div class="col-12 text-center py-4 cies-revista-wrapper">
-      Fundadores y Docentes (Coordinadores)
-    </div>
-
-    <div class="col-12 text-center py-4 cies-revista-wrapper">
-      Libros
+      <div class="col-12 text-center py-4 libros-wrapper">Libros</div>
     </div>
   </div>
 
