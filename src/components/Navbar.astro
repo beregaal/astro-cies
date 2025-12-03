@@ -59,22 +59,65 @@ import "@styles/views/navbar.css";
 </header>
 
 <script>
+  // (function () {
+  //   // Realiza el juego de imagenes al hacer scroll
+  //   const THRESHOLD = 60;
+
+  //   function update() {
+  //     const nav = document.getElementById("cies-nav");
+  //     if (!nav) return;
+
+  //     const scrolled = window.scrollY > THRESHOLD;
+  //     nav.classList.toggle("scrolled", scrolled);
+  //   }
+
+  //   //window.addEventListener("load", update, { once: true });
+  //   document.addEventListener("DOMContentLoaded", update);
+  //   window.addEventListener("scroll", update, { passive: true });
+  // })();
+
   (function () {
-    // Realiza el juego de imagenes al hacer scroll
-    const THRESHOLD = 60;
+    const THRESHOLD = 60;           // punto donde cambia el navbar
+    const NAVBAR_BIG = 140;         // altura navbar normal
+    const NAVBAR_SMALL = 60;        // altura navbar pequeña
+    const MOBILE_BREAKPOINT = 992;  // igual que Bootstrap lg
 
-    function update() {
-      const nav = document.getElementById("cies-nav");
-      if (!nav) return;
+    const nav = document.getElementById("cies-nav");
+    const hero = document.querySelector(".hero-wrapper");
 
+    if (!nav || !hero) return;
+
+    function updateNavbar() {
       const scrolled = window.scrollY > THRESHOLD;
       nav.classList.toggle("scrolled", scrolled);
     }
 
-    //window.addEventListener("load", update, { once: true });
-    document.addEventListener("DOMContentLoaded", update);
-    window.addEventListener("scroll", update, { passive: true });
+    function updateHeroHeight() {
+      // Mobile → hero pantalla completa
+      if (window.innerWidth < MOBILE_BREAKPOINT) {
+        hero.style.height = "100vh";
+        return;
+      }
+
+      // Desktop → altura según estado actual del navbar
+      const isScrolled = nav.classList.contains("scrolled");
+      const currentHeight = isScrolled ? NAVBAR_SMALL : NAVBAR_BIG;
+
+      hero.style.height = `calc(100vh - ${currentHeight}px)`;
+    }
+
+    function updateAll() {
+      updateNavbar();
+      updateHeroHeight();
+    }
+
+    document.addEventListener("DOMContentLoaded", updateAll);
+    window.addEventListener("scroll", updateAll, { passive: true });
+    window.addEventListener("resize", updateHeroHeight);
+
+    // Ajuste extra por si estilos/carga tardan un poquito
+    window.setTimeout(updateAll, 60);
   })();
 </script>
 
-<style></style>
+</script>

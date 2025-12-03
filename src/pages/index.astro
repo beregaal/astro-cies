@@ -2,7 +2,7 @@
 import json_programas from "@data/programas.json";
 import type { CiesProgramas } from "@interfaces/cies-programas";
 
-import wallpaper from "@assets/cies-wallpaper.jpeg";
+import wallpaper from "@assets/cies-wallpaper.jpg";
 import BaseLayout from "@layouts/BaseLayout.astro";
 
 import CardPrograma from "@components/ComponenteCardPrograma.astro";
@@ -23,11 +23,39 @@ const data: CiesProgramas[] = json_programas as CiesProgramas[];
     organization: true,
   }}
 >
-  <div id="cies-home" class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <img src={wallpaper.src} alt="Logo Cies" class="img-fluid w-100" style="height:600px;margin-bottom:30px;" />
+
+  <section class="cies-hero mb-4">
+  <div class="hero-wrapper">
+    <img
+      src={wallpaper.src}
+      alt="Colegio Internacional de Educación Superior"
+      class="hero-img"
+    />
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h1 class="hero-title">
+            Especialistas en psicología, psicoanálisis, psicomotricidad y adicciones
+          </h1>
+          <!-- Si luego quieres subtítulo, aquí va -->
+          <!-- <p class="hero-subtitle">Texto opcional aquí</p> -->
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+  <div id="cies-home" class="container-fluid">
+    
+
+
+    <div class="row">
+      <!-- <div class="col-12">
+        <img src={wallpaper.src} alt="Logo Cies" class="img-fluid w-100" style="height:600px;margin-bottom:30px;" />
+      </div> -->
 
       <div class="col-12 my-5">
         <h1 class="cies-titulo my-4 text-center">Programas Académicos</h1>
