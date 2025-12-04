@@ -1,23 +1,28 @@
 ---
-import logoBlanco from '@assets/cies-logo-blanco.png';
+import logoBlanco from "@assets/cies-logo-blanco.png";
 ---
 
 <footer id="cies-footer">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row align-items-start cies-footer-1">
+      <!-- Columna: Menú -->
       <div class="col-12 col-md-3 col-xl-3 offset-xxl-1 col-xxl-3 my-4">
-        <h6 class="mb-3">MENÚ</h6>
-        <nav class="nav cies-nav-footer flex-column">
-          <a class="nav-link" href="#">Inicio</a>
-          <a class="nav-link" href="#">Nosotros</a>
-          <a class="nav-link" href="#">Programas</a>
-          <a class="nav-link" href="#">Instalaciones</a>
+        <h6 class="mb-3 text-uppercase">Menú</h6>
+        <nav class="nav cies-nav-footer flex-column" aria-label="Navegación principal del sitio">
+          <a class="nav-link" href="/">Inicio</a>
+          <a class="nav-link" href="/historia">Historia</a>
+          <a class="nav-link" href="/formacion/dominicales-psicoanalisis">Cursos dominicales psicoanálisis</a>
+          <a class="nav-link" href="/formacion/dominicales-psicomotricidad">Cursos dominicales psicomotricidad</a>
+          <a class="nav-link" href="/contacto">Contacto</a>
+          <a class="nav-link" href="/proceso-admision">Inicia tu proceso de admisión</a>
+          <a class="nav-link" href="/cacies">Cita CACiES</a>
         </nav>
       </div>
 
+      <!-- Columna: Oferta educativa -->
       <div class="col-12 col-md-5 col-xl-6 col-xxl-4 my-4">
         <h6 class="mb-3 text-uppercase">Nuestra oferta educativa</h6>
-        <nav class="nav cies-nav-footer flex-column">
+        <nav class="nav cies-nav-footer flex-column" aria-label="Oferta educativa">
           <a class="nav-link" href="#">Licenciatura en Psicología</a>
           <a class="nav-link" href="#">Maestría en Psicomotricidad</a>
           <a class="nav-link" href="#">Maestría en Psicoterapia Psicoanalítica</a>
@@ -26,31 +31,37 @@ import logoBlanco from '@assets/cies-logo-blanco.png';
         </nav>
       </div>
 
-      <div class="col-6 col-md-4 col-xl-3 col-xxl-3 my-4">
-        <img src={logoBlanco.src} alt="Logo Cies" class="mb-4" height="50" width="200" />
-        <p>
+      <!-- Columna: Datos de contacto -->
+      <div class="col-6 col-md-4 col-xl-3 col-xxl-3 my-4 cies-footer-contact">
+        <a href="/" title="Ir al inicio">
+          <img src={logoBlanco.src} alt="Logo CIES" class="mb-4" id="cies-footer-logo" height="50" width="200" />
+        </a>
+        <p class="mb-2">
           Rómulo O'Farril 351<br />
           Col. Olivar de los Padre<br />
           C.P. 01780, Ciudad de México<br />
         </p>
-        <p>
-          <i class="bi bi-telephone me-2"></i>Tel: <a href="tel:+525556814287" target="_blank"
-            >55 5681 4287</a
-          ><br />
-          <i class="bi bi-whatsapp me-2"></i>WhatsApp: <a
-            href="https://wa.me/5551014882?text=Hola%20quiero%20más%20información"
-            target="_blank">55 5101 4882</a
-          ><br />
+        <p class="mb-0">
+          <i class="bi bi-telephone me-2"></i>
+          Tel:
+          <a href="tel:+525556814287" target="_blank">55 5681 4287</a><br />
+          <i class="bi bi-whatsapp me-2"></i>
+          WhatsApp:
+          <a href="https://wa.me/5551014882?text=Hola%20quiero%20más%20información" target="_blank">55 5101 4882</a><br />
         </p>
       </div>
 
-      <div class="col-4 text-center"></div>
+      <div class="col-4 text-center d-none d-xl-block"></div>
     </div>
 
-    <div class="row">
+    <!-- Franja inferior -->
+    <!-- Franja inferior -->
+    <div class="row cies-footer-2">
       <div class="col-12 text-center">
-        <hr class="mt-5" />
-        <div class="w-100 d-md-flex justify-content-between align-items-center">
+        <!-- <hr class="mt-4 mb-3 cies-footer-divider" /> -->
+
+        <div class="w-100 d-md-flex justify-content-between align-items-center cies-footer-bottom py-3 px-2">
+          <!-- Redes sociales -->
           <div>
             <ul class="cies-redes-sociales mb-3 mb-md-0">
               <li>
@@ -73,12 +84,15 @@ import logoBlanco from '@assets/cies-logo-blanco.png';
             </ul>
           </div>
 
-          <div class="d-flex flex-column">
-            <span class="small">Copyright &copy; <span id="cies-footer-year"></span> CIES</span>
+          <!-- Copyright + Powered -->
+          <div class="d-flex flex-column mb-3 mb-md-0 text-center text-md-center">
+            <span class="small fw-semibold">Copyright © <span id="cies-footer-year"></span> CIES</span>
+            <a href="https://gaallabs.com" target="_blank" class="powered-by small" title="Visitar GaalLabs"> Powered by GaalLabs </a>
           </div>
 
+          <!-- Aviso -->
           <div>
-            <a class="" href="/aviso-de-privacidad" title="Leer Aviso de Privacidad">Aviso de privacidad</a>
+            <a href="/aviso-de-privacidad" class="cies-footer-link" title="Leer Aviso de Privacidad"> Aviso de privacidad </a>
           </div>
         </div>
       </div>
@@ -87,37 +101,106 @@ import logoBlanco from '@assets/cies-logo-blanco.png';
 </footer>
 
 <script>
-  const spanYear = document.querySelector('#cies-footer-year') as HTMLSpanElement;
-  const currentYear: number = new Date().getFullYear();
-  spanYear.innerText = `${currentYear}`;
+  const spanYear = document.querySelector("#cies-footer-year");
+  if (spanYear) {
+    spanYear.textContent = String(new Date().getFullYear());
+  }
 </script>
-
 
 <style>
   #cies-footer {
     color: #fff;
-    padding: 40px 30px 16px 30px;
+    /* padding: 48px 30px 20px 30px; */
+    /* background-color: var(--cies-green-secondary); */
+    font-size: 0.95rem;
+  }
+
+  #cies-footer .cies-footer-1 {
+    padding: 20px 10px;
+    /* padding: 48px 30px 20px 30px; */
     background-color: var(--cies-green-secondary);
+  }
+
+  #cies-footer .cies-footer-2 {
+    /* padding: 0 10px 20px 10px; */
+    background-color: #003d26;
   }
 
   #cies-footer h6 {
     font-weight: 700;
+    letter-spacing: 0.04em;
+    font-size: 0.9rem;
+  }
+
+  #cies-footer #cies-footer-logo {
+    max-width: 190px;
+    height: auto;
+  }
+
+  #cies-footer .cies-footer-contact p {
+    line-height: 1.5;
   }
 
   #cies-footer .cies-nav-footer {
-    line-height: initial;
+    line-height: 1.4;
   }
 
   #cies-footer .cies-nav-footer > .nav-link {
     color: #f2f0f0;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
     text-decoration: none;
+    font-size: 0.95rem;
   }
 
   #cies-footer .cies-nav-footer > .nav-link:hover {
     color: var(--cies-yellow-primary);
-    padding: 0.5rem 0;
   }
+
+  #cies-footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  #cies-footer a:hover {
+    color: var(--cies-yellow-primary);
+    text-decoration: underline;
+  }
+
+  .cies-footer-divider {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .cies-footer-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  /* Franja final con tono más oscuro */
+  .cies-footer-bottom {
+    background-color: #003d26; /* Tono institucional más oscuro */
+    border-radius: 4px;
+  }
+
+  /* Separador */
+  .cies-footer-divider {
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+
+  /* Powered by */
+  .powered-by {
+    color: #ffffffcc; /* Blanco suave */
+    text-decoration: none;
+    margin-top: 2px;
+  }
+
+  .powered-by:hover {
+    color: var(--cies-yellow-primary);
+    text-decoration: underline;
+  }
+
+  /* ----------------------------- */
+  /*  BLOQUE DE REDES SOCIALES    */
+  /* ----------------------------- */
 
   ul.cies-redes-sociales {
     display: flex;
@@ -167,7 +250,7 @@ import logoBlanco from '@assets/cies-logo-blanco.png';
   }
 
   ul.cies-redes-sociales li a:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     left: 0;
