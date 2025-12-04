@@ -1,676 +1,1030 @@
 [
   {
-    "id": "carmen-islas",
+    "id": "concepcion-rabadan-fernandez",
     "nombre": "María de la I. Concepción Rabadán Fernández",
     "grado": "Lic. Psic",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Licenciada en Psicología por la Universidad X.",
-      "Maestría en Psicología Clínica con orientación psicoanalítica.",
-      "Experiencia docente en licenciatura y posgrado."
+      "Licenciatura en Psicología por la Universidad Anáhuac.",
+      "Maestría en Psicología Clínica por la Universidad Nacional Autónoma de México (UNAM).",
+      "Doctorado en Psicología Clínica por la Universidad Nacional Autónoma de México (UNAM). Premio Gabino Barreda.",
+      "Psicoanalista titular de la Asociación Psicoanalítica Mexicana (APM)."
     ],
-    "lineasInteres": [
-      "Psicoanálisis",
-      "Clínica con adolescentes",
-      "Supervisión de casos"
+    "experienciaProfesional": [
+      "Psicóloga en Centros de Integración Juvenil (CIJ) Lomas.",
+      "Coordinadora del Centro de Día del CIJ Lomas con pacientes psicóticos.",
+      "Jefa de Proyecto de Investigación en el Departamento de Tratamiento y Rehabilitación de las oficinas centrales de CIJ.",
+      "Psicóloga en PREMAN (Prevención del Maltrato a la Niñez).",
+      "Psicóloga en el Hospital Infantil de México Federico Gómez.",
+      "Jefa del Servicio Integral de Salud en la Universidad del Valle de México.",
+      "Asesora del Centro de Estudios de Educación Especial y Desarrollo Humano en la Universidad del Valle de México.",
+      "Ha dirigido 22 tesis doctorales.",
+      "Integrada al Comité de revisión de tesis de grado: 133 lecturas.",
+      "Miembro del consejo de redacción de la Revista Letra en Psicoanálisis (LeP, ISSN 2448-6868).",
+      "Miembro del consejo de redacción de la Revista Psicomotricidad: movimiento y emoción (ISSN 2448-6175).",
+      "Directora Académica del CiES Colegio Internacional de Educación Superior desde 1998."
+    ],
+    "docenteEn": ["CiES Colegio Internacional de Educación Superior.", "Universidad del Valle de México.", "Universidad Intercontinental.", "Asociación Psicoanalítica Mexicana."],
+    "publiaciones": [
+      "Autora (2023). *Winnicott: Clínica de las agonías primitivas*. CDMX: Editorial D’Jimena, CiES.",
+      "Coautora con Ayala, J. (2021). *Más allá de la terapia de juego. Los fundadores*. CDMX: Editorial D’Jimena, CiES.",
+      "“Sentimientos de culpa e identificaciones con familiares de enfermos mentales graves”. Segundo autor: Ayala Villarreal Jaime Fausto. *Cuadernos de Psicoanálisis*, Vol. XXI, 3-4, 1988.",
+      "“Del terror, los estados de suspenso y sus destinos”. *Cuadernos de Psicoanálisis*, Suplemento al Vol. XXXVII (3-4), 2005.",
+      "“Martha Bernays: el rostro desconocido de Freud. Un acercamiento psicoanalítico”. *Cuadernos de Psicoanálisis*, Vol. XXXII (3-4), 1999.",
+      "“Psicoterapia de Grupo por medio del juego dentro de una institución hospitalaria: 2 años 3 meses de trabajo”. *Revista Nacional de Neurología Neurocirugía Psiquiatría*, Vol. XXVII, No. 1-4, 1987.",
+      "“Adherencia terapéutica: aspectos observados en una institución hospitalaria”. *Revista Nacional de Neurología Neurocirugía Psiquiatría*, Vol. XXXII, No. 1-2, 1991.",
+      "“Sexualidad de la mujer y del hombre durante el embarazo y el posparto”. *Revista Nacional de Neurología Neurocirugía Psiquiatría*, Vol. XXXII, No. 3-4, 1991.",
+      "“Mamá, ¿cómo era yo?, papá cuéntame cómo eras cuando chico”. Con Ayala Villarreal Jaime Fausto. *Revista de Psicoanálisis con Niños Fort-Da*, No. 11, agosto 2014.",
+      "“Anatomía del odio, a cuerpo abierto. Clínica psicoanalítica de las toxicomanías”. *Letra en Psicoanálisis (LeP)*, Vol. 1, No. 1, julio 2015.",
+      "Glosario de psicoanálisis “Para leer *Narcisismo de vida, narcisismo de muerte* de André Green. Parte 1 de 2”. Primer autor: Ayala Villarreal Jaime Fausto. *Letra en Psicoanálisis (LeP)*, Vol. 1, No. 1, julio 2015.",
+      "“Mamá, ¿cómo era yo?, papá, cuéntame cómo eras?”. Con Ayala Villarreal Jaime Fausto. *Psicomotricidad: movimiento y emoción*, Vol. 1, No. 1, octubre 2015.",
+      "“Psiquesoma y psique-mente”. *Letra en Psicoanálisis (LeP)*, Vol. 2, No. 1, enero 2016.",
+      "Glosario de psicoanálisis “Para leer *Narcisismo de vida, narcisismo de muerte* de André Green”. Parte 2 de 2. Primer autor: Ayala Villarreal Jaime Fausto. *Letra en Psicoanálisis (LeP)*, Vol. 2, No. 1, enero 2016.",
+      "“Pateando la lata. Una aproximación a la teoría de la agresión winnicottiana”. *Psicomotricidad: movimiento y emoción*, Vol. 2, No. 1, enero-junio 2016.",
+      "“Los padres en la terapia psicoanalítica del hijo. Una aproximación”. *Letra en Psicoanálisis (LeP)*, Vol. 2, No. 2, julio-diciembre 2016.",
+      "“De las imágenes del cuerpo y la dignidad humana”. *Psicomotricidad: movimiento y emoción (PsiMe)*, Vol. 2, No. 2, julio-diciembre 2016.",
+      "Glosario de psicoanálisis “La violencia de la interpretación de Piera Aulagnier”. Parte uno. Primera entrega. Primer autor: Ayala Villarreal Jaime Fausto. *Letra en Psicoanálisis (LeP)*, Vol. 2, No. 2, julio-diciembre 2016.",
+      "Glosario de psicoanálisis “La violencia de la interpretación de Piera Aulagnier”. Parte 1, segunda entrega. Primer autor: Ayala Villarreal Jaime Fausto. *Letra en Psicoanálisis (LeP)*, Vol. 3, No. 1, enero-junio 2017.",
+      "“Sobre la castración y sus destinos: la fantasía, el juego, la teoría sexual, las imágenes”. *Letra en Psicoanálisis (LeP)*, Vol. 3, No. 1, enero-junio 2017.",
+      "“Cuando la madre le deja de hablar a su bebé”. *Letra en Psicoanálisis (LeP)*, Vol. 3, No. 1, enero-junio 2017.",
+      "“Lactancia materna: la huella de un futuro, acercamiento desde la medicina y desde el psicoanálisis”. Segunda autora. Primera autora: Ayala Rabadán Jimena. *Letra en Psicoanálisis (LeP)*, Vol. 4, No. 1, enero-junio 2018.",
+      "Glosario de psicoanálisis “Aulagnier, La violencia de la interpretación”. Tercera entrega. Primer autor: Ayala Villarreal Jaime Fausto. *Letra en Psicoanálisis (LeP)*, Vol. 4, No. 1, enero-junio 2018.",
+      "“Winnicott frente al desafío de hacer lazo social. Disección de un desprecio”. *Letra en Psicoanálisis (LeP)*, Vol. 5, No. 1, enero-junio 2019. ISSN 2448-6868",
+      "“Winnicott: la psicosomática como clínica del mundo interior”. *Letra en Psicoanálisis (LeP)*, Vol. 5, No. 2, julio-diciembre 2019. ISSN 2448-6868",
+      "“Winnicott: La clínica del miedo al derrumbe”. *Letra en Psicoanálisis (LeP)*, Vol. 6, No. 2, julio-diciembre 2020. ISSN 2448-6868",
+      "“¿Cómo aprendemos a hablar? Acerca de la fase entre Eco y eco”. *Letra en Psicoanálisis (LeP)*, Vol. 7, No. 1, enero-junio 2021. ISSN 2448-6868"
     ]
   },
   {
-    "id": "",
+    "id": "jaime-ayala-villarreal",
     "nombre": "Jaime Ayala Villarreal",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Medalla al mérito docente, Universidad del Ejército y la Fuerza Aérea, 1970.",
+      "Médico Cirujano y Partero por la Universidad Autónoma de Nuevo León, Monterrey, Nuevo León.",
+      "Especialidad en Psiquiatría General por la Secretaría de la Defensa Nacional.",
+      "Especialidad en Psiquiatría por el Consejo Mexicano de Psiquiatría.",
+      "Psicoanalista de Grupo del Instituto de Psicoanálisis de la Asociación Psicoanalítica Mexicana (APM).",
+      "Psicoanalista Titular de la Asociación Psicoanalítica Mexicana (APM).",
+      "Psicoanalista Didáctico del Instituto de Psicoanálisis de la Asociación Psicoanalítica Mexicana (APM).",
+      "Maestría en Psicoterapia Psicoanalítica en CiES Colegio Internacional de Educación Superior.",
+      "Doctorado en Investigación Psicoanalítica en CiES Colegio Internacional de Educación Superior."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
+    "experienciaProfesional": [
+      "Director Clínico y de Enseñanza del Instituto Psiquiátrico de la Ciudad de México.",
+      "Director de la Comunidad Terapéutica del Centro de Integración Juvenil, Lomas.",
+      "Docente Investigador del Centro de Estudios de Posgrado de la Asociación Psicoanalítica Mexicana (APM).",
+      "Vice-Presidente Regional y Co-Presidente del Congreso de la Federación Mundial de Salud Mental.",
+      "Co-Fundador de la Federación Mexicana de Salud Mental (FEMESAM).",
+      "Co-Fundador de la Federación Panamericana de Psicomotricidad.",
+      "Director del Centro de Estudios de Postgrado de la Asociación Psicoanalítica Mexicana (APM).",
+      "Presidente de la Sociedad Mexicana de Neurología y Psiquiatría.",
+      "Presidente de la Asociación Psicoanalítica Mexicana (APM).",
+      "Médico de Tiempo Completo del Hospital Central Militar.",
+      "Médico Psiquiatra y Psicoanalista en Consultorio Particular.",
+      "Ha dirigido 50 tesis de Maestría o Doctorado.",
+      "Integrado al Comité de revisión de tesis de grado: 120 lecturas.",
+      "Director-editor de la Revista Letra en Psicoanálisis (LeP, ISSN 2448-6868).",
+      "Director-editor de la Revista Psicomotricidad: movimiento y emoción (ISSN 2448-6175).",
+      "Rector del CiES Colegio Internacional de Educación Superior."
+    ],
+    "docenteEn": ["CiES Colegio Internacional de Educación Superior."],
+    "publiaciones": [
+      "“La contratansferencia en la evolución del proceso psicoanalítico”. Cuadernos de Psicoanálisis. Vol. XVI, 3-4, 1983.",
+      "“Sentimientos de culpa e identificaciones con familiares de enfermos mentales graves”. Segundo autor: Rabadán Concepción. Cuadernos de Psicoanálisis. Vol. XXI, 3-4, 1988.",
+      "“Mitos: motivos y naturaleza”. Cuadernos de Psicoanálisis. Vol. XXXVI, 1-2, 1993.",
+      "“Acting out y comunicación analítica”. Cuadernos de Psicoanálisis. Vol. XXVIII, 1-2, 1995.",
+      "“México, and Psychoanalisis” en The Freud Encyclopedia. Theory, Therapy and Culture. Erwin, Edward (Ed.). Routledge/Taylor & Francis Group, 2002.",
+      "Neuropsicología y Trastornos de Lenguaje. México: Editorial D´ Jimena, 2011.",
+      "“Glosario de psicoanálisis para leer Narcisismo de vida, narcisismo de muerte de André Green. Parte 1 de 2”. Revista Letra en Psicoanálisis LeP, Vol. 1, Nº 1, julio 2015.",
+      "“Mamá, ¿cómo era yo?, papá, cuéntame cómo eras?”. En coautoría con Rabadán Fernández, C. Revista Letra en Psicoanálisis LeP. Vol. 1, Nº 1, octubre 2015.",
+      "“Glosario de psicoanálisis para leer Narcisismo de vida, narcisismo de muerte de André Green. Parte 2 de 2”. En coautoría con Rabadán Fernández, C. Revista Letra en Psicoanálisis LeP, Vol. 2, Nº 1, enero 2016.",
+      "“Bases Psicoanalíticas de la Psicomotricidad”. Revista Psicomotricidad, Movimiento y Emoción (PsiMe). Vol. 2, Nº 1, 2016.",
+      "“Glosario de Psicoanálisis. Para estudiar *La violencia de la interpretación* de Piera Aulagnier (1923-1990), Parte uno. Primera entrega”. En coautoría con Rabadán Fernández, C. Revista Letra en Psicoanálisis LeP. Vol. 2, Nº 2, julio-diciembre 2016.",
+      "Manual de neuropsicología. Ayala V. J. F. (compilador). México: Ediciones D Jimena, Colegio Internacional de Educación Superior, 2019."
     ]
   },
   {
-    "id": "",
+    "id": "yolanda-alquicira-sahagun",
     "nombre": "Yolanda Alquicira Sahagun",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Psicología en la Facultad de Psicología de la UNAM.",
+      "Formación como Psicoanalista del Círculo Psicoanalítico Mexicano.",
+      "Maestría en Psicoterapia Psicoanalítica, CiES Colegio Internacional de Educación Superior.",
+      "Doctora en Investigación Psicoanalítica, CiES Colegio Internacional de Educación Superior.",
+      "Diplomado sobre el “Enfoque psicoanalítico de las afecciones corporales y orgánicas”.",
+      "Programa de Entrenamiento para Profesionales en Avalon, del Centro de Tratamiento para la Mujer, especializado en trastornos de la conducta alimentaria."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
+    "experienciaProfesional": [
+      "Psicóloga en el Centro de Observación y Clasificación en el Reclusorio Preventivo Oriente.",
+      "Laboró en el ISSSTE en los Centros Culturales del Instituto.",
+      "Psicoterapeuta en Servicio Desarrollo y Paz, en su programa de ayuda a refugiados centroamericanos.",
+      "Psicóloga escolar en el Kinder Summer Hill.",
+      "Psicóloga escolar en la Primaria Fernández de Lizardi.",
+      "Consulta privada."
+    ],
+    "docenteEn": [
+      "CiES Colegio Internacional de Educación Superior.",
+      "Imparte el Diplomado “Afecciones Somáticas, una perspectiva psicoanalítica” en el Taller de Investigaciones Psicoanalíticas.",
+      "Centro de atención telefónica de la Universidad Autónoma Metropolitana.",
+      "Universidad Autónoma de Sinaloa.",
+      "Universidad Mundial de La Paz, Baja California Sur."
+    ],
+    "publiaciones": [
+      "Fernández G. C. (coord.) (2006). *El cuerpo y sus afecciones, El Secreto Transgeneracional: ¿se encarna?* México: CPM.",
+      "Blanco, R. A. Y. (2016). Posmodernidad, Psicoanálisis, Hermenéutica. Aproximación al estudio y tratamiento de las nuevas subjetividades. En M. B. Luis Eduardo Primero Rivas, *La nueva epistemología y la salud mental en México* (p. 287). México D.F.: UPN, INPRFM.",
+      "Blanco, R. A. Y. (2017). Subjetividades posmodernas y Hermenéutica. Aproximación al tratamiento de las nuevas subjetividades. En Napoleón Conde Gaxiola, *Ideas de la Hermenéutica Analógica*. México: Torres Asociados."
     ]
   },
   {
-    "id": "",
+    "id": "enrique-octavio-aragon-burgos",
     "nombre": "Enrique Octavio Aragón Burgos",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Lic. en Ciencias por la EBC. Cédula profesional: 2852512.",
+      "Lic. en Psicología por la Universidad Nacional Autónoma de México. Cédula profesional: 6142014.",
+      "Maestría en Psicoterapia Psicoanalítica en CiES Colegio Internacional de Educación Superior. Cédula profesional: 12834534.",
+      "Doctorado en Investigación Psicoanalítica en CiES Colegio Internacional de Educación Superior (en curso, 4.º semestre).",
+      "Instituto de Ciencias de la Rehabilitación Integral AC (en curso).",
+      "Certificación en la metodología Behavior Neurological Base (Neurorehabilitación) por INCRI A.C.",
+      "Certificación PROCEDA de la Asociación Mexicana de Psiquiatría Infantil A.C. para diagnóstico de autismo con pruebas mexicanas.",
+      "Diplomado en Fundamentos Psicoanalíticos por la Universidad Intercontinental.",
+      "Certificación en Psicopatología Dual en adolescentes en el Hospital Psiquiátrico Infantil Dr. Juan N. Navarro.",
+      "Curso en Trastornos del Aprendizaje y estrategias de intervención por la Asociación Mexicana de Psiquiatría Infantil A.C.",
+      "Curso sobre autismo: Concepción actual y principales aportaciones por DOMUS Instituto de Autismo.",
+      "Curso sobre trastornos mentales en infancia y adolescencia por la Asociación Mexicana de Psiquiatría Infantil A.C.",
+      "Curso sobre trastornos afectivos y de ansiedad para profesionales de la salud por el Instituto Nacional de Psiquiatría Ramón de la Fuente Muñiz.",
+      "Curso sobre psicoterapia de juego para manejo de problemas emocionales en niños por la Asociación Mexicana de Psicoterapia de Juego A.C."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Supervisor clínico en la Clínica de Psicoanálisis Infantil y Psicomotricidad Sikanda-Añu.",
+      "Psicoterapeuta en Clínica Privada Hope A.C., atendiendo pacientes con trastornos graves de la personalidad.",
+      "Consulta privada en psicoterapia psicoanalítica."
+    ],
+    "docenteEn": ["CiES — Docente en materias de psicología, familia y comunicación humana."],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "miguel-angel-bautista-gutierrez",
     "nombre": "Miguel Ángel Bautista Gutiérrez",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciado en Psicología por la UNAM.",
+      "Maestro en Psicoterapia Psicoanalítica por el CiES Colegio Internacional de Educación Superior.",
+      "Maestro en Psicoterapia de las Adicciones por el CiES Colegio Internacional de Educación Superior.",
+      "Doctorante del Doctorado en Investigación Psicoanalítica en el CiES Colegio Internacional de Educación Superior."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Trabajo e investigación clínica en el Hospital Psiquiátrico Infantil Dr. Juan N. Navarro.",
+      "Investigación clínica en la UNAM.",
+      "Desarrollo e implementación de programas residenciales para adicciones.",
+      "Trabajo clínico con adicciones, compulsiones y dependencias, así como con personas en reclusión en instituciones públicas y privadas, incluyendo Centros de Integración Juvenil.",
+      "Investigación en la UNAM, UAM, IMSS, ISSSTE y SEP.",
+      "Clínica psicoanalítica en práctica privada."
+    ],
+    "docenteEn": [
+      "UNAM, UAM, IMSS, ISSSTE y SEP.",
+      "Docencia en los posgrados de Psicoterapia Psicoanalítica y Psicomotricidad en CiES Colegio Internacional de Educación Superior.",
+      "Desarrollo de seminarios y ponencias."
+    ],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "martha-patricia-bonilla",
     "nombre": "Martha Patricia Bonilla ",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Psicología Social por la Universidad Autónoma Metropolitana (UAM).",
+      "Maestría en Psicología Social por la Universidad Nacional Autónoma de México (UNAM).",
+      "Especialidad en Sexología Educativa por el Instituto Mexicano de Sexología.",
+      "Diplomado en Análisis Cualitativo por el Centro Avanzado de Comunicación.",
+      "Diplomado en Terapia Breve por el Mental Research Institute.",
+      "Diplomado en Violencia Familiar y Derecho por la Universidad Nacional Autónoma de México.",
+      "Diplomado en Hipnosis Holística por el Centro Mexicano de Desarrollo en Hipnosis.",
+      "Participación en el grupo de trabajo sobre Salud Reproductiva del Adolescente del Colegio México.",
+      "Doctorado en Psicología Social por la Universidad Nacional Autónoma de México.",
+      "Doctorante en el Doctorado en Investigación Psicológica por la Universidad Iberoamericana."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Directora General y fundadora del Centro de Investigación Universitario de la Universidad Intercontinental.",
+      "Docente investigadora de tiempo completo en la Facultad de Ciencias de la Conducta de la Universidad Autónoma del Estado de México.",
+      "Responsable del Programa de Investigación 'Familia y Salud'.",
+      "Asesora del Director General del Instituto Mexicano de Sexología.",
+      "Representante de profesores de asignatura ante el Consejo del Departamento de Psicología de la Universidad Iberoamericana.",
+      "Investigadora Nacional del Sistema Nacional de Investigadores (SNI).",
+      "Responsable de diversos proyectos de investigación.",
+      "Consultora editorial de la Revista de Psicología y Educación y de la Revista Iberoamericana.",
+      "Miembro evaluadora en la Comisión de Acreditación, Tipificación y Superación del Consejo Nacional para la Enseñanza e Investigación en Psicología (CNEIP).",
+      "Miembro evaluadora del Comité Editorial de la Revista electrónica Letra en Psicoanálisis (LeP).",
+      "Miembro evaluadora del Comité Editorial de la Revista electrónica Psicomotricidad: movimiento y emoción (PsiME).",
+      "Asesora de investigación en instituciones como el Instituto Mexicano de Sexología, Secretaría de Educación Pública, Centro del Desarrollo en la Comunidad A.C., Fundación Familia y Pareja I.A.P., y Fundación MacArthur.",
+      "Conferencista en congresos y talleres nacionales e internacionales.",
+      "Participación como jurado en 140 exámenes profesionales y de grado."
+    ],
+    "docenteEn": [
+      "CiES Colegio Internacional de Educación Superior.",
+      "Universidad Intercontinental.",
+      "Universidad Vasco de Quiroga, Morelia, Michoacán.",
+      "Universidad Iberoamericana.",
+      "Centro Avanzado de Comunicación.",
+      "Tecnológico de Monterrey, Campus Ciudad de México.",
+      "Instituto Mexicano de Sexología A.C.",
+      "Universidad Juárez del Estado de Durango.",
+      "Instituto de la Familia A.C.",
+      "Universidad Autónoma del Estado de México, Toluca.",
+      "Universidad Cristóbal Colón, Veracruz.",
+      "Universidad del Noreste, Tampico, Tamaulipas."
+    ],
+    "publiaciones": ["Glosario de Términos Cualitativos. México: Libros para Todos, 2009.", "Adolescentes del Siglo XXI. Universidad de Guanajuato. México: Editorial Color, 2009."]
   },
   {
-    "id": "",
+    "id": "walterio-francisco-beller-taboada",
     "nombre": "Walterio Francisco Beller Taboada",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Estudios de la Licenciatura en Derecho en la Escuela Libre de Derecho.",
+      "Licenciatura en Filosofía en la Facultad de Filosofía y Letras de la UNAM.",
+      "Estudios inconclusos en el Doctorado de Metodología y Teoría de la Ciencia en el Centro de Investigación y de Estudios Avanzados (CINVESTAV) del IPN.",
+      "Maestría en Filosofía en la Facultad de Filosofía y Letras de la UNAM.",
+      "Doctorado en Filosofía en la Facultad de Filosofía y Letras de la UNAM.",
+      "Maestría en Teoría Psicoanalítica en el Centro de Investigación y de Estudios Psicoanalíticos."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
+    "experienciaProfesional": [
+      "Investigador junto con el Dr. Rolando García en el Seminario de Investigación sobre Epistemología Genética de la UAM-X.",
+      "Participación en el Seminario de Investigación sobre Sistemas Complejos Auto-Organizados y Teorías del Caos en el CINVESTAV.",
+      "Dirección de un proyecto dentro del Cuerpo Académico de Humanidades en la Universidad Autónoma de Ciudad Juárez.",
+      "Investigación terminada: 'Por el Camino del Método Porfirio Parra, Un Chihuahuense Universal'. Publicación en prensa.",
+      "Investigación actual sobre Metodología de la Investigación Lógica: teoría y arte de la argumentación.",
+      "Coordinador de Asesores del Procurador General de la República.",
+      "Director General de Prevención del Delito y Servicios a la Comunidad en la Procuraduría General de la República.",
+      "Coordinador de Asesores del Presidente de la Comisión Nacional de los Derechos Humanos.",
+      "Asesor del Comisionado para la Paz en Chiapas.",
+      "Asesor de la Dirección de Educación en Población del CONAPO.",
+      "Trabajos en Códigos Normativos Éticos para la Secretaría de Comunicaciones y Transportes.",
+      "Asesor de la empresa de comunicación Audiovisión Omega S.A. de C.V., para radio y televisión con la periodista Lolita de la Vega.",
+      "Asesor en selección de publicaciones para Editores Asociados Mexicanos (EDAMEX).",
+      "Auxiliar del Departamento Jurídico del Fondo de Cultura Económica.",
+      "Trabajos para la Cámara de Comercio de la Ciudad de México.",
+      "Miembro evaluador del Comité Editorial de la revista electrónica Letra en Psicoanálisis (LeP).",
+      "Asesor Académico del Director en la Dirección de Ciencias Sociales y Humanidades de la UAM Xochimilco.",
+      "Responsable del Área de Recursos Humanos de la COPLADA en UAM Xochimilco.",
+      "Psicoanalista en práctica clínica."
+    ],
+    "docenteEn": [
+      "CiES Colegio Internacional de Educación Superior.",
+      "Colegio de Bachilleres.",
+      "Escuela Nacional de Antropología e Historia.",
+      "Universidad Autónoma Metropolitana Unidad Xochimilco.",
+      "Facultad de Filosofía y Letras de la UNAM.",
+      "Facultad de Ciencias Políticas y Sociales de la UNAM.",
+      "Instituto Politécnico Nacional.",
+      "Centro de Estudios Demográficos y del Desarrollo Urbano.",
+      "Instituto Tecnológico y de Estudios Superiores de Monterrey.",
+      "Universidad La Salle.",
+      "Universidad Iberoamericana.",
+      "Universidad Latinoamericana.",
+      "Universidad Autónoma de Ciudad Juárez."
+    ],
+    "publiaciones": [
+      "Coautor de 'Guía de Investigación Científica'. México: UAM-X, 1980 (3 ediciones).",
+      "Coautor de 'Epistemología, Teoría de la Ciencia y Práctica Universitaria'. México: UAM-X, Colección Temas Universitarios No. 2, 1982.",
+      "“Lógicas no Clásicas: ¿Otra Herida Narcisista?”. Revista Letra en Psicoanálisis (LeP), Vol. 1, No. 1, enero-junio 2015. ISSN 2448-6868.",
+      "“Elementos de lógica argumentativa para la escritura académica”. Primera edición. Ciudad de México: Bonilla Artigas Editores; UAM Unidad Xochimilco, División de Ciencias Sociales y Humanidades, 2018."
     ]
   },
   {
-    "id": "",
+    "id": "lucia-blanco-pantoja",
     "nombre": "Lucía Blanco Pantoja",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciada en Psicología por la UAM-X.",
+      "Maestra en Administración con especialidades en Finanzas, Mercadotecnia y Dirección Internacional por el ITAM.",
+      "Doctora en Ciencias del Desarrollo Humano por el CiES Colegio Internacional de Educación Superior.",
+      "Habla cinco idiomas y lee un sexto.",
+      "Diplomado en Desarrollo Gerencial por la Universidad Iberoamericana.",
+      "Diplomado en Selección y Crecimiento de Personal por Psicología y Desarrollo.",
+      "Diplomado en Grafología por la Asociación Mexicana de Grafología.",
+      "Especialidad en Grafología en Recursos Humanos y en formación como consultor interno.",
+      "Estudios en lectura del rostro desde 2006; actualmente escribe un libro sobre el tema.",
+      "Maestra e Instructora de Biodanza, formada en la escuela de Rolando Toro en Buenos Aires, Argentina."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
+    "experienciaProfesional": [
+      "Coach empresarial certificada por Newfield Consulting y consultora certificada por el CONOCER.",
+      "Titular del programa 'La Cifra Mágica', transmitido por el canal VIBRA TV.",
+      "Siete años de colaboración en la industria de autoservicio en áreas de recursos humanos, operaciones y compras.",
+      "Entrenadora en el programa de cambio de cultura Cifra en Wal-Mart.",
+      "Más de 20 años de experiencia en áreas de Recursos Humanos.",
+      "Desde 1998, Directora General de Lublan Consultores, despacho especializado en desarrollo personal, laboral y organizacional.",
+      "Desarrollo de proyectos de capacitación, formación directiva, coaching y equilibrio de vida."
+    ],
+    "docenteEn": ["Imparte conferencias y cursos a nivel nacional.", "CiES Colegio Internacional de Educación Superior.", "Universidad Iberoamericana."],
+    "publiaciones": [
+      "“Emprendiendo el camino rumbo a Ser Ejecutivo en la Vida y Humano en el Trabajo”.",
+      "Artículos sobre habilidades gerenciales en revistas nacionales e internacionales.",
+      "Articulista en la revista Expansión y colaboradora en el programa de televisión 'Todo en Casa'.",
+      "Colaboradora permanente en el blog del CiES Colegio Internacional de Educación Superior."
     ]
   },
   {
-    "id": "",
+    "id": "nadia-bolanos",
     "nombre": "Nadia Bolaños",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Educación Física.",
+      "Maestría en Psicomotricidad por el CiES Colegio Internacional de Educación Superior.",
+      "Certificación SICED (Sistema de Certificación de Entrenadores Deportivos) en Acondicionamiento Físico, 2009.",
+      "Tallerista y practicante del Método Feldenkrais (México).",
+      "Certificación Internacional en PMA (Pilates Method Alliance).",
+      "Certificación Internacional en Integrated Balance (método de movimiento e integración).",
+      "Certificación Internacional en el método Feldenkrais por la Universidad de Colima."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Intervención con adultos y adultos mayores en el área reeducativa, de manera individual y grupal, con 15 años de experiencia.",
+      "Aplicación de técnicas y métodos psico-corporales para mejorar la salud física y contribuir al desarrollo de la autoconciencia por el movimiento.",
+      "Expositora en coloquios y congresos de Psicomotricidad y Psicoanálisis en el CiES (2015 y 2018).",
+      "Terapia psicomotriz en atención privada."
+    ],
+    "docenteEn": [
+      "Docente de Educación Física a nivel primaria en la Ciudad de Cuernavaca, Morelos (2010 a la fecha).",
+      "Docente en la Maestría en Psicomotricidad en el CiES Colegio Internacional de Educación Superior (2015 a la fecha)."
+    ],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "francisco-castillo-borquez",
     "nombre": "Francisco Castillo Bórquez",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Economía por la UNITEC (inconclusa).",
+      "Licenciatura en Psicología por la Universidad Autónoma Metropolitana-Xochimilco (UAM-X).",
+      "Maestría en Filosofía de la Ciencia por la Universidad Autónoma Metropolitana-Iztapalapa (tesis en proceso).",
+      "Doctorado en Humanidades por la Universidad Latinoamericana.",
+      "Maestría en Psicoterapia Psicoanalítica por el CiES Colegio Internacional de Educación Superior.",
+      "Doctorando en Investigación Psicoanalítica en el CiES Colegio Internacional de Educación Superior."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Coordinador de Servicio Social en la División de Ciencias Biológicas y de la Salud de la Universidad Autónoma Metropolitana.",
+      "Instructor de cursos de capacitación empresarial: Curso de Desarrollo y Superación Personal 'Sembrando una semilla para mi futuro' en Diseños de Alta Moda, S.A. de C.V.",
+      "Miembro del Programa de Investigación 'Desarrollo Humano en Chiapas', aprobado por Colegio Académico en la Universidad Autónoma Metropolitana.",
+      "Coordinador de Apoyo Logístico y Administrativo del proyecto 'Una nueva iniciativa en salud', patrocinado por la Fundación W.K. Kellogg en la Universidad Autónoma Metropolitana.",
+      "Asesor permanente de la Comisión de Servicio Social del Consejo Divisional de la División de Ciencias Biológicas y de la Salud.",
+      "Responsable de la Mesa de Personal y encargado de la Sección de Recursos Humanos y Cómputo en la División de Ciencias Biológicas y de la Salud de la Universidad Autónoma Metropolitana.",
+      "Coordinador Administrativo de los Laboratorios de la Facultad de Psicología en la Universidad Nacional Autónoma de México.",
+      "Evaluación psicológica, asesoría y psicoterapia a pacientes con problemas de obesidad en la Clínica de Enfermedades Metabólicas y Obesidad en Ciudad de México y Cuernavaca, Morelos.",
+      "Sinodal en exámenes de grado en el CiES Colegio Internacional de Educación Superior.",
+      "Psicoterapia psicoanalítica en consultorio privado."
+    ],
+    "docenteEn": [
+      "CiES Colegio Internacional de Educación Superior.",
+      "Universidad Intercontinental.",
+      "Universidad Autónoma Metropolitana.",
+      "Universidad La Salle.",
+      "Universidad Iberoamericana.",
+      "Colegio Lestonnac.",
+      "Universidad Latinoamericana."
+    ],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "maria-de-los-angeles-cano-villamil",
     "nombre": "María de los Ángeles Cano Villamil",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciada Terapista en Comunicación Humana por el Instituto Nacional de la Comunicación Humana.",
+      "Maestra en Psicomotricidad por el Colegio Internacional de Educación Superior.",
+      "Especialización en Grafomotricidad por el IRAPSIR."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": ["Instituto Nacional de Rehabilitación.", "Práctica privada."],
+    "docenteEn": ["Docente titular en la Licenciatura de Terapista en Comunicación Humana.", "Docente en la Maestría en Psicomotricidad."],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "magdalena-feregrino",
     "nombre": "Magdalena Feregrino",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": ["Licenciada en Psicología por la Universidad de Londres.", "Maestría en Psicoterapia Psicoanalítica en el CiES Colegio Internacional de Educación Superior."],
+    "experienciaProfesional": ["Acompañamiento en el Centro de Cáncer del Hospital ABC.", "Consulta privada."],
+    "docenteEn": ["CiES Colegio Internacional de Educación Superior."],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "juan-francisco-garduno-aparicio",
     "nombre": "Juan Francisco Garduño Aparicio",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Psicología por la Universidad Nacional Autónoma de México (UNAM).",
+      "Maestría en Psicomotricidad por el CiES Colegio Internacional de Educación Superior.",
+      "Formación en el Programa de Facilitadores del Método de Potencialización Funcional del Movimiento en el CENEPRE (Centro de Neurodesarrollo, Psicomotricidad y Rehabilitación).",
+      "Formación como Masoterapeuta en la Universidad Autónoma de Chapingo (UACH).",
+      "Diplomado en Psicoterapia Psicoanalítica con Niños y Adolescentes en el Hospital Psiquiátrico Infantil 'Dr. Juan N. Navarro'."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Psicólogo en el Reclusorio Preventivo Varonil Norte.",
+      "Psicólogo en el Consejo Municipal de Lucha contra las Drogas y la Delincuencia.",
+      "Dirección General de Evaluación en la Secretaría de Hacienda y Crédito Público.",
+      "Psicólogo en el área de evaluación psicológica del Centro de Control de Confianza (PGR).",
+      "Terapeuta en el Centro de Neurodesarrollo, Psicomotricidad y Rehabilitación (CENEPRE).",
+      "Participación en procesos del Centro Nacional de Evaluación para la Educación Superior (CENEVAL)."
+    ],
+    "docenteEn": [
+      "CiES Colegio Internacional de Educación Superior.",
+      "Universidad Autónoma del Estado de México.",
+      "Universidad Intercontinental.",
+      "Coordinación Sectorial de Educación Preescolar en la Secretaría de Educación.",
+      "Psicoterapeuta en Psicomotricidad en consultorio privado.",
+      "Psicoterapeuta psicoanalítico en consultorio privado."
+    ],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "susana-guevara-palazuelos",
     "nombre": "Susana Guevara Palazuelos",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    "bio": ["Licenciatura en Psicología por la Universidad de Occidente, Unidad Culiacán.", "Maestría en Psicoterapia Psicoanalítica por el CiES Colegio Internacional de Educación Superior."],
+    "experienciaProfesional": [
+      "Docente de portugués en la institución Berlitz.",
+      "Colaboradora en ANSPAC como orientadora frente a grupo para niños de 6 a 12 años (Asociación Pro Superación Personal).",
+      "Participación en el Verano Científico de la Investigación del Programa Delfín en la Universidad Nacional Autónoma de México.",
+      "Auxiliar en aplicación de pruebas psicométricas y selección de personal en Aditivos Forte.",
+      "Elaboración e impartición del taller de Trastornos Alimenticios en la Universidad de Occidente, Campus Culiacán.",
+      "Participación en Servicio a la Comunidad en el CiES Colegio Internacional de Educación Superior en actividades de orientación vocacional (asistencia por llamado).",
+      "Psicoterapeuta psicoanalítica para niños, adolescentes y adultos en consultorio privado."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "docenteEn": ["CiES Colegio Internacional de Educación Superior.", "Universidad Insurgentes."],
+    "publiaciones": ["“Sometimiento, pasaporte a la vida cuando se vive culpa del sobreviviente”. Revista Letra en Psicoanálisis (LeP), Vol. 4, Nº 1, enero-junio 2018. ISSN 2448-6868."]
   },
   {
-    "id": "",
+    "id": "nicolas-guzman-nava",
     "nombre": "Nicolás Guzmán Nava",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Terapia Física y Rehabilitación.",
+      "Maestría en Psicomotricidad por el CiES Colegio Internacional de Educación Superior.",
+      "Doctorante en el Doctorado en Ciencias del Desarrollo Humano en el CiES Colegio Internacional de Educación Superior."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Coordinador de la Maestría en Psicomotricidad del CiES Colegio Internacional de Educación Superior.",
+      "18 años de experiencia en clínica de habilitación neuromuscular y Psicomotricidad.",
+      "Clínica en rehabilitación con poblaciones débiles visuales y personas ciegas."
+    ],
+    "docenteEn": ["Docente en la Maestría en Psicomotricidad del CiES Colegio Internacional de Educación Superior.", "Docente en otras instituciones."],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "maria-guadalupe-hernandez-lopez",
     "nombre": "María Guadalupe Hernández López",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Maestría en Psicoterapia Psicoanalítica por el CiES Colegio Internacional de Educación Superior.",
+      "Especialidad en Counseling (Consejería Psicológica).",
+      "Formación en EPSIDEH, Centro de Psicología y Desarrollo Humano, avalado por la Asociación Mexicana de Neurología y Psiquiatría.",
+      "Licenciatura en Psicología Educativa por la Escuela Normal Superior Instituto América (Secretaría de Educación de Guanajuato).",
+      "Formación integral en pedagogía, psicología, espiritualidad, filosofía, teología y pastoral por el Interreligioso de México, CIRM Nacional.",
+      "Formación en pedagogía y metodología aplicada a grupos por la Escuela Sedes Sapientiae."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Psicoterapia a adolescentes, jóvenes y adultos en consultorio particular.",
+      "Coordinación académica en Centro Clotet, Educación al Servicio del Sordo A.C., con atención a niños, adolescentes, jóvenes y padres de familia.",
+      "Profesora de primaria en el Colegio Reims.",
+      "Profesora de primaria en el Colegio Juan Ramón Jiménez.",
+      "Auxiliar en coordinación educativa del CEPSIDEH (Centro de Psicología y Desarrollo Humano).",
+      "Programación de talleres, conferencias y diplomados en CEPSIDEH.",
+      "Terapia grupal con jóvenes en Chapingo, Texcoco.",
+      "Acompañamiento en formación humana y espiritual para jóvenes en congregación misionera internacional.",
+      "Programación de talleres, actividades culturales y extracurriculares en el Interreligioso de Formación de México, CIRM Nacional.",
+      "Secretariado en el Interreligioso de Formación de México, CIRM Nacional.",
+      "Departamento de Economía en el Interreligioso de Formación de México, CIRM Nacional.",
+      "Elaboración de proyectos de formación humana y espiritual para congregación religiosa misionera internacional en Barcelona (2004) y Barquisimeto, Venezuela (2008).",
+      "Trabajo de orientación humana y espiritual en comunidades parroquiales con niños, adolescentes, jóvenes y adultos.",
+      "Colaboración en Parroquia Señor de la Ascensión, León, Guanajuato.",
+      "Colaboración en Parroquia Espíritu Santo, Gómez Palacio, Durango.",
+      "Profesora de Antropología de la Vida Religiosa y Psicología de la Vida Religiosa en el INFOPAR (Instituto de Formación para Religiosas), León, Guanajuato.",
+      "Participación en Pastoral Social 2004–2005 en el Dispensario Parroquial Purísimo Corazón de María, Col. del Valle, CDMX."
+    ],
+    "docenteEn": ["CiES Colegio Internacional de Educación Superior.", "Centro Universitario Emmanuel Kant (CUEK).", "Centro de Psicología y Desarrollo Humano (CEPSIDEH)."],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "pedro-rafael-hernandez-uzcanga",
     "nombre": "Pedro Rafael Hernández Uzcanga",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciado en Psicología por la Universidad Autónoma Metropolitana, Unidad Xochimilco.",
+      "Maestría en Psicoterapia Psicoanalítica por el CiES Colegio Internacional de Educación Superior.",
+      "Doctorando en Psicoanálisis por la Universidad Intercontinental.",
+      "Estancia de investigación en la Universidad Argentina John F. Kennedy.",
+      "Doctorando en Investigación Psicoanalítica en el CiES Colegio Internacional de Educación Superior."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Jefe de unidad departamental en la Comunidad de Tratamiento Especializado para Adolescentes.",
+      "Terapeuta familiar e individual en la Comunidad de Desarrollo para Adolescentes (CDA) y en la Comunidad de Tratamiento Especializado para Adolescentes (CTEA) de la Dirección General de Tratamiento para Adolescentes (DGTPA).",
+      "Terapeuta individual en el Centro de Asistencia e Integración Social (IASIS) Cuemanco I y II del Instituto de Asistencia e Integración Social.",
+      "Psicólogo en el Kinder Narciso Bassols.",
+      "Práctica privada y docencia."
+    ],
+    "docenteEn": [
+      "Profesor de Licenciatura en Psicología, Maestría en Psicomotricidad y Maestría en Psicoterapia Psicoanalítica en el CiES Colegio Internacional de Educación Superior.",
+      "Profesor de Licenciatura en Psicología y de Maestrías en Clínica Psicoanalítica, Psicopedagogía y Clínica Psicoanalítica de Niños y Adolescentes en diversas instituciones."
+    ],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "pola-jimenez",
     "nombre": "Pola Jiménez",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Educación Física en la ESEF (Escuela Superior de Educación Física).",
+      "Entrenadora Deportiva en la especialidad de Natación en SICCED–CONADE (Sistema de Capacitación y Certificación para Entrenadores Deportivos).",
+      "Maestría en Psicomotricidad por el Colegio Internacional de Educación Superior, CiES."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Entrenadora y profesora de natación en Club Deportivo Casa Blanca (1993–2003).",
+      "Profesora de natación en Club Deportivo Berimbau (2003–2013).",
+      "Profesora de Educación Física en la SEP desde 1997 y actualmente.",
+      "Terapeuta psicomotriz en consultorio privado y en CiES desde 2010 y actualmente."
+    ],
+    "docenteEn": [
+      "Colegio Internacional de Educación Superior, CiES."
+    ],
+    "publiaciones": []
+
   },
   {
-    "id": "",
+    "id": "mitzi-miriam-leon-calderon",
     "nombre": "Mitzi Miriam León Calderón",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Psicología por la UNAM.",
+      "Maestría en Psicoterapia Psicoanalítica por el CiES Colegio Internacional de Educación Superior.",
+      "Doctorado en Investigación Psicoanalítica por el CiES Colegio Internacional de Educación Superior.",
+      "Doctorante en Ciencias del Desarrollo Humano en el CiES Colegio Internacional de Educación Superior."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
+    "experienciaProfesional": ["Práctica clínica privada."],
+    "docenteEn": ["CiES Colegio Internacional de Educación Superior."],
+    "publiaciones": [
+      "“Función parental en la constitución de la feminidad”. Revista Letra en Psicoanálisis (LeP), Vol. 8, No. 1 (2022).",
+      "“Malestar y displacer en la feminidad más allá de la envidia del pene”. Revista Letra en Psicoanálisis (LeP), Vol. 8, No. 1 (2022).",
+      "“Psicoanálisis y feminidad: la mujer y su malestar por la cultura”. Revista Letra en Psicoanálisis (LeP), Vol. 8, No. 1 (2022).",
+      "“La mujer actual: nuevos síntomas y conflictos de malestar y displacer femenino”. Revista Letra en Psicoanálisis (LeP), Vol. 8, No. 1 (2022).",
+      "“Un estudio de caso de malestar y displacer en la feminidad”. Revista Letra en Psicoanálisis (LeP), Vol. 8, No. 1 (2022)."
     ]
   },
   {
-    "id": "",
+    "id": "anna-berenice-mejia-iturriaga",
     "nombre": "Anna Berenice Mejía Iturriaga",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Psicología por la Facultad de Psicología, Universidad Nacional Autónoma de México.",
+      "Substance Abuse Counseling en North Carolina State University, Chapel Hill, N.C., EUA.",
+      "Deutsch als Fremdsprache en Sprachenkolleg für Ausländer, Freiburg, Alemania.",
+      "Cursos de Psicología en Albert Ludwigs Universität Freiburg, Alemania.",
+      "Die Zukunft der Psychoanalyse en la Universidad de Viena, Austria.",
+      "Cours de Civilisation Française en La Sorbonne, París, Francia.",
+      "Maestría en Teoría Psicoanalítica en el Centro de Investigaciones y Estudios Psicoanalíticos, CDMX.",
+      "Estudios de Doctorado en Ciencias Sociales (Psicología Social de Grupos e Instituciones) en la Universidad Autónoma Metropolitana, Unidad Xochimilco.",
+      "Estudios de Doctorado en Teoría Crítica, Psicoanálisis y Filosofía Política en 17, Instituto de Estudios Críticos.",
+      "Formación permanente en seminarios de Psicoanálisis en: Nueva Escuela Lacaniana (CDMX), École Lacanienne de Psychanalyse (CDMX), Praxis Freudiana (Buenos Aires, Argentina), Fundación Psicoanalítica Sigmund Freud (Tucumán, Argentina)."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
+    "experienciaProfesional": [
+      "Investigación sobre consumo de alcohol y drogas en el Instituto Mexicano de Psiquiatría.",
+      "Investigación, prevención y tratamiento de adicciones en Centros de Integración Juvenil.",
+      "Investigación clínica, social y comunitaria.",
+      "Capacitación en educación para la salud a distintos sectores profesionales.",
+      "Asesoría y capacitación en proyectos de tecnología educativa en América Latina en el Centro Latinoamericano de Investigación de IBM.",
+      "Asesoría al Departamento Psicopedagógico en el Centro Cultural Universitario Justo Sierra.",
+      "Coordinación de la Comisión de Salud de Comunidades Indígenas en Resistencia de Chiapas.",
+      "Supervisión clínica a psicoterapeutas y psicoanalistas en formación en consultorio privado.",
+      "Práctica del psicoanálisis en consultorio privado."
+    ],
+    "docenteEn": [
+      "Maestría en Psicoterapia Psicoanalítica, CiES Colegio Internacional de Educación Superior.",
+      "Licenciatura en Psicología, Facultad de Psicología, UNAM.",
+      "Escuela de Comunicación, Universidad Anáhuac.",
+      "Escuela de Psicología, Universidad de las Américas.",
+      "Maestría en Psicoanálisis, Universidad del Claustro de Sor Juana.",
+      "Doctorado en Psicoanálisis, Universidad Intercontinental."
+    ],
+    "publiaciones": [
+      "“El Discurso del Psicoanálisis que pone en acto la Subjetividad Frente al Poder”. Desformaciones: Cultura, Reflexión y Psicoanálisis. Revista Bimestral, Año 1, 2000.",
+      "“A 100 Años del Nacimiento de Jacques Lacan, una Propuesta de lo Social al Psicoanálisis”. Suplemento y Revista Cultural El Ángel, Periódico Reforma, 22 de abril de 2001.",
+      "“Diálogo entre Rebeldes, Universitarios y Psicoanalistas. Reflexión de intelectuales frente a un fenómeno social”. Semanario La Capital: Política. Editor Rino No. 22, 23, 24 y 25. México, 1, 8, 15 y 22 de mayo de 2001.",
+      "“Tres miradas sobre Atenco: Mirada política, mirada militar, mirada psicoanalítica”. Revista Rebeldía No. 43, Año 3.b, junio 2006. Edit. Arte Gráfico Z, México."
     ]
   },
   {
-    "id": "",
+    "id": "belen-mendoza-mendoza",
     "nombre": "Belén Mendoza Mendoza",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    "bio": ["Licenciada en Psicología por la Universidad Autónoma Metropolitana, Unidad Xochimilco."],
+    "experienciaProfesional": [
+      "Psicomotricista en Kinder Miguel Hidalgo, Tlalnepantla.",
+      "Psicomotricista en Colegio Hebreo Maguen David.",
+      "Psicomotricista en Colegio Justo Sierra.",
+      "Terapeuta en Psicomotricidad en consulta privada."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "docenteEn": [
+      "Docente de Psicología en la Universidad Michael Faraday.",
+      "Docente de Psicología en la Universidad Salesiana.",
+      "Docente de la Maestría en Psicomotricidad en el CiES Colegio Internacional de Educación Superior.",
+      "Docente de Psicología, Pedagogía y Ciencias de la Educación en Liceo Lestec."
+    ],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "teresita-moreno-iriarte",
     "nombre": "Teresita Moreno Iriarte",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    "bio": ["Licenciatura en Psicología.", "Maestría en Teoría Psicoanalítica por el Centro de Investigación y Estudios Psicoanalíticos."],
+    "experienciaProfesional": [
+      "Directora del Centro Educativo Gandhi A.C.",
+      "Psicóloga en el Centro de Atención Múltiple.",
+      "Psicóloga en la Escuela de Educación Especial Luz Alou de Torres Manzo.",
+      "Docente y tallerista del Proyecto Amancay en el Colegio Eugenio D’Mazenod.",
+      "Capacitadora en Acompañamiento Terapéutico.",
+      "Psicoterapeuta en Espacio de Desarrollo Infantil e Intervención Temprana A.C. (Ediit).",
+      "Practicante en el Hospital Sainte Anne a través del Centro Nacional de la Investigación Científica de París, Francia (2000).",
+      "Coordinadora del Programa de Fomento a la Salud de la Unidad de Educación Media Superior Tecnológica Industrial y de Servicios de la SEMS.",
+      "Miembro del Comité Organizador del Primer Congreso Psicoanalítico del CiES: 'Las Prácticas Psicoanalíticas en el México Contemporáneo' (2006).",
+      "Miembro del Comité Organizador del Seminario 'André Green en México' en el CiES (2007).",
+      "Acompañante terapéutico a pacientes con desorganización psíquica.",
+      "Consulta privada en psicoanálisis."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "docenteEn": [
+      "CiES Colegio Internacional de Educación Superior.",
+      "Universidad Vasco de Quiroga.",
+      "Instituto Michoacano de Ciencias de la Educación Morelos.",
+      "Universidad La Salle.",
+      "Universidad del Claustro de Sor Juana."
+    ],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "elsa-miriam-ortiz-funes",
     "nombre": "Elsa Miriam Ortiz Funes",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Psicología por la Universidad del Valle de México (UVM).",
+      "Diplomado en Criminología por la Universidad Nacional Autónoma de México (UNAM).",
+      "Maestría en Psicoterapia Psicoanalítica por el CiES Colegio Internacional de Educación Superior.",
+      "Formación psicoanalítica por la Sociedad Freudiana de la Ciudad de México."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Psicoanalista en consulta privada.",
+      "Evaluación diagnóstica a niños, adolescentes y adultos.",
+      "Elaboración de dictámenes psicológicos.",
+      "Tallerista y conferencista en el Gobierno de la Ciudad de México y en el Gobierno de Guerrero.",
+      "Ponente en encuentros de candidatos OCAL y FEPAL (IPA).",
+      "Trabajo especializado en el ámbito educativo."
+    ],
+    "docenteEn": ["CiES Colegio Internacional de Educación Superior."],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "paulina-reyes-renata-dahl",
     "nombre": "Paulina Reyes Renata Dahl ",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Psicología Social en UAM-X. 1976–81.",
+      "Maestría en Psicomotricidad en CiES. 2002–2005.",
+      "Doctorado en Ciencias del Desarrollo Humano en CiES (Doctorante).",
+      "Diplomado en Clínica y Supervisión Psicoanalítica en Niños y Adolescentes, 2007.",
+      "Diplomado en Terapia de Juego en INJUPI, 2008.",
+      "Diplomado en Terapia de Arte en CITA, por la UNAM, 2010.",
+      "Diplomado en Neurociencias Aplicadas I: Biofeedback y Neurofeedback, 2016."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
+    "experienciaProfesional": [
+      "Coordinadora del Programa de Psicomotricidad de la Escuela Mundo Feliz, Cuautla.",
+      "Maestra de Psicomotricidad en la escuela Tomás Moro, Las Lomas, CDMX.",
+      "Psicomotricista en Clínica LULI, CDMX (2000–2005).",
+      "Psicomotricista en consulta privada (desde 2005 a la fecha)."
+    ],
+    "docenteEn": [
+      "Universidad del Tepeyac, 1981.",
+      "Universidad Autónoma Metropolitana Xochimilco, 1982–84.",
+      "Universidad Intercontinental, 2006.",
+      "CiES Colegio Internacional de Educación Superior."
+    ],
+    "publiaciones": [],
+    "ponente": [
+      "Congreso Mundial de Psicomotricidad, 2005.",
+      "Congreso Internacional de Psicomotricidad, 2011.",
+      "Congreso Malestar, Civilización y Subjetividad, 2017.",
+      "XIX Congreso Nacional de la AMCAOF, 2019.",
+      "1° Congreso Internacional de la Asociación Mexicana de Terapeutas en Comunicación Humana A.C., 2020.",
+      "Congreso Mundial Actualidad y Futuro de la Psicomotricidad, 2020."
     ]
   },
   {
-    "id": "",
+    "id": "dayanira-rodriguez-coronado",
     "nombre": "Dayanira Rodríguez Coronado ",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+    "bio": ["Licenciatura en Psicología por el CiES Colegio Internacional de Educación Superior.", "Maestría en Psicoterapia Psicoanalítica por el CiES Colegio Internacional de Educación Superior."],
+    "experienciaProfesional": [
+      "Miembro del departamento de Psicología en atención a los Centros de Desarrollo Infantil (CENDI) de la alcaldía Miguel Hidalgo en el área de Desarrollo Social.",
+      "Psicodiagnóstico infantil, apoyo en programas comunitarios y diseño de instrumentos en el Centro Integral de Salud Mental (CISAME).",
+      "Participación como ponente en el tema: “Las estrategias para promover la lectura y escritura en la niña y en el niño”, dentro del programa de atención familiar de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación (SAGARPA).",
+      "Expositora del tema: “La depresión, sus síntomas y detección en los adolescentes” en el Centro de Estudios Tecnológicos Industriales y de Servicios (CETIS 10).",
+      "Colaboración en la ponencia: “Las adicciones en los adolescentes”, dirigida a los orientadores educativos de escuelas de nivel medio superior por parte del CiES Colegio Internacional de Educación Superior.",
+      "Participación como sinodal de los exámenes profesionales de la Licenciatura en Psicología del CiES Colegio Internacional de Educación Superior.",
+      "Responsable de módulo dentro del programa Educación Inicial Modalidad No Escolarizada de la Secretaría de Educación Pública (SEP), dentro de la alcaldía Magdalena Contreras.",
+      "Psicoterapia psicoanalítica con adolescentes y adultos."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "docenteEn": ["CiES Colegio Internacional de Educación Superior."],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "martha-elva-valenzuela-amaya",
     "nombre": "Martha Elva Valenzuela Amaya",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Psicología.",
+      "Maestría en Psicoterapia Psicoanalítica por el CiES Colegio Internacional de Educación Superior.",
+      "Doctorando en Investigación Psicoanalítica en el CiES Colegio Internacional de Educación Superior."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": [
+      "Docente en la Licenciatura en Psicología y en las Maestrías en Psicoterapia Psicoanalítica, Psicoterapia de las Adicciones y Psicomotricidad en el CiES Colegio Internacional de Educación Superior.",
+      "Participación en diversos congresos, coloquios y seminarios en temas psicoanalíticos.",
+      "Miembro evaluador del Comité Editorial de la revista electrónica Letra en Psicoanálisis (LeP).",
+      "Miembro evaluador del Comité Editorial de la revista electrónica Psicomotricidad: movimiento y emoción (PsiME).",
+      "Seminario con el Dr. Roberto Castro Rodríguez (1 año).",
+      "Actualmente cursa seminario con el Dr. Octavio Chamizo Guerrero.",
+      "Clínica en psicoterapia psicoanalítica."
+    ],
+    "docenteEn": [],
+    "publiaciones": ["“Piera Aulagnier ante el desafío de hacer lazo social”. Revista Letra en Psicoanálisis (LeP). Vol. 5, Nº 1, julio-diciembre 2019. SSN 2448-6868."]
   },
   {
-    "id": "",
+    "id": "wendy-zepeda",
     "nombre": "Wendy Zepeda",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
     "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
+      "Licenciatura en Psicología, Facultad de Psicología, UNAM (2006–2010). Titulada con Mención Honorífica.",
+      "Maestría en Ciencias (Neurobiología) (2015–2017). Instituto de Neurobiología, UNAM. Titulada con Mención Honorífica.",
+      "Doctorado en Neurociencias de la Conducta (2018). Facultad de Psicología, UNAM (en curso)."
     ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "experienciaProfesional": ["Ayudante de investigador (honorario) en el Laboratorio de Farmacología Conductual, Facultad de Psicología, UNAM. Noviembre a la fecha."],
+    "docenteEn": ["Colegio Internacional de Educación Superior, CiES."],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "julieta-abrego-lerma",
     "nombre": "Julieta Abrego Lerma",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "angelica-lorelein-aguilar-hinojosa",
     "nombre": "Angélica Lorelein Aguilar Hinojosa",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "rosa-ciria-cruz-mendoza",
     "nombre": "Rosa Ciria Cruz Mendoza",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "roberta-garcia-quevedo",
     "nombre": "Roberta García Quevedo",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "oscar-mauricio-garcia-zamitiz",
     "nombre": "Oscar Mauricio García Zamitiz",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "cristina-gonzalez-mendez",
     "nombre": "Cristina González Méndez",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "juan-manuel-hernandez-martinez",
     "nombre": "Juan Manuel Hernández Martínez",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "daniel-mendoza-paredes",
     "nombre": "Daniel Mendoza  Paredes",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "yomara-valeria-molotla-rojas",
     "nombre": "Yomara Valeria Molotla Rojas",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "laura-monsivais-galindo",
     "nombre": "Laura Monsivais Galindo",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "mayra-ramos-coyoy",
     "nombre": "Mayra Ramos Coyoy",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "diana-laura-rojas-lopez",
     "nombre": "Diana Laura Rojas López",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "omar-segura-landin",
     "nombre": "Omar Segura Landin",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "diana-vidales-martinez",
     "nombre": "Diana Vidales Martínez",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   },
   {
-    "id": "",
+    "id": "cristal-villegas",
     "nombre": "Cristal Villegas",
     "grado": "",
     "categoria": "",
     "foto": null,
     "resumen": "",
-    "bio": [
-      "Docente y supervisora clínica.",
-      "Autora de diversos artículos sobre psicoanálisis contemporáneo."
-    ],
-    "lineasInteres": [
-      "Teoría psicoanalítica contemporánea",
-      "Clínica con adultos"
-    ]
+    "bio": [],
+    "experienciaProfesional": [],
+    "docenteEn": [],
+    "publiaciones": []
   }
 ]

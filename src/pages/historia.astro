@@ -21,7 +21,7 @@ const pageUrl = "https://cies.online/historia";
   <CiesSeccionProgramaHeader programa={programa} />
 
   <!-- Contenido -->
-  <main class="container py-5">
+  <main id="historia-wrapper" class="container py-5">
     <!-- Filosofía -->
     <section class="mb-5">
       <h2 class="cies-titulo mb-4">Institución especializada en Psicología, Psicoanálisis, Psicomotricidad y Adicciones</h2>
@@ -335,25 +335,36 @@ const pageUrl = "https://cies.online/historia";
 </BaseLayout>
 
 <style>
-  .cies-timeline {
+  #historia-wrapper .cies-timeline {
     border-left: 3px solid var(--cies-green-primary);
     padding-left: 1.5rem;
     margin-left: 0.5rem;
   }
 
-  .cies-timeline-item {
+  #historia-wrapper .cies-timeline-item {
     margin-bottom: 2rem;
     position: relative;
   }
 
-  .cies-timeline-year {
+  #historia-wrapper .cies-timeline-year {
     font-weight: bold;
     color: var(--cies-green-primary);
     display: block;
     margin-bottom: 0.5rem;
   }
 
-  .cies-timeline-item::before {
+  #historia-wrapper .cies-timeline:before {
+    content: "";
+    position: absolute;
+    top: .25rem;
+    bottom: .25rem;
+    left: .7rem;
+    width: 2px;
+    background: transparent;
+    /* background: linear-gradient(to bottom,var(--cies-green-primary),rgba(157,220,59,.15)); */
+  }
+
+  #historia-wrapper .cies-timeline-item::before {
     content: "";
     width: 12px;
     height: 12px;

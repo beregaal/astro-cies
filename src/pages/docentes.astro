@@ -88,7 +88,7 @@ const programa = {
             <div class="modal-content cies-docente-modal">
               <div class="modal-header border-0 pb-0">
                 <h2
-                  class="modal-title h5"
+                  class="modal-title cies-titulo h5"
                   id={`docenteModalLabel-${docente.id}`}
                 >
                   {docente.nombre}
@@ -100,9 +100,9 @@ const programa = {
                   aria-label="Cerrar"
                 />
               </div>
-              <div class="modal-body pt-3">
+              <div class="modal-body pt-3 px-4">
                 <div class="row g-4">
-                  <div class="col-12 col-md-4 text-center">
+                  {/* <div class="col-12 col-md-4 text-center">
                     <img
                       src={`/images/docentes/${docente.foto ?? "docentes-dummy.png"}`}
                       alt={docente.nombre}
@@ -114,13 +114,14 @@ const programa = {
                       </p>
                     )}
                     <p class="small text-muted mb-0">{docente.grado}</p>
-                  </div>
-                  <div class="col-12 col-md-8">
+                  </div> */}
+                  <div class="col-12">
                     {docente.resumen && (
                       <p class="mb-3 fw-semibold">{docente.resumen}</p>
                     )}
 
                     {docente.bio && (
+                      <h3 class="h6 fw-semibold mt-2 cies-rvoe-heading">Desarrollo Académico</h3>
                       <ul class="cies-docente-bio mb-3">
                         {docente.bio.map((linea) => (
                           <li>{linea}</li>
@@ -128,12 +129,36 @@ const programa = {
                       </ul>
                     )}
 
-                    {docente.lineasInteres &&
-                      docente.lineasInteres.length > 0 && (
+                    {docente.experienciaProfesional &&
+                      docente.experienciaProfesional.length > 0 && (
                         <>
-                          <h3 class="h6 fw-semibold mt-2">Líneas de interés</h3>
+                          <h3 class="h6 fw-semibold mt-2 cies-rvoe-heading">Desarrollo Profesional</h3>
                           <ul class="small mb-0">
-                            {docente.lineasInteres.map((item) => (
+                            {docente.experienciaProfesional.map((item) => (
+                              <li>{item}</li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+
+                    {docente.docenteEn &&
+                      docente.docenteEn.length > 0 && (
+                        <>
+                          <h3 class="h6 fw-semibold mt-2 cies-rvoe-heading">Docente en</h3>
+                          <ul class="small mb-0">
+                            {docente.docenteEn.map((item) => (
+                              <li>{item}</li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+
+                    {docente.publiaciones &&
+                      docente.publiaciones.length > 0 && (
+                        <>
+                          <h3 class="h6 fw-semibold mt-2 cies-rvoe-heading">Publicaciones</h3>
+                          <ul class="small mb-0">
+                            {docente.publiaciones.map((item) => (
                               <li>{item}</li>
                             ))}
                           </ul>
